@@ -217,7 +217,7 @@ router.get("/:id", async (req: AuthRequest, res: Response) => {
  *             properties:
  *               title:
  *                 type: string
- *                 example: Son Nguyen Profile
+ *                 example:  bahmed Profile
  *               content:
  *                 type: string
  *                 example: Full text content to embed.
@@ -650,7 +650,7 @@ router.post("/:id/reindex", async (req: AuthRequest, res: Response) => {
  *                       example: profile
  *                     title:
  *                       type: string
- *                       example: Son Nguyen Profile
+ *                       example:  bahmed Profile
  *                     content:
  *                       type: string
  *                     sourceType:

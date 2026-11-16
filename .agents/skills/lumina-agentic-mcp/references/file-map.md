@@ -26,7 +26,7 @@
 ## Standalone MCP server (separate package)
 
 - `mcp_server/`: standalone MCP server at repo root (32 tools, 7 resources, 6 prompts).
-- See `.agents/skills/lumina-mcp-server/` for MCP server skill.
+- See `.agents/skills/SYNORA-mcp-server/` for MCP server skill.
 
 ## Configuration and utils
 

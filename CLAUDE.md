@@ -1,4 +1,4 @@
-# Lumina Repository Guide
+# SYNORA Repository Guide
 
 ## Scope
 
@@ -15,7 +15,7 @@
 - Do not edit generated artifacts unless the task explicitly requires rebuilding them.
   - Generated or compiled directories include `client/build/`, `server/dist/`, and `node_modules/`.
 - Treat unrelated dirty files as user-owned. Do not revert or reorganize them.
-- Preserve Lumina's existing product intent:
+- Preserve SYNORA's existing product intent:
   - The frontend should remain polished, animated, and branded rather than generic.
   - Knowledge management should remain CLI-driven unless the user explicitly asks for a product change.
   - Grounded responses and inline citations must keep working when retrieval behavior changes.

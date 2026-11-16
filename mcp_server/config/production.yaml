@@ -1,9 +1,9 @@
-# Lumina MCP Server — Production Configuration
+# SYNORA MCP Server — Production Configuration
 
 server:
-  name: "lumina-mcp-server"
+  name: "SYNORA-mcp-server"
   version: "1.0.0"
-  description: "Production Lumina MCP server"
+  description: "Production SYNORA MCP server"
 
 tools:
   pipeline:
@@ -56,4 +56,4 @@ security:
 logging:
   level: "WARNING"
   format: "%(asctime)s [%(name)s] %(levelname)s %(message)s"
-  file: "/var/log/lumina-mcp/server.log"
+  file: "/var/log/SYNORA-mcp/server.log"

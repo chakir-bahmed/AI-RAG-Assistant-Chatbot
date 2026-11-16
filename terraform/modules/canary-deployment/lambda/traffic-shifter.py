@@ -448,7 +448,7 @@ def save_deployment_state(state: Dict[str, Any]) -> None:
     """
     try:
         table_name = os.environ.get('DYNAMODB_TABLE_NAME',
-                                   f"{os.environ.get('PROJECT_NAME', 'lumina')}-canary-state")
+                                   f"{os.environ.get('PROJECT_NAME', 'SYNORA')}-canary-state")
 
         item = {
             'deployment_id': {'S': state['deployment_id']},
@@ -474,7 +474,7 @@ def get_latest_deployment_state() -> Optional[Dict[str, Any]]:
     """
     try:
         table_name = os.environ.get('DYNAMODB_TABLE_NAME',
-                                   f"{os.environ.get('PROJECT_NAME', 'lumina')}-canary-state")
+                                   f"{os.environ.get('PROJECT_NAME', 'SYNORA')}-canary-state")
 
         response = dynamodb_client.query(
             TableName=table_name,

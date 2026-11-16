@@ -5,7 +5,7 @@ dotenv.config();
 
 // @ts-ignore
 const pinecone = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
-const indexName = process.env.PINECONE_INDEX_NAME || "lumina-index";
+const indexName = process.env.PINECONE_INDEX_NAME || "SYNORA-index";
 const index = pinecone.index(indexName);
 
 export { index };

@@ -1,8 +1,8 @@
-# Lumina Codex Guide
+# SYNORA Codex Guide
 
 ## Repository Overview
 
-Lumina is a full-stack AI assistant with four major surfaces:
+SYNORA is a full-stack AI assistant with four major surfaces:
 
 - `client/`: React 18 + Vite + MUI + Framer Motion frontend
 - `server/`: Express + TypeScript API with MongoDB, Gemini, Pinecone, and knowledge CLI
@@ -14,7 +14,7 @@ Lumina is a full-stack AI assistant with four major surfaces:
 
 - Prefer the smallest-area change that solves the task.
 - Treat unrelated dirty files as user-owned; do not revert or reorganize them.
-- Preserve Lumina's branded, animated frontend personality.
+- Preserve SYNORA's branded, animated frontend personality.
 - Keep knowledge management CLI-driven unless explicitly asked to change.
 - Update `openapi.yaml` when API contracts change.
 - MCP tool names and schemas are external contracts — rename carefully.

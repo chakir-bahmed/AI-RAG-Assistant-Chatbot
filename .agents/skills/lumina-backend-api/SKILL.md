@@ -1,9 +1,9 @@
 ---
-name: lumina-backend-api
-description: Implement and debug the Express and TypeScript backend for Lumina. Use when editing files under server/src or server/package.json, changing authentication, conversations, guest flows, chat routes, models, middleware, API contracts, or Gemini and Pinecone service wiring outside the dedicated knowledge-ingestion workflow.
+name: SYNORA-backend-api
+description: Implement and debug the Express and TypeScript backend for SYNORA. Use when editing files under server/src or server/package.json, changing authentication, conversations, guest flows, chat routes, models, middleware, API contracts, or Gemini and Pinecone service wiring outside the dedicated knowledge-ingestion workflow.
 ---
 
-# Lumina Backend Api
+# SYNORA Backend Api
 
 ## Overview
 
@@ -24,7 +24,7 @@ Use this skill for HTTP and data-layer work in `server/`. Follow the existing ro
 ## Handle Contract Changes Explicitly
 
 - Update `openapi.yaml` when endpoint behavior, payload fields, or response shapes change.
-- If the work is really about knowledge ingestion, Pinecone source lifecycle, or citation formatting, switch to `lumina-rag-knowledge`.
+- If the work is really about knowledge ingestion, Pinecone source lifecycle, or citation formatting, switch to `SYNORA-rag-knowledge`.
 - If frontend callers depend on the changed contract, update the client in the same task when feasible.
 
 ## Finish With Real Validation

@@ -17,7 +17,7 @@ class KnowledgeManifestResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://knowledge/manifest",
+                uri="SYNORA://knowledge/manifest",
                 name="Knowledge Manifest",
                 description="List of all knowledge sources and their ingestion status",
                 mimeType="application/json",
@@ -35,7 +35,7 @@ class KnowledgeStatsResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://knowledge/stats",
+                uri="SYNORA://knowledge/stats",
                 name="Knowledge Base Statistics",
                 description="Statistics about the knowledge base: document count, total size, types",
                 mimeType="application/json",

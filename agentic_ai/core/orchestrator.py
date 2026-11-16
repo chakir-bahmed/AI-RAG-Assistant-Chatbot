@@ -4,7 +4,7 @@ Agent Orchestrator using LangGraph
 This module implements the agent orchestration using LangGraph's StateGraph,
 creating an assembly line architecture for agent execution.
 
-The orchestrator now integrates with the standalone Lumina MCP Server via
+The orchestrator now integrates with the standalone SYNORA MCP Server via
 the MCP client, giving each agent access to a rich set of tools
 (file I/O, code search, web fetch, knowledge queries, git operations, etc.).
 """

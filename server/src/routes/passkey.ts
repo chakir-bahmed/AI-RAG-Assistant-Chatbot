@@ -16,7 +16,7 @@ dotenv.config();
 const router = express.Router();
 
 const RP_ID = process.env.WEBAUTHN_RP_ID || "localhost";
-const RP_NAME = process.env.WEBAUTHN_RP_NAME || "Lumina AI";
+const RP_NAME = process.env.WEBAUTHN_RP_NAME || "SYNORA AI";
 const EXPECTED_ORIGINS = (
   process.env.WEBAUTHN_EXPECTED_ORIGIN || "http://localhost:3000"
 )

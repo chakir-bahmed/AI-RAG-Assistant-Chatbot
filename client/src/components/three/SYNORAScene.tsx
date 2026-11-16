@@ -3,14 +3,14 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
 /**
- * LuminaScene — a fully procedural React Three Fiber atmosphere for the
+ * SYNORAScene — a fully procedural React Three Fiber atmosphere for the
  * landing page. Every visual is generated in code (simplex-noise GLSL,
  * BufferGeometry, ShaderMaterial); there are no binary assets (no .glb/.gltf,
  * no textures, no HDR environments). The scene is rendered behind page content
  * with pointer-events disabled so it never intercepts clicks.
  */
 
-interface LuminaSceneProps {
+interface SYNORASceneProps {
   /** Active MUI palette mode — tunes opacity/brightness for legibility. */
   readonly mode: "light" | "dark";
   /** Primary brand color (hex). */
@@ -546,7 +546,7 @@ const AdaptiveQuality: React.FC<{ initialDpr: number }> = ({ initialDpr }) => {
   return null;
 };
 
-const LuminaScene: React.FC<LuminaSceneProps> = ({
+const SYNORAScene: React.FC<SYNORASceneProps> = ({
   mode,
   colorA,
   colorB,
@@ -715,4 +715,4 @@ const LuminaScene: React.FC<LuminaSceneProps> = ({
   );
 };
 
-export default LuminaScene;
+export default SYNORAScene;

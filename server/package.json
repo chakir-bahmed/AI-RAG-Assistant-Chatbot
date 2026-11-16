@@ -1,8 +1,8 @@
 {
-  "name": "lumina-ai-assistant-backend",
+  "name": "SYNORA-ai-assistant-backend",
   "version": "1.0.0",
   "main": "dist/server.js",
-  "author": "Son Nguyen",
+  "author": " bahmed",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "assistant",
     "personal",
     "openai",
-    "lumina",
+    "SYNORA",
     "knowledge",
     "rag",
     "retrieval",
@@ -34,7 +34,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "dev": "nodemon --watch src/**/*.ts --exec ts-node src/server.ts",
     "lint": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,scss,md,html}\"",
     "test": "echo \"Tests run successfully\" && exit 0",
     "vercel": "vercel --prod",

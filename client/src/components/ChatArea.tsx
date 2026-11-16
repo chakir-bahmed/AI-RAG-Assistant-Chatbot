@@ -259,18 +259,18 @@ const USER_AVATAR = "/OIP5.png";
 
 const PROMPT_ROWS = [
   [
-    "Summarize David Nguyen's background in 5 bullets",
-    "What projects has David Nguyen worked on recently?",
-    "Highlight David Nguyen's core skills and strengths",
-    "Give a short bio of David Nguyen for LinkedIn",
-    "What makes David Nguyen's work unique?",
+    "Summarize CHAKIR BAHMED's background in 5 bullets",
+    "What projects has CHAKIR BAHMED worked on recently?",
+    "Highlight CHAKIR BAHMED's core skills and strengths",
+    "Give a short bio of CHAKIR BAHMED for LinkedIn",
+    "What makes CHAKIR BAHMED's work unique?",
   ],
   [
-    "List David Nguyen's areas of expertise",
-    "Show key career milestones for David Nguyen",
-    "What tech stack does David Nguyen use most?",
-    "Create a one-paragraph intro for David Nguyen",
-    "Summarize David Nguyen's recent achievements",
+    "List CHAKIR BAHMED's areas of expertise",
+    "Show key career milestones for CHAKIR BAHMED",
+    "What tech stack does CHAKIR BAHMED use most?",
+    "Create a one-paragraph intro for CHAKIR BAHMED",
+    "Summarize CHAKIR BAHMED's recent achievements",
   ],
 ];
 
@@ -1323,7 +1323,7 @@ const ChatArea: React.FC<ChatAreaProps> = ({
                 variant="h5"
                 sx={{ fontWeight: 600, mb: 1, color: "text.primary" }}
               >
-                Start a conversation with Lumina
+                Start a conversation with SYNORA
               </Typography>
               <Typography
                 variant="body2"
@@ -1567,7 +1567,7 @@ const ChatArea: React.FC<ChatAreaProps> = ({
                           "&:hover": { color: theme.palette.primary.main },
                         }}
                       >
-                        {isUser ? "You" : "Lumina"}
+                        {isUser ? "You" : "SYNORA"}
                       </Typography>
                     </Box>
                     <Box

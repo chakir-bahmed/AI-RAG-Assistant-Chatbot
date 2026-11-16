@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Cleaning Lumina application..."
+echo "Cleaning SYNORA application..."
 
 # Clean Server
 echo "=> Cleaning backend..."

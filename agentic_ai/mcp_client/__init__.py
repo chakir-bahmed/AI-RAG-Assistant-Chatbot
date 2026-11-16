@@ -1,5 +1,5 @@
 """
-MCP Client for connecting to the standalone Lumina MCP Server.
+MCP Client for connecting to the standalone SYNORA MCP Server.
 """
 
 from .client import MCPClient

@@ -91,7 +91,7 @@ class FetchUrlTool(ToolHandler):
         try:
             req = urllib.request.Request(
                 url,
-                headers={"User-Agent": "LuminaMCPServer/1.0"},
+                headers={"User-Agent": "SYNORAMCPServer/1.0"},
             )
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 content_type = resp.headers.get("Content-Type", "")
@@ -149,7 +149,7 @@ class ExtractContentTool(ToolHandler):
             import urllib.request
 
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "LuminaMCPServer/1.0"})
+                req = urllib.request.Request(url, headers={"User-Agent": "SYNORAMCPServer/1.0"})
                 with urllib.request.urlopen(req, timeout=_DEFAULT_TIMEOUT) as resp:
                     html = resp.read().decode("utf-8", errors="replace")
             except Exception as exc:

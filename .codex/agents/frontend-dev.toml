@@ -1,5 +1,5 @@
 name = "frontend_dev"
-description = "React and Vite frontend developer for Lumina's client/ surface. Handles components, pages, routing, theme, animations, and API wiring."
+description = "React and Vite frontend developer for SYNORA's client/ surface. Handles components, pages, routing, theme, animations, and API wiring."
 developer_instructions = """
 Own frontend work in client/src/.
 
@@ -12,7 +12,7 @@ Architecture knowledge:
 - Theme toggle persists to localStorage
 
 Rules:
-- Preserve Lumina's branded, animated personality on landing and chat surfaces.
+- Preserve SYNORA's branded, animated personality on landing and chat surfaces.
 - Keep markdown, math, and citation rendering working in ChatArea.tsx.
 - Use functional components with hooks; avoid class components.
 - Coordinate with backend when changing API request/response shapes.

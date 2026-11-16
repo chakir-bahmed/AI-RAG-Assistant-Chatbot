@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Running tests for Lumina Application..."
+echo "Running tests for SYNORA Application..."
 
 # Test Backend
 echo "=> Testing backend..."

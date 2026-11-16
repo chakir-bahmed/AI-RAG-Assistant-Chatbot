@@ -14,9 +14,9 @@ Use this skill for the standalone MCP server package at `mcp_server/`.
 
 ## Architecture
 
-- `server.py`: LuminaMCPServer with handler registration and dual transport (stdio + SSE).
+- `server.py`: SYNORAMCPServer with handler registration and dual transport (stdio + SSE).
 - `tools/`: 8 category modules, 32 tools total. Each subclasses `ToolHandler(ABC)`.
-- `resources/`: 7 read-only data endpoints via `lumina://` URIs.
+- `resources/`: 7 read-only data endpoints via `SYNORA://` URIs.
 - `prompts/`: 6 parameterized prompt templates.
 - `middleware/`: composable chain of auth, rate limiting, and validation.
 - `config.py`: deep-merge configuration (defaults → file → env vars).

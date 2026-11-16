@@ -20,7 +20,7 @@ class ServerInfoResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://system/info",
+                uri="SYNORA://system/info",
                 name="System Information",
                 description="Runtime environment information: OS, Python, working directory",
                 mimeType="application/json",
@@ -43,7 +43,7 @@ class ServerCapabilitiesResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://system/capabilities",
+                uri="SYNORA://system/capabilities",
                 name="Server Capabilities",
                 description="MCP server capability summary — available tool categories and features",
                 mimeType="application/json",

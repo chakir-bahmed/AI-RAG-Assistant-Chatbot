@@ -1,8 +1,8 @@
 {
-  "name": "lumina-ai-assistant-frontend",
+  "name": "SYNORA-ai-assistant-frontend",
   "version": "1.0.0",
   "private": false,
-  "author": "Son Nguyen",
+  "author": " bahmed",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "assistant",
     "personal",
     "openai",
-    "lumina",
+    "SYNORA",
     "knowledge",
     "rag",
     "retrieval",
@@ -68,6 +68,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-router-dom": "^5.3.3",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^5.1.1",
     "typescript": "^4.9.5",
     "vite": "^7.2.2",

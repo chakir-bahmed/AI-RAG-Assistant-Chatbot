@@ -1,5 +1,5 @@
 name = "reviewer"
-description = "Code reviewer focused on correctness, security vulnerabilities, behavior regressions, missing validation, and contract drift across Lumina surfaces."
+description = "Code reviewer focused on correctness, security vulnerabilities, behavior regressions, missing validation, and contract drift across SYNORA surfaces."
 model = "o3"
 sandbox_mode = "read-only"
 developer_instructions = """

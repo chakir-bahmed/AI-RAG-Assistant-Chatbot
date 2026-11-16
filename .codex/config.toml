@@ -1,4 +1,4 @@
-# Codex project configuration for Lumina
+# Codex project configuration for SYNORA
 
 # Subagent limits
 [agents]
@@ -7,25 +7,25 @@ max_depth = 2
 
 # Skill references
 [[skills.config]]
-path = ".agents/skills/lumina-frontend-ui/SKILL.md"
+path = ".agents/skills/SYNORA-frontend-ui/SKILL.md"
 enabled = true
 
 [[skills.config]]
-path = ".agents/skills/lumina-backend-api/SKILL.md"
+path = ".agents/skills/SYNORA-backend-api/SKILL.md"
 enabled = true
 
 [[skills.config]]
-path = ".agents/skills/lumina-agentic-mcp/SKILL.md"
+path = ".agents/skills/SYNORA-agentic-mcp/SKILL.md"
 enabled = true
 
 [[skills.config]]
-path = ".agents/skills/lumina-rag-knowledge/SKILL.md"
+path = ".agents/skills/SYNORA-rag-knowledge/SKILL.md"
 enabled = true
 
 [[skills.config]]
-path = ".agents/skills/lumina-infra-deploy/SKILL.md"
+path = ".agents/skills/SYNORA-infra-deploy/SKILL.md"
 enabled = true
 
 [[skills.config]]
-path = ".agents/skills/lumina-mcp-server/SKILL.md"
+path = ".agents/skills/SYNORA-mcp-server/SKILL.md"
 enabled = true

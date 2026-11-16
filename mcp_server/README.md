@@ -1,4 +1,4 @@
-# Lumina MCP Server
+# SYNORA MCP Server
 
 [![MCP Protocol](https://img.shields.io/badge/MCP-1.0-blue?style=flat-square)](https://modelcontextprotocol.io)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
@@ -7,7 +7,7 @@
 [![Resources](https://img.shields.io/badge/Resources-7-purple?style=flat-square)]()
 [![Prompts](https://img.shields.io/badge/Prompts-6-teal?style=flat-square)]()
 
-A standalone, enterprise-grade **Model Context Protocol (MCP)** server for the Lumina AI platform. Exposes 32 tools, 7 resources, and 6 prompts across eight capability domains—enabling any MCP-compatible client to orchestrate agentic pipelines, query a RAG knowledge base, manipulate files, analyze code, and more.
+A standalone, enterprise-grade **Model Context Protocol (MCP)** server for the SYNORA AI platform. Exposes 32 tools, 7 resources, and 6 prompts across eight capability domains—enabling any MCP-compatible client to orchestrate agentic pipelines, query a RAG knowledge base, manipulate files, analyze code, and more.
 
 ---
 
@@ -42,7 +42,7 @@ A standalone, enterprise-grade **Model Context Protocol (MCP)** server for the L
 
 ## Overview
 
-The **Model Context Protocol (MCP)** is an open standard that provides a uniform interface for AI assistants to discover and invoke tools, read resources, and use prompt templates hosted by external servers. Lumina MCP Server implements this standard so that clients such as Claude Desktop, Cursor, VS Code Copilot, ChatGPT, and custom applications can interact with the full Lumina platform through a single, well-defined protocol layer.
+The **Model Context Protocol (MCP)** is an open standard that provides a uniform interface for AI assistants to discover and invoke tools, read resources, and use prompt templates hosted by external servers. SYNORA MCP Server implements this standard so that clients such as Claude Desktop, Cursor, VS Code Copilot, ChatGPT, and custom applications can interact with the full SYNORA platform through a single, well-defined protocol layer.
 
 The server is written in async Python, supports **stdio** and **SSE** transports, and ships with pluggable middleware for authentication, rate limiting, and input validation.
 
@@ -117,10 +117,10 @@ graph TB
         D[Custom MCP Client]
     end
 
-    subgraph "Lumina MCP Server"
+    subgraph "SYNORA MCP Server"
         E[Transport Layer<br/>stdio / SSE]
         F[Middleware Chain<br/>Auth → Rate Limiter → Validator]
-        G[LuminaMCPServer<br/>server.py]
+        G[SYNORAMCPServer<br/>server.py]
 
         subgraph Handlers
             H[Tools — 32]
@@ -131,7 +131,7 @@ graph TB
         K[Config Manager<br/>config.py]
     end
 
-    subgraph "Lumina Platform"
+    subgraph "SYNORA Platform"
         L[Agentic AI Pipeline]
         M[Pinecone / RAG]
         N[File System]
@@ -149,7 +149,7 @@ graph TB
 
 ```
 mcp_server/
-├── __init__.py                  # Package init — exports LuminaMCPServer, version "1.0.0"
+├── __init__.py                  # Package init — exports SYNORAMCPServer, version "1.0.0"
 ├── __main__.py                  # CLI entry point: python -m mcp_server
 ├── server.py                    # Core server class, handler registration, transport lifecycle
 ├── config.py                    # ServerConfig — deep merge, env overrides, dot-notation access
@@ -167,9 +167,9 @@ mcp_server/
 ├── resources/
 │   ├── __init__.py              # ResourceRegistry.build(cfg) — dynamic loader
 │   ├── base.py                  # Abstract ResourceHandler(ABC)
-│   ├── pipeline_resources.py    # lumina://pipeline/{config,metrics,agents}
-│   ├── knowledge_resources.py   # lumina://knowledge/{manifest,stats}
-│   └── system_resources.py      # lumina://system/{info,capabilities}
+│   ├── pipeline_resources.py    # SYNORA://pipeline/{config,metrics,agents}
+│   ├── knowledge_resources.py   # SYNORA://knowledge/{manifest,stats}
+│   └── system_resources.py      # SYNORA://system/{info,capabilities}
 ├── prompts/
 │   ├── __init__.py              # PromptRegistry.build(cfg) — dynamic loader
 │   ├── base.py                  # Abstract PromptHandler(ABC)
@@ -197,7 +197,7 @@ The server exposes **32 tools** organized into eight categories. Each tool is im
 
 ### Pipeline Tools
 
-Module: `tools/pipeline_tools.py` — orchestrate and monitor the Lumina agentic AI pipeline.
+Module: `tools/pipeline_tools.py` — orchestrate and monitor the SYNORA agentic AI pipeline.
 
 #### `run_pipeline`
 
@@ -536,17 +536,17 @@ Verify environment setup and dependency availability. Takes no parameters.
 
 ## Resources Reference
 
-Resources are read-only data endpoints accessed via `lumina://` URIs. Clients call `resources/read` with the URI to retrieve structured data.
+Resources are read-only data endpoints accessed via `SYNORA://` URIs. Clients call `resources/read` with the URI to retrieve structured data.
 
 | URI | Module | Description |
 |---|---|---|
-| `lumina://pipeline/config` | `pipeline_resources.py` | Current pipeline configuration including agent definitions, task routing, and execution parameters |
-| `lumina://pipeline/metrics` | `pipeline_resources.py` | Pipeline execution metrics: run counts, durations, success/failure rates |
-| `lumina://pipeline/agents` | `pipeline_resources.py` | List of registered agents with their roles, capabilities, and status |
-| `lumina://knowledge/manifest` | `knowledge_resources.py` | Complete manifest of all ingested knowledge sources, types, and sync timestamps |
-| `lumina://knowledge/stats` | `knowledge_resources.py` | Knowledge base statistics: document count, vector dimensions, index size |
-| `lumina://system/info` | `system_resources.py` | System information: OS, Python version, memory, CPU, uptime |
-| `lumina://system/capabilities` | `system_resources.py` | Server capability summary: supported tools, resources, prompts, and protocol features |
+| `SYNORA://pipeline/config` | `pipeline_resources.py` | Current pipeline configuration including agent definitions, task routing, and execution parameters |
+| `SYNORA://pipeline/metrics` | `pipeline_resources.py` | Pipeline execution metrics: run counts, durations, success/failure rates |
+| `SYNORA://pipeline/agents` | `pipeline_resources.py` | List of registered agents with their roles, capabilities, and status |
+| `SYNORA://knowledge/manifest` | `knowledge_resources.py` | Complete manifest of all ingested knowledge sources, types, and sync timestamps |
+| `SYNORA://knowledge/stats` | `knowledge_resources.py` | Knowledge base statistics: document count, vector dimensions, index size |
+| `SYNORA://system/info` | `system_resources.py` | System information: OS, Python version, memory, CPU, uptime |
+| `SYNORA://system/capabilities` | `system_resources.py` | Server capability summary: supported tools, resources, prompts, and protocol features |
 
 ---
 
@@ -573,7 +573,7 @@ Configuration is loaded using a **deep-merge** strategy: defaults → config fil
 
 ```yaml
 server:
-  name: "lumina-mcp-server"
+  name: "SYNORA-mcp-server"
   version: "1.0.0"
 
 tools:
@@ -633,7 +633,7 @@ logging:
 from mcp_server.config import ServerConfig
 
 cfg = ServerConfig("config/default.yaml")
-print(cfg.server.name)                         # "lumina-mcp-server"
+print(cfg.server.name)                         # "SYNORA-mcp-server"
 print(cfg.middleware.rate_limit.requests_per_minute)  # 60
 ```
 
@@ -735,7 +735,7 @@ Add to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "lumina": {
+    "SYNORA": {
       "command": "python",
       "args": ["-m", "mcp_server"],
       "cwd": "/path/to/AI-RAG-Assistant-Chatbot",
@@ -754,7 +754,7 @@ Add to your Cursor MCP settings:
 ```json
 {
   "mcpServers": {
-    "lumina": {
+    "SYNORA": {
       "command": "python",
       "args": ["-m", "mcp_server", "--config", "mcp_server/config/production.yaml"],
       "cwd": "/path/to/AI-RAG-Assistant-Chatbot"
@@ -770,7 +770,7 @@ Add to `.vscode/mcp.json` in your workspace:
 ```json
 {
   "servers": {
-    "lumina": {
+    "SYNORA": {
       "command": "python",
       "args": ["-m", "mcp_server"],
       "cwd": "${workspaceFolder}"
@@ -800,7 +800,7 @@ The `agentic_ai/` pipeline connects to the MCP server through the `mcp_client/` 
 
 ```mermaid
 graph LR
-    A[Agentic AI Pipeline] -->|MCP Client| B[Lumina MCP Server]
+    A[Agentic AI Pipeline] -->|MCP Client| B[SYNORA MCP Server]
     B -->|tool results| A
     B --> C[Tools / Resources / Prompts]
 ```

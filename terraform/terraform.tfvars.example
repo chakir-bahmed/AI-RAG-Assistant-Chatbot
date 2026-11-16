@@ -4,8 +4,8 @@
 # General Configuration
 environment  = "production"
 aws_region   = "us-east-1"
-domain_name  = "lumina-ai.yourdomain.com"
-backend_domain = "api.lumina-ai.yourdomain.com"
+domain_name  = "SYNORA-ai.yourdomain.com"
+backend_domain = "api.SYNORA-ai.yourdomain.com"
 certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/your-cert-id"
 alert_email    = "alerts@yourdomain.com"
 
@@ -62,14 +62,14 @@ redis_snapshot_retention = 7
 jwt_secret        = "your-super-secret-jwt-key"  # Change this!
 google_ai_api_key = "your-google-ai-api-key"
 pinecone_api_key  = "your-pinecone-api-key"
-pinecone_index_name = "lumina-knowledge-base"
+pinecone_index_name = "SYNORA-knowledge-base"
 
 # WebAuthn / passkeys. RP ID must be the apex domain — no scheme, no port.
 # EXPECTED_ORIGIN is a comma-separated list of all front-end origins.
 # Changing rp_id later invalidates every passkey users have already enrolled.
-webauthn_rp_id           = "lumina.example.com"
-webauthn_rp_name         = "Lumina AI"
-webauthn_expected_origin = "https://lumina.example.com"
+webauthn_rp_id           = "SYNORA.example.com"
+webauthn_rp_name         = "SYNORA AI"
+webauthn_expected_origin = "https://SYNORA.example.com"
 
 # Monitoring
 log_retention_days = 30

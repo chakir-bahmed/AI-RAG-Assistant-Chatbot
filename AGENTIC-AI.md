@@ -1,4 +1,4 @@
-# Lumina Agentic AI & MCP Architecture
+# SYNORA Agentic AI & MCP Architecture
 
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Assembly%20Line-00C853?style=flat-square)](https://github.com/langchain-ai/langgraph)
@@ -6,7 +6,7 @@
 [![Tools](https://img.shields.io/badge/MCP%20Tools-32-orange?style=flat-square)]()
 [![Agents](https://img.shields.io/badge/Pipeline%20Agents-7-purple?style=flat-square)]()
 
-This document provides a complete, implementation-level reference for Lumina's **multi-agent AI pipeline** (`agentic_ai/`) and **standalone MCP server** (`mcp_server/`). It covers architecture, data flow, state management, tool routing, configuration, deployment, and extension points.
+This document provides a complete, implementation-level reference for SYNORA's **multi-agent AI pipeline** (`agentic_ai/`) and **standalone MCP server** (`mcp_server/`). It covers architecture, data flow, state management, tool routing, configuration, deployment, and extension points.
 
 ---
 
@@ -66,7 +66,7 @@ This document provides a complete, implementation-level reference for Lumina's *
 
 ## System Overview
 
-Lumina's agentic subsystem consists of two packages that work together:
+SYNORA's agentic subsystem consists of two packages that work together:
 
 | Package | Language | Purpose | Key Technology |
 |---------|----------|---------|----------------|
@@ -102,7 +102,7 @@ graph TB
     end
 
     subgraph "mcp_server/ — Standalone MCP Server"
-        Server[LuminaMCPServer<br/>server.py]
+        Server[SYNORAMCPServer<br/>server.py]
         MW[Middleware Chain]
         Tools[32 Tools across 8 categories]
         Resources[7 Resources]
@@ -141,7 +141,7 @@ graph TB
 | **Config-Driven** | All behavior is controlled through YAML files, not hardcoded values |
 | **Tool-Augmented** | Agents call real tools (via MCP) rather than hallucinating capabilities |
 | **Fail-Safe** | Validation gates with automatic retry loops prevent low-quality output from propagating |
-| **Protocol-Standard** | MCP compliance means any compatible client can use Lumina's tools without custom integration |
+| **Protocol-Standard** | MCP compliance means any compatible client can use SYNORA's tools without custom integration |
 | **Separation of Concerns** | The MCP server is a standalone, independently deployable package |
 
 ---
@@ -596,7 +596,7 @@ sequenceDiagram
     participant C as MCP Client
     participant T as Transport (stdio/SSE)
     participant MW as Middleware Chain
-    participant S as LuminaMCPServer
+    participant S as SYNORAMCPServer
     participant H as Tool Handler
 
     C->>T: JSON-RPC Request
@@ -618,7 +618,7 @@ sequenceDiagram
 graph TB
     subgraph "Entry Points"
         CLI["python -m mcp_server<br/>CLI with argparse"]
-        Direct["from mcp_server import LuminaMCPServer<br/>Direct import"]
+        Direct["from mcp_server import SYNORAMCPServer<br/>Direct import"]
     end
 
     subgraph "Configuration"
@@ -628,7 +628,7 @@ graph TB
     end
 
     subgraph "Core Server"
-        Server["LuminaMCPServer<br/>_register_handlers()"]
+        Server["SYNORAMCPServer<br/>_register_handlers()"]
     end
 
     subgraph "Registries"
@@ -697,17 +697,17 @@ class ToolHandler(ABC):
 
 ### Resource System
 
-Resources provide read-only data access via `lumina://` URIs:
+Resources provide read-only data access via `SYNORA://` URIs:
 
 | URI | Module | Description |
 |-----|--------|-------------|
-| `lumina://pipeline/config` | `pipeline_resources.py` | Current pipeline configuration |
-| `lumina://pipeline/metrics` | `pipeline_resources.py` | Execution metrics and statistics |
-| `lumina://pipeline/agents` | `pipeline_resources.py` | Agent roster with roles and status |
-| `lumina://knowledge/manifest` | `knowledge_resources.py` | All ingested knowledge sources |
-| `lumina://knowledge/stats` | `knowledge_resources.py` | Knowledge base size, dimension info, and Neo4j graph stats |
-| `lumina://system/info` | `system_resources.py` | OS, Python, memory, CPU details |
-| `lumina://system/capabilities` | `system_resources.py` | Full server capability manifest |
+| `SYNORA://pipeline/config` | `pipeline_resources.py` | Current pipeline configuration |
+| `SYNORA://pipeline/metrics` | `pipeline_resources.py` | Execution metrics and statistics |
+| `SYNORA://pipeline/agents` | `pipeline_resources.py` | Agent roster with roles and status |
+| `SYNORA://knowledge/manifest` | `knowledge_resources.py` | All ingested knowledge sources |
+| `SYNORA://knowledge/stats` | `knowledge_resources.py` | Knowledge base size, dimension info, and Neo4j graph stats |
+| `SYNORA://system/info` | `system_resources.py` | OS, Python, memory, CPU details |
+| `SYNORA://system/capabilities` | `system_resources.py` | Full server capability manifest |
 
 ### Prompt Library
 
@@ -1000,7 +1000,7 @@ monitoring:
 
 ```yaml
 server:
-  name: "lumina-mcp-server"
+  name: "SYNORA-mcp-server"
   version: "1.0.0"
 
 tools:
@@ -1102,12 +1102,12 @@ python -m agentic_ai visualize
 ### Docker Deployment
 
 ```bash
-docker build -t lumina-agentic:latest -f agentic_ai/deployments/aws/Dockerfile .
+docker build -t SYNORA-agentic:latest -f agentic_ai/deployments/aws/Dockerfile .
 docker run -d \
   -p 8080:8080 \
   -e OPENAI_API_KEY=your-key \
   -e MCP_API_KEY=your-mcp-key \
-  lumina-agentic:latest
+  SYNORA-agentic:latest
 ```
 
 ### Cloud Deployment

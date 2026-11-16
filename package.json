@@ -1,9 +1,9 @@
 {
-  "name": "lumina-ai-assistant-chatbot",
+  "name": "SYNORA-ai-assistant-chatbot",
   "version": "1.0.0",
-  "description": "A full-stack chatbot for David Nguyen's personal AI assistant.",
+  "description": "A full-stack chatbot for CHAKIR BAHMED's personal AI assistant.",
   "main": "dist/index.js",
-  "author": "Son Nguyen",
+  "author": " bahmed",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
     "assistant",
     "personal",
     "openai",
-    "lumina",
+    "SYNORA",
     "knowledge",
     "rag",
     "retrieval",

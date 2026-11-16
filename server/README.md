@@ -1,6 +1,6 @@
-# Lumina Backend (Server) 🚀
+# SYNORA Backend (Server) 🚀
 
-This directory contains the **server** side of the **Lumina** project – a robust backend built with **Node.js** and **Express** using **TypeScript**. The backend provides all the necessary API endpoints for user authentication, conversation management, and AI chat interactions, as well as integrations with external services like MongoDB, Google Gemini, Pinecone, and Neo4j.
+This directory contains the **server** side of the **SYNORA** project – a robust backend built with **Node.js** and **Express** using **TypeScript**. The backend provides all the necessary API endpoints for user authentication, conversation management, and AI chat interactions, as well as integrations with external services like MongoDB, Google Gemini, Pinecone, and Neo4j.
 
 ---
 
@@ -22,7 +22,7 @@ This directory contains the **server** side of the **Lumina** project – a robu
 
 ## Overview
 
-The Lumina backend is designed to handle:
+The SYNORA backend is designed to handle:
 
 - **User Authentication:** Secure sign up, login, and password reset functionalities using JWT.
 - **Conversation Management:** Endpoints for creating, retrieving, updating, searching, and deleting conversations.
@@ -126,7 +126,7 @@ For additional API details, please refer to the OpenAPI specification file (`ope
    JWT_SECRET=your_jwt_secret_here
    GOOGLE_AI_API_KEY=your_google_ai_api_key_here
    PINECONE_API_KEY=your_pinecone_api_key_here
-   PINECONE_INDEX_NAME=lumina-index
+   PINECONE_INDEX_NAME=SYNORA-index
 
    # Neo4j AuraDB (optional — enables graph RAG)
    NEO4J_URI=neo4j+s://your-instance.databases.neo4j.io
@@ -139,7 +139,7 @@ For additional API details, please refer to the OpenAPI specification file (`ope
    # register or sign in. Credentials are domain-bound; changing RP_ID after
    # users enroll invalidates all previously-registered passkeys.
    WEBAUTHN_RP_ID=localhost
-   WEBAUTHN_RP_NAME=Lumina AI
+   WEBAUTHN_RP_NAME=SYNORA AI
    WEBAUTHN_EXPECTED_ORIGIN=http://localhost:3000
    ```
 
@@ -159,9 +159,9 @@ For additional API details, please refer to the OpenAPI specification file (`ope
 
 All knowledge ingestion is handled via CLI to keep the production UI locked down.
 
-Knowledge sources live in `server/knowledge/` and are registered in `knowledge/manifest.json`. These include the public-safe profile (current employer added) plus dedicated sources for projects, skills, certifications, publications, awards, volunteering, coursework, languages/organizations, and test scores. A dense, single-unit reverse-chronological `son-nguyen-career-timeline.txt` keeps career/experience queries returning complete results. Running `npm run knowledge:sync` re-indexes the manifest, including this source.
+Knowledge sources live in `server/knowledge/` and are registered in `knowledge/manifest.json`. These include the public-safe profile (current employer added) plus dedicated sources for projects, skills, certifications, publications, awards, volunteering, coursework, languages/organizations, and test scores. A dense, single-unit reverse-chronological `bahmed-career-timeline.txt` keeps career/experience queries returning complete results. Running `npm run knowledge:sync` re-indexes the manifest, including this source.
 
-1. Ensure your `.env` has `PINECONE_INDEX_NAME=lumina-index` (or your target index name).
+1. Ensure your `.env` has `PINECONE_INDEX_NAME=SYNORA-index` (or your target index name).
 2. Run one of the commands below from the `server` directory.
 
 Examples:
@@ -299,4 +299,4 @@ This project is licensed under the [MIT License](../LICENSE).
 
 ---
 
-Thank you for exploring the Lumina backend! For any questions or contributions, please feel free to get in touch. Happy coding!
+Thank you for exploring the SYNORA backend! For any questions or contributions, please feel free to get in touch. Happy coding!

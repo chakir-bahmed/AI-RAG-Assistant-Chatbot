@@ -1,6 +1,6 @@
 # Knowledge Management Guide
 
-This guide covers how to add, update, and delete knowledge in Lumina's dual-store RAG system (Pinecone vectors + Neo4j graph).
+This guide covers how to add, update, and delete knowledge in SYNORA's dual-store RAG system (Pinecone vectors + Neo4j graph).
 
 ## Table of Contents
 
@@ -63,17 +63,17 @@ Every knowledge update flows through this pipeline:
 ```
 server/knowledge/
 ├── manifest.json                        # Manifest for batch sync
-├── son-nguyen-profile.txt               # Bio, education, work experience
-├── son-nguyen-alias.txt                 # Name aliases
-├── son-nguyen-projects.txt              # All 87+ projects (detailed)
-├── son-nguyen-skills.txt                # Skills by category
-├── son-nguyen-publications.txt          # Research papers
-├── son-nguyen-honors-awards.txt         # Awards, distinctions
-├── son-nguyen-certifications.txt        # Professional certifications
-├── son-nguyen-volunteering.txt          # Volunteer roles
-├── son-nguyen-coursework.txt            # University coursework
-├── son-nguyen-languages-organizations.txt  # Languages & orgs
-└── son-nguyen-test-scores.txt           # Standardized test scores
+├── bahmed-profile.txt               # Bio, education, work experience
+├── bahmed-alias.txt                 # Name aliases
+├── bahmed-projects.txt              # All 87+ projects (detailed)
+├── bahmed-skills.txt                # Skills by category
+├── bahmed-publications.txt          # Research papers
+├── bahmed-honors-awards.txt         # Awards, distinctions
+├── bahmed-certifications.txt        # Professional certifications
+├── bahmed-volunteering.txt          # Volunteer roles
+├── bahmed-coursework.txt            # University coursework
+├── bahmed-languages-organizations.txt  # Languages & orgs
+└── bahmed-test-scores.txt           # Standardized test scores
 ```
 
 **Rules:**
@@ -90,21 +90,21 @@ All commands run from the `server/` directory.
 
 ### Add a New Experience / Job
 
-1. Edit `server/knowledge/son-nguyen-profile.txt`
+1. Edit `server/knowledge/bahmed-profile.txt`
 2. Add the new role in the WORK EXPERIENCE section (reverse chronological order)
 3. Re-ingest:
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Profile" \
-  --file ./knowledge/son-nguyen-profile.txt \
+  --title " bahmed Profile" \
+  --file ./knowledge/bahmed-profile.txt \
   --type bio \
   --external-id "profile"
 ```
 
 ### Add a New Project
 
-1. Edit `server/knowledge/son-nguyen-projects.txt`
+1. Edit `server/knowledge/bahmed-projects.txt`
 2. Add the project under the appropriate category section using this format:
 
 ```
@@ -121,50 +121,50 @@ Stars: [count if notable]
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Projects" \
-  --file ./knowledge/son-nguyen-projects.txt \
+  --title " bahmed Projects" \
+  --file ./knowledge/bahmed-projects.txt \
   --type project \
   --external-id "projects"
 ```
 
 ### Add a New Publication
 
-1. Edit `server/knowledge/son-nguyen-publications.txt`
+1. Edit `server/knowledge/bahmed-publications.txt`
 2. Add the publication with title, venue, date, description, and ResearchGate link
 3. Re-ingest:
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Publications" \
-  --file ./knowledge/son-nguyen-publications.txt \
+  --title " bahmed Publications" \
+  --file ./knowledge/bahmed-publications.txt \
   --type other \
   --external-id "publications"
 ```
 
 ### Add a New Skill
 
-1. Edit `server/knowledge/son-nguyen-skills.txt`
+1. Edit `server/knowledge/bahmed-skills.txt`
 2. Add the skill under the appropriate category
 3. Re-ingest:
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Skills" \
-  --file ./knowledge/son-nguyen-skills.txt \
+  --title " bahmed Skills" \
+  --file ./knowledge/bahmed-skills.txt \
   --type other \
   --external-id "skills"
 ```
 
 ### Add a New Certification
 
-1. Edit `server/knowledge/son-nguyen-certifications.txt`
+1. Edit `server/knowledge/bahmed-certifications.txt`
 2. Add the certification with issuer, date, and URL
 3. Re-ingest:
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Certifications" \
-  --file ./knowledge/son-nguyen-certifications.txt \
+  --title " bahmed Certifications" \
+  --file ./knowledge/bahmed-certifications.txt \
   --type other \
   --external-id "certifications"
 ```
@@ -177,9 +177,9 @@ npm run knowledge:upsert -- \
 ```json
 {
   "externalId": "new-topic",
-  "title": "Son Nguyen New Topic",
+  "title": " bahmed New Topic",
   "sourceType": "other",
-  "file": "./knowledge/son-nguyen-new-topic.txt"
+  "file": "./knowledge/bahmed-new-topic.txt"
 }
 ```
 
@@ -187,8 +187,8 @@ npm run knowledge:upsert -- \
 
 ```bash
 npm run knowledge:upsert -- \
-  --title "Son Nguyen New Topic" \
-  --file ./knowledge/son-nguyen-new-topic.txt \
+  --title " bahmed New Topic" \
+  --file ./knowledge/bahmed-new-topic.txt \
   --type other \
   --external-id "new-topic"
 ```
@@ -216,13 +216,13 @@ The `--external-id` flag is key. When you upsert with the same external-id:
 
 ```bash
 # 1. Edit the file
-vim server/knowledge/son-nguyen-profile.txt
+vim server/knowledge/bahmed-profile.txt
 
 # 2. Re-ingest (same external-id = update in place)
 cd server
 npm run knowledge:upsert -- \
-  --title "Son Nguyen Profile" \
-  --file ./knowledge/son-nguyen-profile.txt \
+  --title " bahmed Profile" \
+  --file ./knowledge/bahmed-profile.txt \
   --type bio \
   --external-id "profile"
 ```
@@ -319,9 +319,9 @@ npm run knowledge:sync -- --manifest ./knowledge/manifest.json --delete-missing
   "sources": [
     {
       "externalId": "profile",
-      "title": "Son Nguyen Profile",
+      "title": " bahmed Profile",
       "sourceType": "bio",
-      "file": "./knowledge/son-nguyen-profile.txt"
+      "file": "./knowledge/bahmed-profile.txt"
     }
   ]
 }

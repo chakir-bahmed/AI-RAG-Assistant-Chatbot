@@ -1,5 +1,5 @@
 locals {
-  effective_log_bucket_name = var.log_bucket_name != "" ? var.log_bucket_name : "${var.environment}-lumina-cloudfront-logs"
+  effective_log_bucket_name = var.log_bucket_name != "" ? var.log_bucket_name : "${var.environment}-SYNORA-cloudfront-logs"
   logging_bucket_domain     = "${local.effective_log_bucket_name}.s3.amazonaws.com"
 }
 
@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "logs" {
   bucket = local.effective_log_bucket_name
 
   tags = {
-    Name = "${var.environment}-lumina-cloudfront-logs"
+    Name = "${var.environment}-SYNORA-cloudfront-logs"
   }
 }
 
@@ -91,14 +91,14 @@ resource "aws_s3_bucket_policy" "logs" {
 
 resource "aws_cloudfront_distribution" "this" {
   enabled             = true
-  comment             = "Lumina CDN for ${var.environment}"
+  comment             = "SYNORA CDN for ${var.environment}"
   default_root_object = ""
   aliases             = [var.domain_name]
   price_class         = var.price_class
 
   origin {
     domain_name = var.alb_dns_name
-    origin_id   = "lumina-alb"
+    origin_id   = "SYNORA-alb"
 
     custom_origin_config {
       http_port              = 80
@@ -111,7 +111,7 @@ resource "aws_cloudfront_distribution" "this" {
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "lumina-alb"
+    target_origin_id = "SYNORA-alb"
 
     viewer_protocol_policy = "redirect-to-https"
     cache_policy_id        = "658327ea-f89d-4fab-a63d-7e88639e58f6" # CachingOptimized
@@ -142,6 +142,6 @@ resource "aws_cloudfront_distribution" "this" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-cloudfront"
+    Name = "${var.environment}-SYNORA-cloudfront"
   }
 }

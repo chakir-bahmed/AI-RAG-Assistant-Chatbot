@@ -2,9 +2,9 @@
 
 ## Core
 
-- `mcp_server/__init__.py`: package init, exports LuminaMCPServer.
+- `mcp_server/__init__.py`: package init, exports SYNORAMCPServer.
 - `mcp_server/__main__.py`: CLI entry point (--config, --transport, --host, --port, --log-level).
-- `mcp_server/server.py`: LuminaMCPServer class, handler registration, stdio and SSE transport.
+- `mcp_server/server.py`: SYNORAMCPServer class, handler registration, stdio and SSE transport.
 - `mcp_server/config.py`: ServerConfig with deep merge, env overrides, dot-notation access.
 
 ## Tools (32 total)
@@ -22,9 +22,9 @@
 
 ## Resources (7 total)
 
-- `mcp_server/resources/pipeline_resources.py`: lumina://pipeline/{config,metrics,agents}.
-- `mcp_server/resources/knowledge_resources.py`: lumina://knowledge/{manifest,stats}.
-- `mcp_server/resources/system_resources.py`: lumina://system/{info,capabilities}.
+- `mcp_server/resources/pipeline_resources.py`: SYNORA://pipeline/{config,metrics,agents}.
+- `mcp_server/resources/knowledge_resources.py`: SYNORA://knowledge/{manifest,stats}.
+- `mcp_server/resources/system_resources.py`: SYNORA://system/{info,capabilities}.
 
 ## Prompts (6 total)
 

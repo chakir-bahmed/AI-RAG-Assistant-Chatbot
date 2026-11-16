@@ -1,6 +1,6 @@
 # Advanced Deployment Strategies Guide
 
-This guide covers the advanced deployment strategies and CI/CD enhancements available in the Lumina AI Assistant project.
+This guide covers the advanced deployment strategies and CI/CD enhancements available in the SYNORA AI Assistant project.
 
 ## Table of Contents
 
@@ -518,11 +518,11 @@ The system provides two main dashboards:
 ```bash
 # Open deployment overview dashboard
 aws cloudwatch get-dashboard \
-  --dashboard-name lumina-deployment-overview-production
+  --dashboard-name SYNORA-deployment-overview-production
 
 # Open DORA metrics dashboard
 aws cloudwatch get-dashboard \
-  --dashboard-name lumina-dora-metrics-production
+  --dashboard-name SYNORA-dora-metrics-production
 
 # Or via AWS Console:
 https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:
@@ -726,7 +726,7 @@ aws logs tail /aws/codedeploy/<project>/<env> --follow
 ```bash
 # Check canary health
 aws cloudwatch describe-alarms \
-  --alarm-name-prefix "lumina-backend-canary"
+  --alarm-name-prefix "SYNORA-backend-canary"
 
 # Review metrics
 aws cloudwatch get-metric-statistics \

@@ -1,6 +1,6 @@
 # Terraform Modules
 
-This directory contains reusable Terraform modules for deploying and managing the Lumina AI Assistant infrastructure.
+This directory contains reusable Terraform modules for deploying and managing the SYNORA AI Assistant infrastructure.
 
 ## Available Modules
 

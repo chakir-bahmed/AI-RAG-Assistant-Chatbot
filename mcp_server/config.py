@@ -1,5 +1,5 @@
 """
-Configuration management for the Lumina MCP Server.
+Configuration management for the SYNORA MCP Server.
 """
 
 from __future__ import annotations
@@ -14,9 +14,9 @@ import yaml
 
 _DEFAULT_CONFIG: Dict[str, Any] = {
     "server": {
-        "name": "lumina-mcp-server",
+        "name": "SYNORA-mcp-server",
         "version": "1.0.0",
-        "description": "Enterprise-grade MCP server for Lumina AI platform",
+        "description": "Enterprise-grade MCP server for SYNORA AI platform",
     },
     "tools": {
         "pipeline": {"enabled": True},

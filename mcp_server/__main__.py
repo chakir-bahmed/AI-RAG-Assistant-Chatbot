@@ -1,5 +1,5 @@
 """
-Entry point for running the Lumina MCP Server.
+Entry point for running the SYNORA MCP Server.
 
 Usage:
     python -m mcp_server
@@ -15,7 +15,7 @@ import sys
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Lumina MCP Server — enterprise-grade Model Context Protocol server"
+        description="SYNORA MCP Server — enterprise-grade Model Context Protocol server"
     )
     parser.add_argument(
         "--config",
@@ -53,12 +53,12 @@ def parse_args() -> argparse.Namespace:
 async def main() -> None:
     args = parse_args()
 
-    from .server import LuminaMCPServer
+    from .server import SYNORAMCPServer
     from .utils.logger import setup_logging
 
     setup_logging(level=args.log_level)
 
-    server = LuminaMCPServer(config_path=args.config)
+    server = SYNORAMCPServer(config_path=args.config)
 
     if args.transport == "stdio":
         await server.run_stdio()

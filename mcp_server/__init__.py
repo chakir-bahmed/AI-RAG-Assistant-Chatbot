@@ -1,5 +1,5 @@
 """
-Lumina MCP Server
+SYNORA MCP Server
 =================
 
 A standalone, enterprise-grade Model Context Protocol (MCP) server that
@@ -12,8 +12,8 @@ system diagnostics through the standardized MCP interface.
 """
 
 __version__ = "1.0.0"
-__author__ = "Lumina AI Team"
+__author__ = "SYNORA AI Team"
 
-from .server import LuminaMCPServer
+from .server import SYNORAMCPServer
 
-__all__ = ["LuminaMCPServer"]
+__all__ = ["SYNORAMCPServer"]

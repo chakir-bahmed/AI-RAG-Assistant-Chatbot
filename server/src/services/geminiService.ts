@@ -51,13 +51,13 @@ const GREETING_PATTERN =
   /^[\s\W]*(hi+|hey+|hello+|heya|hiya|yo|howdy|greetings|sup|wass?up|what'?s\s+up|good\s+(morning|afternoon|evening|day))[\s\W]*$/i;
 
 const GREETING_RESPONSES = [
-  "Hello! How can I help you learn about David Nguyen today?",
-  "Hi there! Ask me anything about David's background, projects, or experience.",
-  "Hey! I'm Lumina, David's AI assistant — what would you like to know?",
-  "Hello! Curious about David's work, skills, or projects? Just ask.",
-  "Hi! I can walk you through David Nguyen's experience and projects — what's on your mind?",
-  "Hey there! Want a quick intro to David, or details on a specific project?",
-  "Hello! I'm here to answer questions about David Nguyen. Where should we start?",
+  "Hello! How can I help you learn about CHAKIR BAHMED today?",
+  "Hi there! Ask me anything about chakir's background, projects, or experience.",
+  "Hey! I'm SYNORA, chakir's AI assistant — what would you like to know?",
+  "Hello! Curious about chakir's work, skills, or projects? Just ask.",
+  "Hi! I can walk you through CHAKIR BAHMED's experience and projects — what's on your mind?",
+  "Hey there! Want a quick intro to chakir, or details on a specific project?",
+  "Hello! I'm here to answer questions about CHAKIR BAHMED. Where should we start?",
 ];
 
 let lastGreetingIndex = -1;
@@ -302,13 +302,13 @@ const retrieveHybridSources = async (
 };
 
 const IDENTITY_SYSTEM_INSTRUCTION =
-  "You are Lumina, David Nguyen's AI assistant.";
+  "You are SYNORA, CHAKIR BAHMED's AI assistant.";
 const RAG_PROMPT_INSTRUCTIONS = [
   "Answer ONLY using the provided sources from the knowledge base.",
   "Cite sources inline using [number] that matches the sources list.",
   "Every sentence must include at least one citation.",
   "If the sources do not contain the answer, say you do not have enough information and suggest adding it.",
-  "Do not use general knowledge or make assumptions, but you can use your knowledge to answer questions not related to David Nguyen.",
+  "Do not use general knowledge or make assumptions, but you can use your knowledge to answer questions not related to CHAKIR BAHMED.",
   "Be concise and to the point.",
   "If listing items, keep it concise and avoid duplicates.",
   "Avoid repeating the same item; de-duplicate by title or project name.",

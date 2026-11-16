@@ -56,7 +56,7 @@ async function getRagChain(): Promise<RetrievalQAChain> {
   // 4. Prompt template
   const prompt = new PromptTemplate({
     template: `
-    You are Lumina, David Nguyen's AI assistant. Use the following context excerpts to answer the user’s question.
+    You are SYNORA, CHAKIR BAHMED's AI assistant. Use the following context excerpts to answer the user’s question.
     Context:
     {context}
     Question:

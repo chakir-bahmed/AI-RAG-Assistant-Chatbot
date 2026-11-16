@@ -1,11 +1,11 @@
-Technical Skills - Son Nguyen (David Nguyen)
+Technical Skills -  bahmed (CHAKIR BAHMED)
 
 === Frontend Development ===
 
 HTML5 - Expert. Used across all web projects, semantic markup and accessibility.
 CSS3 - Expert. Advanced layouts, animations, responsive design across all frontend work.
 SASS - Proficient. CSS preprocessing for large-scale projects with variables, mixins, and nesting.
-React - Expert. Primary frontend framework. Used in DocuThinker, EstateWise, MovieVerse, Lumina AI Chatbot, and many more projects. Deep experience with hooks, context, state management.
+React - Expert. Primary frontend framework. Used in DocuThinker, EstateWise, MovieVerse, SYNORA AI Chatbot, and many more projects. Deep experience with hooks, context, state management.
 Angular - Proficient. Used for enterprise-scale SPAs with TypeScript-first architecture.
 Vue.js - Proficient. Component-based development with Composition API and Vuex/Pinia state management.
 Nuxt - Proficient. Vue-based SSR and static site generation framework.
@@ -16,12 +16,12 @@ jQuery - Familiar. Legacy project maintenance and DOM manipulation.
 TailwindCSS - Expert. Utility-first CSS framework used in modern projects for rapid, consistent styling.
 PostCSS - Proficient. CSS transformation and optimization pipeline tooling.
 Streamlit - Proficient. Python-based rapid prototyping for data science and ML dashboards.
-MUI/JoyUI - Expert. Material UI component library for React. Used in Lumina AI Chatbot and other polished frontend projects.
+MUI/JoyUI - Expert. Material UI component library for React. Used in SYNORA AI Chatbot and other polished frontend projects.
 Shadcn UI - Proficient. Headless, accessible component primitives for React with Tailwind integration.
 Electron - Proficient. Cross-platform desktop application development with web technologies.
 Webpack - Proficient. Module bundling, code splitting, and build optimization.
 Turborepo - Proficient. Monorepo build orchestration and caching for multi-package workspaces.
-Vite - Expert. Modern build tooling for fast development and production builds. Used in Lumina AI Chatbot and other recent projects.
+Vite - Expert. Modern build tooling for fast development and production builds. Used in SYNORA AI Chatbot and other recent projects.
 Playwright - Proficient. End-to-end browser testing and automation with cross-browser support.
 Cypress - Proficient. Component and end-to-end testing for frontend applications.
 Selenium - Proficient. Browser automation and cross-browser testing.
@@ -32,8 +32,8 @@ Micro-Frontends Architecture - Proficient. Decomposing large frontends into inde
 
 === Backend Development ===
 
-Node.js - Expert. Primary backend runtime. Used in Lumina AI Chatbot, DocuThinker, and many production services.
-Express.js - Expert. HTTP framework for RESTful APIs and middleware-based architectures. Core of Lumina server.
+Node.js - Expert. Primary backend runtime. Used in SYNORA AI Chatbot, DocuThinker, and many production services.
+Express.js - Expert. HTTP framework for RESTful APIs and middleware-based architectures. Core of SYNORA server.
 NestJS - Proficient. Enterprise Node.js framework with decorators, dependency injection, and modular architecture.
 Spring Framework - Proficient. Java enterprise framework for dependency injection and aspect-oriented programming.
 Spring Boot - Proficient. Rapid Java backend development with auto-configuration and embedded servers.
@@ -64,7 +64,7 @@ JWT - Expert. JSON Web Token authentication and session management across multip
 Auth0 - Proficient. Identity platform integration for authentication and authorization.
 Elasticsearch - Proficient. Full-text search engine for large-scale data indexing and querying.
 ELK Stack - Proficient. Elasticsearch, Logstash, Kibana for centralized logging and observability.
-OpenAPI - Proficient. API specification and documentation standard. Used in Lumina AI Chatbot.
+OpenAPI - Proficient. API specification and documentation standard. Used in SYNORA AI Chatbot.
 Microservices Architecture - Expert. Designing and deploying distributed systems with independent, scalable services.
 
 === AI & Machine Learning ===
@@ -72,7 +72,7 @@ Microservices Architecture - Expert. Designing and deploying distributed systems
 TensorFlow - Proficient. Deep learning framework for model training and deployment.
 Keras - Proficient. High-level neural network API on TensorFlow for rapid prototyping.
 Agentic AI - Expert. Core focus area at LexisNexis. Building multi-agent autonomous systems with planning, tool use, and memory. Published research on intent engineering for agentic systems (March 2026).
-Model Context Protocol (MCP) - Expert. Protocol for LLM tool integration. Built a standalone MCP server with 32 tools, 7 resources, and 6 prompts in the Lumina project.
+Model Context Protocol (MCP) - Expert. Protocol for LLM tool integration. Built a standalone MCP server with 32 tools, 7 resources, and 6 prompts in the SYNORA project.
 Agent to Agent Protocol (A2A) - Proficient. Protocol for inter-agent communication in multi-agent systems.
 PyTorch - Proficient. Deep learning framework for research and production models.
 Scikit-Learn - Expert. Classical ML library for classification, regression, clustering, and preprocessing.
@@ -86,7 +86,7 @@ LangSmith - Proficient. Observability and evaluation platform for LLM applicatio
 CrewAI - Proficient. Multi-agent orchestration framework for collaborative AI task execution.
 Fireworks AI - Proficient. Fast inference platform for LLM serving and fine-tuning.
 FAISS - Proficient. Facebook AI Similarity Search for efficient vector similarity retrieval.
-Pinecone - Expert. Managed vector database for production RAG and semantic search. Used in Lumina AI Chatbot.
+Pinecone - Expert. Managed vector database for production RAG and semantic search. Used in SYNORA AI Chatbot.
 Optuna - Proficient. Hyperparameter optimization framework for machine learning experiments.
 Jupyter Notebook - Expert. Interactive computing environment for data science and ML experimentation.
 MLflow - Proficient. ML lifecycle management for experiment tracking, model registry, and deployment.
@@ -100,7 +100,7 @@ Google Colab - Proficient. Cloud-based Jupyter environment with free GPU access 
 === Databases ===
 
 MySQL - Expert. Relational database for web applications with complex query optimization.
-MongoDB - Expert. Document-oriented NoSQL database. Primary database for Lumina AI Chatbot and many projects.
+MongoDB - Expert. Document-oriented NoSQL database. Primary database for SYNORA AI Chatbot and many projects.
 PostgreSQL - Expert. Advanced relational database with JSON support, CTEs, and full-text search.
 Microsoft SQL Server - Proficient. Enterprise relational database for business applications.
 Neo4j - Proficient. Graph database for relationship-heavy data and knowledge graphs.
@@ -124,7 +124,7 @@ Assembly - Familiar. Low-level processor instruction programming for systems und
 WebAssembly - Research-level. Published research on WASM performance. Binary instruction format for web execution.
 Python - Expert. Primary language for AI/ML, data science, scripting, and backend development.
 JavaScript - Expert. Full-stack web development, frontend and Node.js backend.
-TypeScript - Expert. Type-safe JavaScript for large-scale applications. Used across Lumina and LexisNexis projects.
+TypeScript - Expert. Type-safe JavaScript for large-scale applications. Used across SYNORA and LexisNexis projects.
 Rust - Familiar. Systems programming language for memory safety and performance.
 PHP - Proficient. Server-side web development and legacy application maintenance.
 Go - Familiar. Concurrent backend services and cloud-native tooling.

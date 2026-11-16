@@ -1,8 +1,8 @@
 resource "aws_sns_topic" "alerts" {
-  name = "${var.environment}-lumina-alerts"
+  name = "${var.environment}-SYNORA-alerts"
 
   tags = {
-    Name = "${var.environment}-lumina-alerts"
+    Name = "${var.environment}-SYNORA-alerts"
   }
 }
 
@@ -14,7 +14,7 @@ resource "aws_sns_topic_subscription" "email" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "frontend_cpu" {
-  alarm_name          = "${var.environment}-lumina-frontend-cpu-high"
+  alarm_name          = "${var.environment}-SYNORA-frontend-cpu-high"
   alarm_description   = "Frontend service CPU utilization is above threshold"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 3
@@ -35,7 +35,7 @@ resource "aws_cloudwatch_metric_alarm" "frontend_cpu" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "backend_cpu" {
-  alarm_name          = "${var.environment}-lumina-backend-cpu-high"
+  alarm_name          = "${var.environment}-SYNORA-backend-cpu-high"
   alarm_description   = "Backend service CPU utilization is above threshold"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 3
@@ -56,7 +56,7 @@ resource "aws_cloudwatch_metric_alarm" "backend_cpu" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "backend_memory" {
-  alarm_name          = "${var.environment}-lumina-backend-memory-high"
+  alarm_name          = "${var.environment}-SYNORA-backend-memory-high"
   alarm_description   = "Backend service memory utilization is above threshold"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 3
@@ -77,7 +77,7 @@ resource "aws_cloudwatch_metric_alarm" "backend_memory" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
-  alarm_name          = "${var.environment}-lumina-alb-5xx"
+  alarm_name          = "${var.environment}-SYNORA-alb-5xx"
   alarm_description   = "ALB is returning 5XX errors"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 1
@@ -97,7 +97,7 @@ resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "documentdb_cpu" {
-  alarm_name          = "${var.environment}-lumina-documentdb-cpu"
+  alarm_name          = "${var.environment}-SYNORA-documentdb-cpu"
   alarm_description   = "DocumentDB CPU utilization is above threshold"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 3
@@ -117,7 +117,7 @@ resource "aws_cloudwatch_metric_alarm" "documentdb_cpu" {
 }
 
 resource "aws_cloudwatch_metric_alarm" "elasticache_cpu" {
-  alarm_name          = "${var.environment}-lumina-elasticache-cpu"
+  alarm_name          = "${var.environment}-SYNORA-elasticache-cpu"
   alarm_description   = "ElastiCache CPU utilization is above threshold"
   comparison_operator = "GreaterThanThreshold"
   evaluation_periods  = 3
@@ -136,8 +136,8 @@ resource "aws_cloudwatch_metric_alarm" "elasticache_cpu" {
   ok_actions    = [aws_sns_topic.alerts.arn]
 }
 
-resource "aws_cloudwatch_dashboard" "lumina" {
-  dashboard_name = "Lumina-${var.environment}"
+resource "aws_cloudwatch_dashboard" "SYNORA" {
+  dashboard_name = "SYNORA-${var.environment}"
 
   dashboard_body = jsonencode({
     widgets = [

@@ -9,11 +9,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "lumina-terraform-state"
+    bucket         = "SYNORA-terraform-state"
     key            = "production/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "lumina-terraform-locks"
+    dynamodb_table = "SYNORA-terraform-locks"
   }
 }
 
@@ -22,7 +22,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "Lumina-AI-Assistant"
+      Project     = "SYNORA-AI-Assistant"
       Environment = var.environment
       ManagedBy   = "Terraform"
       Owner       = "DevOps-Team"
@@ -96,7 +96,7 @@ module "elasticache" {
 }
 
 resource "aws_secretsmanager_secret" "backend_env" {
-  name = "${var.environment}/lumina/backend"
+  name = "${var.environment}/SYNORA/backend"
 }
 
 resource "aws_secretsmanager_secret_version" "backend_env" {

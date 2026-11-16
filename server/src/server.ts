@@ -87,12 +87,12 @@ const swaggerOptions = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Lumina AI Assistant API",
+      title: "SYNORA AI Assistant API",
       version: "1.1.0",
-      description: "API documentation for the Lumina AI Assistant application.",
+      description: "API documentation for the SYNORA AI Assistant application.",
       contact: {
-        name: "David Nguyen",
-        url: "https://sonnguyenhoang.com/",
+        name: "CHAKIR BAHMED",
+        url: "https://sonbahmedhoang.com/",
         email: "hoangson091104@gmail.com",
       },
       license: {
@@ -143,7 +143,7 @@ app.get("/docs", (req, res) => {
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <title>Lumina AI Assistant API Docs</title>
+      <title>SYNORA AI Assistant API Docs</title>
       <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css">
     </head>
     <body>

@@ -529,7 +529,7 @@ docker run -d \
 
 ## 🔌 MCP Client Integration
 
-The agentic AI pipeline connects to the **standalone Lumina MCP Server** (`mcp_server/` at the repository root) through a built-in MCP client. This gives every pipeline agent access to 30+ real tools for file operations, code analysis, web retrieval, git operations, and more.
+The agentic AI pipeline connects to the **standalone SYNORA MCP Server** (`mcp_server/` at the repository root) through a built-in MCP client. This gives every pipeline agent access to 30+ real tools for file operations, code analysis, web retrieval, git operations, and more.
 
 ### How It Works
 

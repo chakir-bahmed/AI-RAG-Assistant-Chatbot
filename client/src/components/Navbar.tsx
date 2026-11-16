@@ -73,7 +73,7 @@ const Navbar: React.FC<NavbarProps> = ({
   const navigate = useNavigate();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const text = "Lumina AI";
+  const text = "SYNORA AI";
   // Treat default placeholder titles as "no title" so the welcome line shows.
   const DEFAULT_TITLES = ["New Conversation", "Untitled Conversation"];
   const hasRealTitle =
@@ -277,8 +277,8 @@ const Navbar: React.FC<NavbarProps> = ({
             {hasRealTitle
               ? activeTitle
               : isMobile
-                ? "Welcome to Lumina"
-                : "Welcome to Lumina - ask me anything about David"}
+                ? "Welcome to SYNORA"
+                : "Welcome to SYNORA - ask me anything about chakir"}
           </Typography>
         </Box>
 

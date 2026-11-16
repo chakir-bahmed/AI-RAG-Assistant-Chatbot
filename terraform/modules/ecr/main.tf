@@ -1,7 +1,7 @@
 locals {
   repositories = {
-    frontend = "${var.environment}-lumina-frontend"
-    backend  = "${var.environment}-lumina-backend"
+    frontend = "${var.environment}-SYNORA-frontend"
+    backend  = "${var.environment}-SYNORA-backend"
   }
 }
 

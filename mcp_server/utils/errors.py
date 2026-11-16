@@ -1,5 +1,5 @@
 """
-Custom exception hierarchy for the Lumina MCP Server.
+Custom exception hierarchy for the SYNORA MCP Server.
 """
 
 

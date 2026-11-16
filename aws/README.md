@@ -1,6 +1,6 @@
 # AWS Deployment Playbooks
 
-This directory contains operational tooling for deploying the Lumina AI Assistant to AWS using the Terraform stack in `../terraform`. The scripts automate common lifecycle tasks such as building container images, publishing them to Amazon ECR, and applying the infrastructure changes described in the architecture documentation.
+This directory contains operational tooling for deploying the SYNORA AI Assistant to AWS using the Terraform stack in `../terraform`. The scripts automate common lifecycle tasks such as building container images, publishing them to Amazon ECR, and applying the infrastructure changes described in the architecture documentation.
 
 ## Directory Structure
 
@@ -62,14 +62,14 @@ The scripts respect the following variables:
 - `AWS_PROFILE` – Profile to use with the AWS CLI and Terraform.
 - `AWS_REGION` – Region for commands (defaults to the region defined in `terraform.tfvars`).
 - `TF_WORKSPACE` – Terraform workspace to target (defaults to `default`).
-- `LUMINA_IMAGE_TAG` – Optional override for the image tag applied to both frontend and backend images (defaults to `latest`).
+- `SYNORA_IMAGE_TAG` – Optional override for the image tag applied to both frontend and backend images (defaults to `latest`).
 
 You can export them before running any script, for example:
 
 ```bash
 export AWS_PROFILE=prod
 export AWS_REGION=us-east-1
-export LUMINA_IMAGE_TAG=2024-05-01
+export SYNORA_IMAGE_TAG=2024-05-01
 ```
 
 ## Operational Tips

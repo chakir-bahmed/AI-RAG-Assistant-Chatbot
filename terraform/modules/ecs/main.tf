@@ -3,7 +3,7 @@ data "aws_region" "current" {}
 data "aws_caller_identity" "current" {}
 
 resource "aws_ecs_cluster" "main" {
-  name = "${var.environment}-lumina-cluster"
+  name = "${var.environment}-SYNORA-cluster"
 
   setting {
     name  = "containerInsights"
@@ -11,12 +11,12 @@ resource "aws_ecs_cluster" "main" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-ecs-cluster"
+    Name = "${var.environment}-SYNORA-ecs-cluster"
   }
 }
 
 resource "aws_iam_role" "ecs_task_execution" {
-  name = "${var.environment}-lumina-ecs-task-execution-role"
+  name = "${var.environment}-SYNORA-ecs-task-execution-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -36,7 +36,7 @@ resource "aws_iam_role_policy_attachment" "ecs_task_execution" {
 }
 
 resource "aws_iam_role_policy" "ecs_task_execution_secrets" {
-  name = "${var.environment}-lumina-ecs-execution-secrets"
+  name = "${var.environment}-SYNORA-ecs-execution-secrets"
   role = aws_iam_role.ecs_task_execution.id
 
   policy = jsonencode({
@@ -57,7 +57,7 @@ resource "aws_iam_role_policy" "ecs_task_execution_secrets" {
 }
 
 resource "aws_iam_role" "ecs_task" {
-  name = "${var.environment}-lumina-ecs-task-role"
+  name = "${var.environment}-SYNORA-ecs-task-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -72,17 +72,17 @@ resource "aws_iam_role" "ecs_task" {
 }
 
 resource "aws_cloudwatch_log_group" "frontend" {
-  name              = "/ecs/${var.environment}-lumina-frontend"
+  name              = "/ecs/${var.environment}-SYNORA-frontend"
   retention_in_days = var.log_retention_days
 }
 
 resource "aws_cloudwatch_log_group" "backend" {
-  name              = "/ecs/${var.environment}-lumina-backend"
+  name              = "/ecs/${var.environment}-SYNORA-backend"
   retention_in_days = var.log_retention_days
 }
 
 resource "aws_security_group" "ecs_tasks" {
-  name        = "${var.environment}-lumina-ecs-tasks-sg"
+  name        = "${var.environment}-SYNORA-ecs-tasks-sg"
   description = "Security group for ECS tasks"
   vpc_id      = var.vpc_id
 
@@ -111,7 +111,7 @@ resource "aws_security_group" "ecs_tasks" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-ecs-tasks-sg"
+    Name = "${var.environment}-SYNORA-ecs-tasks-sg"
   }
 }
 
@@ -202,7 +202,7 @@ locals {
 }
 
 resource "aws_ecs_task_definition" "frontend" {
-  family                   = "${var.environment}-lumina-frontend"
+  family                   = "${var.environment}-SYNORA-frontend"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu                      = var.frontend_cpu
@@ -218,7 +218,7 @@ resource "aws_ecs_task_definition" "frontend" {
 }
 
 resource "aws_ecs_task_definition" "backend" {
-  family                   = "${var.environment}-lumina-backend"
+  family                   = "${var.environment}-SYNORA-backend"
   network_mode             = "awsvpc"
   requires_compatibilities = ["FARGATE"]
   cpu                      = var.backend_cpu
@@ -234,7 +234,7 @@ resource "aws_ecs_task_definition" "backend" {
 }
 
 resource "aws_ecs_service" "frontend" {
-  name                               = "${var.environment}-lumina-frontend"
+  name                               = "${var.environment}-SYNORA-frontend"
   cluster                            = aws_ecs_cluster.main.id
   task_definition                    = aws_ecs_task_definition.frontend.arn
   desired_count                      = var.frontend_desired_count
@@ -266,7 +266,7 @@ resource "aws_ecs_service" "frontend" {
 }
 
 resource "aws_ecs_service" "backend" {
-  name                               = "${var.environment}-lumina-backend"
+  name                               = "${var.environment}-SYNORA-backend"
   cluster                            = aws_ecs_cluster.main.id
   task_definition                    = aws_ecs_task_definition.backend.arn
   desired_count                      = var.backend_desired_count
@@ -307,7 +307,7 @@ resource "aws_appautoscaling_target" "frontend" {
 }
 
 resource "aws_appautoscaling_policy" "frontend_cpu" {
-  name               = "${var.environment}-lumina-frontend-cpu-policy"
+  name               = "${var.environment}-SYNORA-frontend-cpu-policy"
   policy_type        = "TargetTrackingScaling"
   resource_id        = aws_appautoscaling_target.frontend.resource_id
   scalable_dimension = aws_appautoscaling_target.frontend.scalable_dimension
@@ -332,7 +332,7 @@ resource "aws_appautoscaling_target" "backend" {
 }
 
 resource "aws_appautoscaling_policy" "backend_cpu" {
-  name               = "${var.environment}-lumina-backend-cpu-policy"
+  name               = "${var.environment}-SYNORA-backend-cpu-policy"
   policy_type        = "TargetTrackingScaling"
   resource_id        = aws_appautoscaling_target.backend.resource_id
   scalable_dimension = aws_appautoscaling_target.backend.scalable_dimension

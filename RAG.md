@@ -1,6 +1,6 @@
-# RAG - Retrieval-Augmented Generation in Lumina
+# RAG - Retrieval-Augmented Generation in SYNORA
 
-Lumina uses a hybrid RAG pipeline that combines **vector search** (Pinecone) with **graph-based retrieval** (Neo4j AuraDB) to ground every answer in indexed knowledge sources. Both retrieval paths run in parallel at query time, and their results are merged, deduplicated, and ranked before being fed to the LLM. Every sentence in a response carries an inline citation that maps to a numbered sources list shown in the UI. If no sources match the user's question, the assistant says so rather than hallucinating.
+SYNORA uses a hybrid RAG pipeline that combines **vector search** (Pinecone) with **graph-based retrieval** (Neo4j AuraDB) to ground every answer in indexed knowledge sources. Both retrieval paths run in parallel at query time, and their results are merged, deduplicated, and ranked before being fed to the LLM. Every sentence in a response carries an inline citation that maps to a numbered sources list shown in the UI. If no sources match the user's question, the assistant says so rather than hallucinating.
 
 ## Table of Contents
 
@@ -23,7 +23,7 @@ Lumina uses a hybrid RAG pipeline that combines **vector search** (Pinecone) wit
 
 ## Architecture Overview
 
-Lumina implements a hybrid RAG architecture with the following components:
+SYNORA implements a hybrid RAG architecture with the following components:
 
 ```mermaid
 graph TB
@@ -64,7 +64,7 @@ graph TB
   CLI --> GraphSvc
 ```
 
-This architecture allows Lumina to leverage the strengths of both vector similarity and structured graph relationships for robust retrieval, while maintaining a clean separation of concerns across services. The Gemini Service orchestrates the retrieval and generation process, ensuring that every response is grounded in the indexed knowledge base with transparent citations.
+This architecture allows SYNORA to leverage the strengths of both vector similarity and structured graph relationships for robust retrieval, while maintaining a clean separation of concerns across services. The Gemini Service orchestrates the retrieval and generation process, ensuring that every response is grounded in the indexed knowledge base with transparent citations.
 
 ---
 
@@ -129,7 +129,7 @@ sequenceDiagram
   else Sources available
     rect rgb(0, 0, 0)
       note over C,LLM: Grounded Generation Phase
-      C->>LLM: System: "You are Lumina..." + RAG instructions
+      C->>LLM: System: "You are SYNORA..." + RAG instructions
       C->>LLM: Context: Numbered source snippets [1]...[N]
       C->>LLM: User prompt with citation directive
       LLM-->>C: Response text with inline [1], [2] citations
@@ -346,7 +346,7 @@ The graph uses a hybrid **entity + chunk** model with three primary node labels:
 
 | Type            | Examples                                     |
 | --------------- | -------------------------------------------- |
-| `Person`        | David Nguyen, Ben Taylor                     |
+| `Person`        | CHAKIR BAHMED, Ben Taylor                     |
 | `Organization`  | LexisNexis, UNC-Chapel Hill                  |
 | `Project`       | DocuThinker, Navigator, MovieVerse           |
 | `Technology`    | React, TypeScript, Neo4j, LangGraph          |
@@ -666,7 +666,7 @@ The LLM receives a carefully structured prompt with three layers:
 ```mermaid
 graph TD
   subgraph System Instruction
-    SI["Identity: You are Lumina, David Nguyen's AI assistant"]
+    SI["Identity: You are SYNORA, CHAKIR BAHMED's AI assistant"]
   end
   subgraph RAG Context Message
     RI["11 RAG directives<br/>(cite every sentence, don't hallucinate, etc.)"]
@@ -969,7 +969,7 @@ npm run knowledge:sync -- --manifest ./knowledge/manifest.json
 
 The repository ships a populated manifest at `server/knowledge/manifest.json` whose entries map directly to the canonical source `externalId`s used by topic-aware full-source augmentation (`profile`, `career-timeline`, `certifications`, `publications`, `honors-awards`, `volunteering`, `coursework`, `languages-organizations`, `test-scores`, plus the larger `projects` and `skills` docs).
 
-> **`career-timeline` source:** `server/knowledge/son-nguyen-career-timeline.txt` (registered as `externalId: "career-timeline"`) is a dense, single-retrievable-unit, reverse-chronological list of every role plus key milestones. It is purpose-built to be pulled **whole** by topic augmentation for career/experience/milestone queries, guaranteeing no role is dropped by the top-K cutoff.
+> **`career-timeline` source:** `server/knowledge/bahmed-career-timeline.txt` (registered as `externalId: "career-timeline"`) is a dense, single-retrievable-unit, reverse-chronological list of every role plus key milestones. It is purpose-built to be pulled **whole** by topic augmentation for career/experience/milestone queries, guaranteeing no role is dropped by the top-K cutoff.
 
 **Delete sources not in the manifest:**
 
@@ -991,7 +991,7 @@ Set these in `server/.env`:
 MONGODB_URI=mongodb://localhost:27017/ai-assistant
 GOOGLE_AI_API_KEY=your_google_ai_api_key_here
 PINECONE_API_KEY=your_pinecone_api_key_here
-PINECONE_INDEX_NAME=lumina-index
+PINECONE_INDEX_NAME=SYNORA-index
 ```
 
 ### Neo4j Environment Variables (Optional)

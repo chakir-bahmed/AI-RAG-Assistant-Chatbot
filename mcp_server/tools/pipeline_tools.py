@@ -26,7 +26,7 @@ class RunPipelineTool(ToolHandler):
             types.Tool(
                 name="run_pipeline",
                 description=(
-                    "Run the Lumina agentic AI pipeline for a given task. "
+                    "Run the SYNORA agentic AI pipeline for a given task. "
                     "Returns a pipeline_id and the full result once complete."
                 ),
                 inputSchema={

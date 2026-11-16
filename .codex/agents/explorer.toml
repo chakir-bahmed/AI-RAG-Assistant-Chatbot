@@ -1,5 +1,5 @@
 name = "explorer"
-description = "Read-only codebase explorer for gathering evidence, tracing code paths, and answering architecture questions across all Lumina surfaces."
+description = "Read-only codebase explorer for gathering evidence, tracing code paths, and answering architecture questions across all SYNORA surfaces."
 model = "o3"
 sandbox_mode = "read-only"
 developer_instructions = """

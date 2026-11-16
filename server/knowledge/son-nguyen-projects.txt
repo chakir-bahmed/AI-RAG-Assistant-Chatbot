@@ -1,8 +1,8 @@
-Personal Projects of Son Nguyen (David Nguyen)
+Personal Projects of  bahmed (CHAKIR BAHMED)
 GitHub: https://github.com/hoangsonww
 Total Public Projects: 87+
 
-This document catalogs the complete collection of Son Nguyen's public GitHub repositories, organized by category. Each project includes a detailed description, tech stack, links, and star count. These projects span AI/ML, full-stack web development, mobile apps, games, data analysis, developer tooling, and more.
+This document catalogs the complete collection of  bahmed's public GitHub repositories, organized by category. Each project includes a detailed description, tech stack, links, and star count. These projects span AI/ML, full-stack web development, mobile apps, games, data analysis, developer tooling, and more.
 
 ================================================================================
 CATEGORY: AI/ML & AGENTIC AI
@@ -18,10 +18,10 @@ Stars: 52
 
 Project: AI-RAG-Assistant-Chatbot
 Category: AI/ML & Agentic AI
-Description: Lumina is Son Nguyen's personal AI assistant, a full-stack web application that answers questions about David Nguyen and general topics using state-of-the-art AI and Retrieval-Augmented Generation (RAG). The system ingests personal knowledge documents into vector databases for grounded, citation-backed responses. Users can log in to save conversation history or continue as guests. The app features a sleek, responsive UI with intuitive UX, rich animations, and modern design patterns. It includes conversation branching, message editing, and real-time streaming responses.
+Description: SYNORA is  bahmed's personal AI assistant, a full-stack web application that answers questions about CHAKIR BAHMED and general topics using state-of-the-art AI and Retrieval-Augmented Generation (RAG). The system ingests personal knowledge documents into vector databases for grounded, citation-backed responses. Users can log in to save conversation history or continue as guests. The app features a sleek, responsive UI with intuitive UX, rich animations, and modern design patterns. It includes conversation branching, message editing, and real-time streaming responses.
 Tech Stack: React, Vite, MUI, Framer Motion, Express, TypeScript, MongoDB, Google Gemini, Pinecone, Node.js
 GitHub: https://github.com/hoangsonww/AI-RAG-Assistant-Chatbot
-Live: https://lumina-david.vercel.app
+Live: https://SYNORA-chakir.vercel.app
 Stars: 34
 
 Project: RAG-LangChain-AI-System
@@ -166,7 +166,7 @@ Stars: 31
 
 Project: The-MovieVerse-Database
 Category: Full-Stack Web Applications
-Description: The MovieVerse is a digital compass to the cinematic universe, serving more than 1 million users with over 350,000 active users per month. The application provides comprehensive movie information, search functionality, personalized recommendations, watchlists, and user reviews. It integrates with movie database APIs for rich content including cast information, trailers, ratings, and box office data. The platform features a beautifully designed responsive UI with smooth animations and intuitive navigation, making it one of Son's most popular and widely-used projects.
+Description: The MovieVerse is a digital compass to the cinematic universe, serving more than 1 million users with over 350,000 active users per month. The application provides comprehensive movie information, search functionality, personalized recommendations, watchlists, and user reviews. It integrates with movie database APIs for rich content including cast information, trailers, ratings, and box office data. The platform features a beautifully designed responsive UI with smooth animations and intuitive navigation, making it one of 's most popular and widely-used projects.
 Tech Stack: HTML, CSS, JavaScript, Movie Database APIs, Web APIs
 GitHub: https://github.com/hoangsonww/The-MovieVerse-Database
 Live: https://movie-verse.com
@@ -390,10 +390,10 @@ Stars: 15
 
 Project: hoangsonww.github.io
 Category: Full-Stack Web Applications
-Description: Son Nguyen's personal portfolio website, a seamless blend of style and functionality showcasing his journey, projects, and skills in the tech world. Built with modern web technologies and creative design, the site provides an interactive user experience with smooth animations, project showcases, skills visualization, and contact information. The portfolio features a responsive layout, dark/light mode, project filtering, and integration with GitHub for live project data. It serves as the central hub for Son's professional online presence.
+Description:  bahmed's personal portfolio website, a seamless blend of style and functionality showcasing his journey, projects, and skills in the tech world. Built with modern web technologies and creative design, the site provides an interactive user experience with smooth animations, project showcases, skills visualization, and contact information. The portfolio features a responsive layout, dark/light mode, project filtering, and integration with GitHub for live project data. It serves as the central hub for 's professional online presence.
 Tech Stack: HTML, CSS, JavaScript, Modern Web Technologies
 GitHub: https://github.com/hoangsonww/hoangsonww.github.io
-Live: https://sonnguyenhoang.com
+Live: https://sonbahmedhoang.com
 Stars: 19
 
 ================================================================================
@@ -530,7 +530,7 @@ Stars: 10
 
 Project: Akari-Puzzle-Game-JavaFX
 Category: Games & Desktop Applications
-Description: A JavaFX implementation of the classic Akari logic puzzle (also known as "Light Up"). The game challenges players to place lamps strategically on a grid to illuminate corridors while adhering to specific rules about lamp placement near numbered cells. The application features a sleek user interface, a collection of puzzles ranging in difficulty from beginner to expert, hint systems, and puzzle validation. It offers hours of brain-teasing fun while demonstrating constraint satisfaction problem-solving in game design.
+Description: A JavaFX implementation of the classic Akari logic puzzle (also known as "Light Up"). The game challenges players to place lamps strategically on a grid to ilSYNORAte corridors while adhering to specific rules about lamp placement near numbered cells. The application features a sleek user interface, a collection of puzzles ranging in difficulty from beginner to expert, hint systems, and puzzle validation. It offers hours of brain-teasing fun while demonstrating constraint satisfaction problem-solving in game design.
 Tech Stack: Java, JavaFX, Logic Puzzles, Desktop Application
 GitHub: https://github.com/hoangsonww/Akari-Puzzle-Game-JavaFX
 Live: https://hoangsonww.github.io/Akari-Puzzle-Game-JavaFX/
@@ -562,7 +562,7 @@ Stars: 11
 
 Project: The-Ultimate-Task-Board
 Category: Games & Desktop Applications
-Description: An AI-powered to-do list and cooking recipe generator app that combines task management with culinary creativity. Using machine learning algorithms, the app tracks users' tasks, reminds them of upcoming deadlines, and offers personalized recipe suggestions based on dietary preferences, ingredients on hand, and cooking experience level. As lead developer, Son worked with designers and data scientists to bring this vision to life, combining productivity tooling with AI-driven content generation in a unique application concept.
+Description: An AI-powered to-do list and cooking recipe generator app that combines task management with culinary creativity. Using machine learning algorithms, the app tracks users' tasks, reminds them of upcoming deadlines, and offers personalized recipe suggestions based on dietary preferences, ingredients on hand, and cooking experience level. As lead developer,  worked with designers and data scientists to bring this vision to life, combining productivity tooling with AI-driven content generation in a unique application concept.
 Tech Stack: SQL, HTML, Java, Machine Learning, AI
 GitHub: https://github.com/hoangsonww/The-Ultimate-Task-Board
 Live: https://hoangsonww.github.io/The-Ultimate-Task-Board/
@@ -737,6 +737,6 @@ Stars: 16
 SUMMARY
 ================================================================================
 
-Son Nguyen (David Nguyen) has built and maintains over 87 public GitHub repositories spanning an exceptionally diverse range of software engineering disciplines. His work covers AI/ML and agentic AI systems (including RAG platforms, multi-agent orchestrators, emotion detection, and fraud detection), full-stack web applications (from e-commerce and social media to health management and project management tools), developer tools and NPM packages (including query converters, prefetching libraries, and authentication servers), mobile applications (React Native and native Swift/Kotlin), desktop games (JavaFX-based puzzle and arcade games), comprehensive data analysis projects (using R, Python, Julia, SAS, and Stata for domains ranging from economics to seismology), data engineering pipelines, data structures and algorithms implementations, and hardware design with SystemVerilog.
+ bahmed (CHAKIR BAHMED) has built and maintains over 87 public GitHub repositories spanning an exceptionally diverse range of software engineering disciplines. His work covers AI/ML and agentic AI systems (including RAG platforms, multi-agent orchestrators, emotion detection, and fraud detection), full-stack web applications (from e-commerce and social media to health management and project management tools), developer tools and NPM packages (including query converters, prefetching libraries, and authentication servers), mobile applications (React Native and native Swift/Kotlin), desktop games (JavaFX-based puzzle and arcade games), comprehensive data analysis projects (using R, Python, Julia, SAS, and Stata for domains ranging from economics to seismology), data engineering pipelines, data structures and algorithms implementations, and hardware design with SystemVerilog.
 
 His most popular projects include Fusion Electronics (102 stars, MERN e-commerce), End-to-End Data Pipeline (94 stars, full data engineering lifecycle), Employee Management App (65 stars, React + Spring Boot), Moodify (62 stars, emotion-based music recommendation), and Agentic AI Pipeline (52 stars, LangGraph multi-agent system). Many of his projects are deployed live with polished UIs, demonstrating not just technical breadth but a commitment to delivering complete, user-facing products. His technology repertoire spans JavaScript/TypeScript (React, Next.js, Vue, Angular, Node.js, Express, NestJS), Python (FastAPI, Flask, Django, LangChain, scikit-learn, PyTorch), Java (Spring Boot, JavaFX), Rust (Axum), Go, C, Swift, Kotlin, SystemVerilog, and R, along with cloud platforms (AWS, Vercel), databases (MongoDB, PostgreSQL, MySQL, Supabase, Pinecone), and modern AI frameworks (LangGraph, LangChain, Hugging Face Transformers, Google Gemini).

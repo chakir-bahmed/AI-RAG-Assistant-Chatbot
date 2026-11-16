@@ -57,17 +57,17 @@ pipeline {
 
                     // Build backend image
                     dir('server') {
-                        sh 'docker build -t lumina-backend:latest .'
+                        sh 'docker build -t SYNORA-backend:latest .'
                     }
 
                     // Build frontend image
                     dir('client') {
-                        sh 'docker build -t lumina-frontend:latest .'
+                        sh 'docker build -t SYNORA-frontend:latest .'
                     }
 
                     // Optionally, push Docker images to your registry
-                    // sh 'docker push your-registry/lumina-backend:latest'
-                    // sh 'docker push your-registry/lumina-frontend:latest'
+                    // sh 'docker push your-registry/SYNORA-backend:latest'
+                    // sh 'docker push your-registry/SYNORA-frontend:latest'
                 }
             }
         }

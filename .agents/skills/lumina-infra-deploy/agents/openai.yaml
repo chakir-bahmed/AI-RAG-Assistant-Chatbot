@@ -1,4 +1,4 @@
 interface:
-  display_name: "Lumina Infra Deploy"
-  short_description: "Terraform and deployment workflow for Lumina"
-  default_prompt: "Use $lumina-infra-deploy to work on Lumina deployment, Docker, or infrastructure code."
+  display_name: "SYNORA Infra Deploy"
+  short_description: "Terraform and deployment workflow for SYNORA"
+  default_prompt: "Use $SYNORA-infra-deploy to work on SYNORA deployment, Docker, or infrastructure code."

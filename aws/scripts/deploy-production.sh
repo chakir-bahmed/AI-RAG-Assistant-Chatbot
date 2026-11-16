@@ -12,7 +12,7 @@ command -v docker >/dev/null 2>&1 || { echo "docker is required" >&2; exit 1; }
 AWS_PROFILE=${AWS_PROFILE:-default}
 AWS_REGION=${AWS_REGION:-$(aws configure get region --profile "${AWS_PROFILE}" 2>/dev/null || echo "us-east-1")}
 TF_WORKSPACE=${TF_WORKSPACE:-default}
-IMAGE_TAG=${LUMINA_IMAGE_TAG:-$(date +%Y%m%d%H%M%S)}
+IMAGE_TAG=${SYNORA_IMAGE_TAG:-$(date +%Y%m%d%H%M%S)}
 
 export AWS_PROFILE AWS_REGION TF_VAR_frontend_image_tag="${IMAGE_TAG}" TF_VAR_backend_image_tag="${IMAGE_TAG}"
 

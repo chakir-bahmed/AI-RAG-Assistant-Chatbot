@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-echo "Starting Lumina application via Docker Compose..."
+echo "Starting SYNORA application via Docker Compose..."
 docker-compose up --build

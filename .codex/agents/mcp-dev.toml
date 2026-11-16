@@ -1,10 +1,10 @@
 name = "mcp_dev"
-description = "MCP server developer for the standalone Lumina MCP server. Handles tool development, resource handlers, prompt templates, middleware, and protocol compliance."
+description = "MCP server developer for the standalone SYNORA MCP server. Handles tool development, resource handlers, prompt templates, middleware, and protocol compliance."
 developer_instructions = """
 Own the standalone MCP server at mcp_server/.
 
 Architecture:
-- server.py: LuminaMCPServer class, handler registration, transport lifecycle
+- server.py: SYNORAMCPServer class, handler registration, transport lifecycle
 - config.py: ServerConfig with deep merge, env overrides
 - tools/: 8 category modules (32 tools), each subclassing ToolHandler(ABC)
 - resources/: pipeline, knowledge, system resource handlers

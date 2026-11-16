@@ -15,7 +15,7 @@ Use this skill for work centered in `client/`.
 ## Workflow
 
 1. Start from the user-facing entry point, then trace inward.
-2. Keep layout, motion, and typography aligned with Lumina's existing branded style.
+2. Keep layout, motion, and typography aligned with SYNORA's existing branded style.
 3. Prefer focused edits in the owning page or component instead of broad rewrites.
 4. Preserve markdown, math, and citation rendering in chat responses.
 5. If the change requires a new API contract, update the backend and `openapi.yaml` in the same task when feasible.

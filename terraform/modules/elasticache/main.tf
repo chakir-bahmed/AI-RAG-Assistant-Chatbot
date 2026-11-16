@@ -1,5 +1,5 @@
 resource "aws_security_group" "elasticache" {
-  name        = "${var.environment}-lumina-elasticache-sg"
+  name        = "${var.environment}-SYNORA-elasticache-sg"
   description = "Security group for ElastiCache"
   vpc_id      = var.vpc_id
 
@@ -12,21 +12,21 @@ resource "aws_security_group" "elasticache" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-elasticache-sg"
+    Name = "${var.environment}-SYNORA-elasticache-sg"
   }
 }
 
 resource "aws_elasticache_subnet_group" "this" {
-  name       = "${var.environment}-lumina-elasticache-subnets"
+  name       = "${var.environment}-SYNORA-elasticache-subnets"
   subnet_ids = var.private_subnet_ids
 
   tags = {
-    Name = "${var.environment}-lumina-elasticache-subnets"
+    Name = "${var.environment}-SYNORA-elasticache-subnets"
   }
 }
 
 resource "aws_elasticache_parameter_group" "this" {
-  name   = "${var.environment}-lumina-elasticache-params"
+  name   = "${var.environment}-SYNORA-elasticache-params"
   family = var.parameter_group_family
 
   parameter {
@@ -35,13 +35,13 @@ resource "aws_elasticache_parameter_group" "this" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-elasticache-params"
+    Name = "${var.environment}-SYNORA-elasticache-params"
   }
 }
 
 resource "aws_elasticache_replication_group" "this" {
-  replication_group_id          = "${var.environment}-lumina-redis"
-  replication_group_description = "Redis replication group for Lumina"
+  replication_group_id          = "${var.environment}-SYNORA-redis"
+  replication_group_description = "Redis replication group for SYNORA"
   node_type                     = var.node_type
   number_cache_clusters         = var.num_cache_nodes
   subnet_group_name             = aws_elasticache_subnet_group.this.name
@@ -60,7 +60,7 @@ resource "aws_elasticache_replication_group" "this" {
   apply_immediately             = false
 
   tags = {
-    Name = "${var.environment}-lumina-redis"
+    Name = "${var.environment}-SYNORA-redis"
   }
 }
 

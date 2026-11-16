@@ -1,5 +1,5 @@
 resource "aws_lb" "main" {
-  name               = "${var.environment}-lumina-alb"
+  name               = "${var.environment}-SYNORA-alb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb.id]
@@ -9,12 +9,12 @@ resource "aws_lb" "main" {
   idle_timeout               = 60
 
   tags = {
-    Name = "${var.environment}-lumina-alb"
+    Name = "${var.environment}-SYNORA-alb"
   }
 }
 
 resource "aws_security_group" "alb" {
-  name        = "${var.environment}-lumina-alb-sg"
+  name        = "${var.environment}-SYNORA-alb-sg"
   description = "Security group for Application Load Balancer"
   vpc_id      = var.vpc_id
 
@@ -43,12 +43,12 @@ resource "aws_security_group" "alb" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-alb-sg"
+    Name = "${var.environment}-SYNORA-alb-sg"
   }
 }
 
 resource "aws_lb_target_group" "frontend" {
-  name        = "${var.environment}-lumina-frontend"
+  name        = "${var.environment}-SYNORA-frontend"
   port        = 3000
   protocol    = "HTTP"
   vpc_id      = var.vpc_id
@@ -65,12 +65,12 @@ resource "aws_lb_target_group" "frontend" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-frontend-tg"
+    Name = "${var.environment}-SYNORA-frontend-tg"
   }
 }
 
 resource "aws_lb_target_group" "backend" {
-  name        = "${var.environment}-lumina-backend"
+  name        = "${var.environment}-SYNORA-backend"
   port        = 5000
   protocol    = "HTTP"
   vpc_id      = var.vpc_id
@@ -87,7 +87,7 @@ resource "aws_lb_target_group" "backend" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-backend-tg"
+    Name = "${var.environment}-SYNORA-backend-tg"
   }
 }
 

@@ -16,7 +16,7 @@ export const gradientTextSx = (theme: Theme): SxProps<Theme> => ({
   WebkitTextFillColor: "transparent",
 });
 
-/** Primary call-to-action button with the Lumina gradient + lift on hover. */
+/** Primary call-to-action button with the SYNORA gradient + lift on hover. */
 export const brandButtonSx = (theme: Theme): SxProps<Theme> => ({
   py: 1.25,
   borderRadius: 2,

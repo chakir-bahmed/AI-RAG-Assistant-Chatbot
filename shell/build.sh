@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Building Lumina Application..."
+echo "Building SYNORA Application..."
 
 # Build Backend
 echo "=> Building backend..."

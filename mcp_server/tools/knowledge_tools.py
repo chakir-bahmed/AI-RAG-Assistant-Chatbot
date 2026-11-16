@@ -20,7 +20,7 @@ class SearchKnowledgeTool(ToolHandler):
             types.Tool(
                 name="search_knowledge",
                 description=(
-                    "Semantic search across the Lumina knowledge base. "
+                    "Semantic search across the SYNORA knowledge base. "
                     "Returns the most relevant documents/chunks for a query."
                 ),
                 inputSchema={

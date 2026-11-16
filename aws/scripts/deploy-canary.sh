@@ -108,7 +108,7 @@ build_and_push_image() {
     # Get ECR repository URI
     local ecr_uri=$(aws ecr describe-repositories \
         --region "$AWS_REGION" \
-        --repository-names "lumina-${SERVICE}" \
+        --repository-names "SYNORA-${SERVICE}" \
         --query "repositories[0].repositoryUri" \
         --output text 2>/dev/null || echo "")
 
@@ -153,7 +153,7 @@ create_canary_task_definition() {
     # Get ECR repository URI
     local ecr_uri=$(aws ecr describe-repositories \
         --region "$AWS_REGION" \
-        --repository-names "lumina-${SERVICE}" \
+        --repository-names "SYNORA-${SERVICE}" \
         --query "repositories[0].repositoryUri" \
         --output text)
 

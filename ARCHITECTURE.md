@@ -1,4 +1,4 @@
-# Lumina AI Assistant - Architecture Documentation
+# SYNORA AI Assistant - Architecture Documentation
 
 ## Table of Contents
 
@@ -56,7 +56,7 @@
 
 ## Overview
 
-Lumina is a full-stack AI-powered chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide personalized, context-aware responses. The system is built with a modern microservices-oriented architecture, featuring a React frontend, Express.js backend, MongoDB for data persistence, Pinecone for vector storage, Neo4j AuraDB for knowledge graph traversal, and Google's Gemini AI for natural language processing. The hybrid retrieval pipeline combines vector similarity search with graph-based entity traversal, merging results for higher relevance and richer citations.
+SYNORA is a full-stack AI-powered chatbot application that leverages Retrieval-Augmented Generation (RAG) to provide personalized, context-aware responses. The system is built with a modern microservices-oriented architecture, featuring a React frontend, Express.js backend, MongoDB for data persistence, Pinecone for vector storage, Neo4j AuraDB for knowledge graph traversal, and Google's Gemini AI for natural language processing. The hybrid retrieval pipeline combines vector similarity search with graph-based entity traversal, merging results for higher relevance and richer citations.
 
 ### Key Architectural Principles
 
@@ -335,11 +335,11 @@ graph LR
 
 ### 3D / WebGL Presentation Layer
 
-The landing page renders a fully procedural WebGL scene through `client/src/components/three/LuminaScene.tsx`, built on React Three Fiber (`@react-three/fiber@^8.18.0`) over `three@^0.169.0`. The scene ships **no binary assets** -- every geometry and GLSL shader is generated in code, so the brand visuals add nothing to the asset payload and scale to any resolution.
+The landing page renders a fully procedural WebGL scene through `client/src/components/three/SYNORAScene.tsx`, built on React Three Fiber (`@react-three/fiber@^8.18.0`) over `three@^0.169.0`. The scene ships **no binary assets** -- every geometry and GLSL shader is generated in code, so the brand visuals add nothing to the asset payload and scale to any resolution.
 
 ```mermaid
 graph TD
-    subgraph "LuminaScene (R3F Canvas)"
+    subgraph "SYNORAScene (R3F Canvas)"
         Core["Icosahedron Core<br/>(simplex-noise vertex displacement)"]
         Fresnel["Iridescent Fresnel Shading"]
         Halo["Additive Fresnel Halo"]
@@ -391,7 +391,7 @@ The authentication surfaces share a dedicated component layer under `client/src/
 
 | Component | Responsibility |
 |-----------|----------------|
-| **AuthShell** | Branded glass-morphism layout that frames each auth page over the reused `LuminaScene` backdrop |
+| **AuthShell** | Branded glass-morphism layout that frames each auth page over the reused `SYNORAScene` backdrop |
 | **PasswordField** | Reusable password input with show/hide toggle |
 | **PasswordStrengthMeter** | Live strength feedback during signup / reset |
 | **styles** | Shared style helpers for consistent auth-surface theming |
@@ -963,7 +963,7 @@ Batch knowledge operations can be driven by a `manifest.json` file located in `s
 
 ## MCP Server Architecture
 
-The Lumina MCP Server is a standalone package (`mcp_server/`) that implements the [Model Context Protocol](https://modelcontextprotocol.io) — an open standard for connecting AI applications to external tools and data sources.
+The SYNORA MCP Server is a standalone package (`mcp_server/`) that implements the [Model Context Protocol](https://modelcontextprotocol.io) — an open standard for connecting AI applications to external tools and data sources.
 
 ### MCP Protocol Overview
 
@@ -978,7 +978,7 @@ graph TB
     end
 
     subgraph "MCP Server"
-        Server[LuminaMCPServer]
+        Server[SYNORAMCPServer]
         MW[Middleware Chain]
         Auth[Authentication]
         RL[Rate Limiter]
@@ -1032,12 +1032,12 @@ graph TB
 graph LR
     subgraph "Entry Points"
         CLI[__main__.py<br/>CLI Arguments]
-        Import[Direct Import<br/>LuminaMCPServer]
+        Import[Direct Import<br/>SYNORAMCPServer]
     end
 
     subgraph "Core"
         Config[ServerConfig<br/>YAML + Env Merge]
-        Server[LuminaMCPServer<br/>Handler Registration]
+        Server[SYNORAMCPServer<br/>Handler Registration]
     end
 
     subgraph "Registries"
@@ -1300,7 +1300,7 @@ flowchart TD
 | **Bound** | The merged context is capped at `MAX_MERGED_CHUNKS` (~30) so full-source injection cannot blow the prompt budget |
 | **Guarantee** | For a recognized topic the model always sees the complete canonical source, so topic completeness no longer depends on similarity ranking |
 
-A new knowledge source, `son-nguyen-career-timeline.txt`, backs the experience/career topic: a dense single-unit role-and-milestone timeline designed to be merged whole, so career queries return the full chronology rather than fragmented chunks.
+A new knowledge source, `bahmed-career-timeline.txt`, backs the experience/career topic: a dense single-unit role-and-milestone timeline designed to be merged whole, so career queries return the full chronology rather than fragmented chunks.
 
 #### Resilient Knowledge Sync
 
@@ -2143,7 +2143,7 @@ graph LR
 
 ### WebGL Scene Performance
 
-The procedural landing/auth backdrop (`LuminaScene.tsx`) is engineered to stay cheap and non-blocking on the critical path:
+The procedural landing/auth backdrop (`SYNORAScene.tsx`) is engineered to stay cheap and non-blocking on the critical path:
 
 | Optimization | Details |
 |-------------|---------|
@@ -2439,7 +2439,7 @@ graph LR
 
 ## Conclusion
 
-This architecture document provides a comprehensive overview of the Lumina AI Assistant application's design, from high-level system architecture to detailed component interactions. The system is designed with scalability, security, and maintainability in mind, leveraging modern cloud-native technologies and best practices.
+This architecture document provides a comprehensive overview of the SYNORA AI Assistant application's design, from high-level system architecture to detailed component interactions. The system is designed with scalability, security, and maintainability in mind, leveraging modern cloud-native technologies and best practices.
 
 ### Key Architectural Strengths
 
@@ -2465,5 +2465,5 @@ This architecture document provides a comprehensive overview of the Lumina AI As
 
 **Document Version**: 3.2
 **Last Updated**: 2026-06-15
-**Maintained By**: David Nguyen
+**Maintained By**: CHAKIR BAHMED
 **Contact**: hoangson091104@gmail.com

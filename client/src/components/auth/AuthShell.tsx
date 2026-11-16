@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { gradientTextSx } from "./styles";
 
-const LuminaScene = React.lazy(() => import("../three/LuminaScene"));
+const SYNORAScene = React.lazy(() => import("../three/SYNORAScene"));
 
 interface AuthShellProps {
   /** Small uppercase label above the title. */
@@ -23,7 +23,7 @@ interface AuthShellProps {
 
 /**
  * Shared branded layout for the auth surfaces (login, signup, reset). Renders
- * the Lumina 3D atmosphere behind a frosted glass card with a branded header,
+ * the SYNORA 3D atmosphere behind a frosted glass card with a branded header,
  * matching the landing page's visual language and adapting to the active theme.
  */
 const AuthShell: React.FC<AuthShellProps> = ({
@@ -60,8 +60,7 @@ const AuthShell: React.FC<AuthShellProps> = ({
   return (
     <Box
       sx={{
-        minHeight: "100vh",
-        "@supports (height: 100svh)": { minHeight: "100svh" },
+        minHeight: "100svh",
         background: pageBackground,
         display: "flex",
         flexDirection: "column",
@@ -81,7 +80,7 @@ const AuthShell: React.FC<AuthShellProps> = ({
         }}
       >
         <React.Suspense fallback={null}>
-          <LuminaScene
+          <SYNORAScene
             mode={isDark ? "dark" : "light"}
             colorA={theme.palette.primary.main}
             colorB={theme.palette.info.main}
@@ -120,7 +119,7 @@ const AuthShell: React.FC<AuthShellProps> = ({
           cursor: "pointer",
           p: 0.5,
         }}
-        aria-label="Go to Lumina home"
+        aria-label="Go to SYNORA home"
       >
         <Box
           sx={{
@@ -140,7 +139,7 @@ const AuthShell: React.FC<AuthShellProps> = ({
           variant="h6"
           sx={{ fontWeight: 800, ...gradientTextSx(theme) }}
         >
-          Lumina
+          SYNORA
         </Typography>
       </Box>
 

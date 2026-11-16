@@ -1,13 +1,13 @@
 ---
-name: lumina-frontend-ui
-description: Build, refine, and debug the React/Vite frontend for Lumina. Use when editing files under client/src or client/package.json, changing chat UX, landing page content, auth flows, routing, theme behavior, markdown rendering, animations, responsive layout, or frontend API wiring.
+name: SYNORA-frontend-ui
+description: Build, refine, and debug the React/Vite frontend for SYNORA. Use when editing files under client/src or client/package.json, changing chat UX, landing page content, auth flows, routing, theme behavior, markdown rendering, animations, responsive layout, or frontend API wiring.
 ---
 
-# Lumina Frontend UI
+# SYNORA Frontend UI
 
 ## Overview
 
-Use this skill for frontend tasks in `client/`. Keep changes aligned with Lumina's existing visual language: animated, polished, content-rich, and responsive rather than generic dashboard UI.
+Use this skill for frontend tasks in `client/`. Keep changes aligned with SYNORA's existing visual language: animated, polished, content-rich, and responsive rather than generic dashboard UI.
 
 ## Load The Right Reference
 
@@ -26,7 +26,7 @@ Use this skill for frontend tasks in `client/`. Keep changes aligned with Lumina
 ## Coordinate With The Backend Carefully
 
 - If a frontend change depends on a new request shape, endpoint, or response contract, update the backend and `openapi.yaml` in the same task when feasible.
-- If the bug is really caused by retrieval, citations, or chat response composition, switch to `lumina-rag-knowledge` or `lumina-backend-api` instead of forcing a frontend-only patch.
+- If the bug is really caused by retrieval, citations, or chat response composition, switch to `SYNORA-rag-knowledge` or `SYNORA-backend-api` instead of forcing a frontend-only patch.
 
 ## Finish With Real Validation
 

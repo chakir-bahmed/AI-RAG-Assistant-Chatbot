@@ -1,9 +1,9 @@
 ---
-name: lumina-agentic-mcp
+name: SYNORA-agentic-mcp
 description: Work on the Python multi-agent pipeline and MCP client in agentic_ai. Use when editing files under agentic_ai/, changing agent orchestration, configuration loading, MCP client connectivity, async execution flow, pipeline startup commands, or cloud deployment wrappers for the Python service.
 ---
 
-# Lumina Agentic Mcp
+# SYNORA Agentic Mcp
 
 ## Overview
 

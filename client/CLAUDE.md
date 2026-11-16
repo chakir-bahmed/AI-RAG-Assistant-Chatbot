@@ -9,7 +9,7 @@
 
 ## Rules
 
-- Preserve the existing branded, motion-heavy Lumina UI instead of replacing it with generic app-shell patterns.
+- Preserve the existing branded, motion-heavy SYNORA UI instead of replacing it with generic app-shell patterns.
 - Keep chat markdown, math, and source citation rendering intact when editing `ChatArea.tsx`.
 - Prefer focused edits to the page or component that owns the behavior rather than broad theme-wide rewrites.
 - When changing request or response shapes, coordinate with `server/` and `openapi.yaml`.

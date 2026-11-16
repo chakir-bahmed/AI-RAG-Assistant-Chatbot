@@ -179,7 +179,7 @@ create_new_task_definition() {
     # Get ECR repository URI
     local ecr_uri=$(aws ecr describe-repositories \
         --region "$AWS_REGION" \
-        --repository-names "lumina-${service}" \
+        --repository-names "SYNORA-${service}" \
         --query "repositories[0].repositoryUri" \
         --output text 2>/dev/null || echo "")
 

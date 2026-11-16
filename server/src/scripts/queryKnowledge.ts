@@ -40,28 +40,28 @@ async function searchKnowledge(query: string, topK = 3) {
 
 // Example usage 1
 (async () => {
-  const query = "Who is David Nguyen?";
+  const query = "Who is CHAKIR BAHMED?";
   const results = await searchKnowledge(query);
   console.log("🔹 Most relevant results:", results);
 })();
 
 // Example usage 2
 (async () => {
-  const query = "What projects has Son Nguyen worked on?";
+  const query = "What projects has  bahmed worked on?";
   const results = await searchKnowledge(query, 5);
   console.log("🔹 Most relevant results:", results);
 })();
 
 // Example usage 3
 (async () => {
-  const query = "What are Son Nguyen's skills?";
+  const query = "What are  bahmed's skills?";
   const results = await searchKnowledge(query, 10);
   console.log("🔹 Most relevant results:", results);
 })();
 
 // Example usage 4
 (async () => {
-  const query = "What is Lumina?";
+  const query = "What is SYNORA?";
   const results = await searchKnowledge(query, 1);
   console.log("🔹 Most relevant results:", results);
 })();

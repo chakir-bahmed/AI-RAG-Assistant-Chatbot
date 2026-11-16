@@ -1,5 +1,5 @@
 """
-MCP Client — connects to the standalone Lumina MCP Server and exposes
+MCP Client — connects to the standalone SYNORA MCP Server and exposes
 tool invocation, resource reading, and prompt retrieval.
 
 Supports both stdio (subprocess) and direct in-process connections.
@@ -19,7 +19,7 @@ _logger = get_logger("mcp_client")
 
 
 class MCPClient:
-    """Client that communicates with the Lumina MCP Server.
+    """Client that communicates with the SYNORA MCP Server.
 
     For the agentic pipeline, we use **direct in-process** invocation
     (bypassing stdio transport) for maximum performance.  The client

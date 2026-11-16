@@ -1,5 +1,5 @@
 """
-Core MCP Server for the Lumina platform.
+Core MCP Server for the SYNORA platform.
 
 Registers all tools, resources, and prompts, manages lifecycle,
 and handles both stdio and SSE transports.
@@ -29,8 +29,8 @@ from .prompts import registry as prompt_registry
 _logger = get_logger("server")
 
 
-class LuminaMCPServer:
-    """Enterprise-grade MCP server exposing Lumina AI capabilities."""
+class SYNORAMCPServer:
+    """Enterprise-grade MCP server exposing SYNORA AI capabilities."""
 
     def __init__(self, config_path: Optional[str] = None) -> None:
         self.cfg = load_config(config_path)
@@ -48,7 +48,7 @@ class LuminaMCPServer:
 
         self._register_handlers()
         _logger.info(
-            "Lumina MCP Server initialised — %d tools, %d resources, %d prompts",
+            "SYNORA MCP Server initialised — %d tools, %d resources, %d prompts",
             len(self._tool_handlers),
             len(self._resource_handlers),
             len(self._prompt_handlers),
@@ -121,7 +121,7 @@ class LuminaMCPServer:
     # ------------------------------------------------------------------
     async def run_stdio(self) -> None:
         """Run over stdin/stdout (default for CLI usage)."""
-        _logger.info("Starting Lumina MCP Server on stdio transport …")
+        _logger.info("Starting SYNORA MCP Server on stdio transport …")
         async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
             await self.server.run(
                 read_stream,
@@ -169,7 +169,7 @@ class LuminaMCPServer:
                 )
 
         app = Starlette(routes=[Route("/sse", endpoint=handle_sse)])
-        _logger.info("Starting Lumina MCP Server on SSE transport at %s:%s", host, port)
+        _logger.info("Starting SYNORA MCP Server on SSE transport at %s:%s", host, port)
         config = uvicorn.Config(app, host=host, port=port, log_level="info")
         server = uvicorn.Server(config)
         await server.serve()

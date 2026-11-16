@@ -5,5 +5,5 @@ output "alert_topic_arn" {
 
 output "dashboard_name" {
   description = "Name of the CloudWatch dashboard"
-  value       = aws_cloudwatch_dashboard.lumina.dashboard_name
+  value       = aws_cloudwatch_dashboard.SYNORA.dashboard_name
 }

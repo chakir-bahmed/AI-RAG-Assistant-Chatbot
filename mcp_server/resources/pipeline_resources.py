@@ -16,7 +16,7 @@ class PipelineConfigResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://pipeline/config",
+                uri="SYNORA://pipeline/config",
                 name="Pipeline Configuration",
                 description="Current agentic pipeline configuration",
                 mimeType="application/json",
@@ -36,7 +36,7 @@ class PipelineMetricsResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://pipeline/metrics",
+                uri="SYNORA://pipeline/metrics",
                 name="Pipeline Metrics",
                 description="Aggregated pipeline execution metrics",
                 mimeType="application/json",
@@ -57,7 +57,7 @@ class PipelineAgentsResource(ResourceHandler):
     def __init__(self) -> None:
         super().__init__(
             types.Resource(
-                uri="lumina://pipeline/agents",
+                uri="SYNORA://pipeline/agents",
                 name="Pipeline Agents",
                 description="List of agents in the agentic pipeline with their types and roles",
                 mimeType="application/json",

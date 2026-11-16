@@ -110,7 +110,7 @@ Rules:
 const QUERY_ENTITY_PROMPT = `Extract entity names mentioned in this question. Return ONLY a valid JSON array of strings.
 Examples:
 - "What projects use React?" -> ["React"]
-- "Tell me about David's work at LexisNexis" -> ["David", "LexisNexis"]
+- "Tell me about chakir's work at LexisNexis" -> ["chakir", "LexisNexis"]
 - "What skills does he have?" -> []
 If no specific entities, return [].`;
 

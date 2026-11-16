@@ -1,5 +1,5 @@
 """
-Logging utilities for the Lumina MCP Server.
+Logging utilities for the SYNORA MCP Server.
 """
 
 import logging

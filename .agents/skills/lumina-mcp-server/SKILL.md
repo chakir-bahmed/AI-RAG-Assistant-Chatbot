@@ -1,9 +1,9 @@
 ---
-name: lumina-mcp-server
-description: Develop and maintain the standalone Lumina MCP server. Use when editing files under mcp_server/, adding or modifying tools, resources, prompts, middleware, configuration, or transport behavior for the Model Context Protocol server.
+name: SYNORA-mcp-server
+description: Develop and maintain the standalone SYNORA MCP server. Use when editing files under mcp_server/, adding or modifying tools, resources, prompts, middleware, configuration, or transport behavior for the Model Context Protocol server.
 ---
 
-# Lumina MCP Server
+# SYNORA MCP Server
 
 ## Overview
 

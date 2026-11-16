@@ -1,4 +1,4 @@
-"""Middleware components for the Lumina MCP Server."""
+"""Middleware components for the SYNORA MCP Server."""
 
 from .auth import check_api_key
 from .rate_limiter import RateLimiter

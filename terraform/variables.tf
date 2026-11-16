@@ -14,7 +14,7 @@ variable "aws_region" {
 variable "domain_name" {
   description = "Domain name for the application"
   type        = string
-  default     = "lumina-ai.example.com"
+  default     = "SYNORA-ai.example.com"
 }
 
 variable "backend_domain" {
@@ -321,7 +321,7 @@ variable "pinecone_api_key" {
 variable "pinecone_index_name" {
   description = "Pinecone index name"
   type        = string
-  default     = "lumina-knowledge-base"
+  default     = "SYNORA-knowledge-base"
 }
 
 variable "webauthn_rp_id" {
@@ -332,7 +332,7 @@ variable "webauthn_rp_id" {
 variable "webauthn_rp_name" {
   description = "Human-readable Relying Party name shown in the browser passkey prompt."
   type        = string
-  default     = "Lumina AI"
+  default     = "SYNORA AI"
 }
 
 variable "webauthn_expected_origin" {

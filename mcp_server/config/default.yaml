@@ -1,9 +1,9 @@
-# Lumina MCP Server — Default Configuration
+# SYNORA MCP Server — Default Configuration
 
 server:
-  name: "lumina-mcp-server"
+  name: "SYNORA-mcp-server"
   version: "1.0.0"
-  description: "Enterprise-grade MCP server for the Lumina AI platform"
+  description: "Enterprise-grade MCP server for the SYNORA AI platform"
 
 tools:
   pipeline:

@@ -1,6 +1,6 @@
 ---
 name: rag-knowledge
-description: Use when changing Lumina's retrieval and grounded-answer workflow, including server/src/services/knowledgeBase.ts, Pinecone access, retrieval ranking, knowledge source models, citation generation, or debugging why responses are or are not grounded in indexed content.
+description: Use when changing SYNORA's retrieval and grounded-answer workflow, including server/src/services/knowledgeBase.ts, Pinecone access, retrieval ranking, knowledge source models, citation generation, or debugging why responses are or are not grounded in indexed content.
 ---
 
 # RAG Knowledge

@@ -1,11 +1,11 @@
-# Lumina Frontend 🚗
+# SYNORA Frontend 🚗
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
 
-This directory contains the **client** side of the **Lumina** project – a sleek, responsive React application that serves as the user interface for David Nguyen's Personal AI Assistant. The frontend allows users to interact with the AI, manage their conversation history, authenticate, and enjoy a modern, animated experience.
+This directory contains the **client** side of the **SYNORA** project – a sleek, responsive React application that serves as the user interface for CHAKIR BAHMED's Personal AI Assistant. The frontend allows users to interact with the AI, manage their conversation history, authenticate, and enjoy a modern, animated experience.
 
 ---
 
@@ -26,7 +26,7 @@ This directory contains the **client** side of the **Lumina** project – a slee
 
 ## Overview
 
-The Lumina frontend is built with **React** and **TypeScript** and styled using **Material‑UI (MUI)**. It provides a dynamic, modern user interface featuring:
+The SYNORA frontend is built with **React** and **TypeScript** and styled using **Material‑UI (MUI)**. It provides a dynamic, modern user interface featuring:
 
 - A responsive design adaptable to all screen sizes
 - Smooth animations and theme toggling (dark/light mode)
@@ -39,7 +39,7 @@ The frontend seamlessly integrates with the backend to provide functionalities s
 
 ## Key Features
 
-- **AI Chat Interface:** Interact with an intelligent assistant that answers questions about David Nguyen and various topics.
+- **AI Chat Interface:** Interact with an intelligent assistant that answers questions about CHAKIR BAHMED and various topics.
 - **3D Landing Hero:** A fully procedural WebGL background (Three.js + React Three Fiber) renders a noise-displaced, iridescent fresnel-shaded "core," an additive glow halo, a ~6,000-point GPU particle starfield, orbiting knowledge-node accents, and glow rings — all geometry and GLSL generated in code with no binary assets. It is theme-aware, reacts to mouse parallax and scroll, scales across mobile/tablet/desktop tiers, respects `prefers-reduced-motion`, falls back gracefully when WebGL is unavailable, and is lazy-loaded into its own chunk. The same scene is reused as the ambient backdrop on the auth pages.
 - **User Authentication:** Sign up, log in, and manage your account with JWT-based authentication.
 - **Passkey (WebAuthn) Sign-in:** Passwordless login with Touch ID, Face ID, Windows Hello, or a phone via QR. Supports discoverable (usernameless) credentials, an optional post-signup enrollment prompt, and a `/passkeys` management page for adding, naming, and revoking credentials. Email + password remains as a fallback.
@@ -146,7 +146,7 @@ client/
     │   ├── Sidebar.tsx
     │   ├── ChatArea.tsx
     │   ├── three/            # Procedural WebGL scene (lazy-loaded, no binary assets)
-    │   │   └── LuminaScene.tsx
+    │   │   └── SYNORAScene.tsx
     │   └── auth/             # Shared branded auth UI system
     │       ├── AuthShell.tsx           # Glass layout reusing the 3D backdrop
     │       ├── PasswordField.tsx       # Input with show/hide toggle
@@ -200,4 +200,4 @@ This project is licensed under the [MIT License](../LICENSE).
 
 ---
 
-Thank you for checking out the Lumina frontend! If you have any questions or feedback, feel free to reach out. Happy coding! 🚗
+Thank you for checking out the SYNORA frontend! If you have any questions or feedback, feel free to reach out. Happy coding! 🚗

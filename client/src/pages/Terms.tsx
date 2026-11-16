@@ -17,8 +17,8 @@ import { gradientTextSx, brandButtonSx } from "../components/auth/styles";
 /**
  * TermsPage Component
  *
- * This page displays the comprehensive Terms and Conditions for Lumina AI.
- * Lumina AI is designed to provide dynamic insights into Son (David) Nguyen's professional background, skills, projects, and accomplishments.
+ * This page displays the comprehensive Terms and Conditions for SYNORA AI.
+ * SYNORA AI is designed to provide dynamic insights into  (chakir) bahmed's professional background, skills, projects, and accomplishments.
  */
 const TermsPage: React.FC = () => {
   const theme = useTheme();
@@ -128,7 +128,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
               Please read these Terms and Conditions carefully before using
-              Lumina AI.
+              SYNORA AI.
             </Typography>
             <Typography
               variant="caption"
@@ -174,28 +174,28 @@ const TermsPage: React.FC = () => {
               1. Acceptance of Terms
             </Typography>
             <Typography variant="body1" paragraph>
-              By accessing and using Lumina AI, you agree to be bound by these
+              By accessing and using SYNORA AI, you agree to be bound by these
               Terms and Conditions, as well as any updates or modifications that
-              may be made from time to time. Lumina AI is designed to provide
-              dynamic insights into Son (David) Nguyen's professional
+              may be made from time to time. SYNORA AI is designed to provide
+              dynamic insights into  (chakir) bahmed's professional
               background, skills, projects, and accomplishments. If you do not
               agree with these terms, please discontinue use of the service
               immediately.
             </Typography>
 
-            {/* 2. Use of Lumina AI */}
+            {/* 2. Use of SYNORA AI */}
             <Typography variant="h6" gutterBottom sx={sectionHeadingSx}>
-              2. Use of Lumina AI
+              2. Use of SYNORA AI
             </Typography>
             <Typography variant="body1" paragraph>
-              Lumina AI is provided for informational and non-commercial
+              SYNORA AI is provided for informational and non-commercial
               purposes only. The service offers dynamic, data-driven insights
-              into Son (David) Nguyen's professional journey, including but not
+              into  (chakir) bahmed's professional journey, including but not
               limited to his technical skills, project contributions, and career
               milestones.
             </Typography>
             <Typography variant="body1" paragraph>
-              You agree to use Lumina AI responsibly and in compliance with
+              You agree to use SYNORA AI responsibly and in compliance with
               these Terms. Prohibited uses include:
             </Typography>
             <ul>
@@ -222,7 +222,7 @@ const TermsPage: React.FC = () => {
               <li>
                 <Typography variant="body1">
                   Overloading, disrupting, or interfering with the performance
-                  of Lumina AI through automated scripts or excessive requests.
+                  of SYNORA AI through automated scripts or excessive requests.
                 </Typography>
               </li>
             </ul>
@@ -232,7 +232,7 @@ const TermsPage: React.FC = () => {
               3. User Conduct and Responsibilities
             </Typography>
             <Typography variant="body1" paragraph>
-              Users are expected to interact with Lumina AI in a respectful and
+              Users are expected to interact with SYNORA AI in a respectful and
               constructive manner. All communications must adhere to community
               standards and applicable laws. You are responsible for any content
               you submit or share while using the service.
@@ -248,8 +248,8 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               All content, design elements, user interface components, and
-              underlying code of Lumina AI are the intellectual property of Son
-              (David) Nguyen and its licensors. Unauthorized reproduction,
+              underlying code of SYNORA AI are the intellectual property of 
+              (chakir) bahmed and its licensors. Unauthorized reproduction,
               distribution, or creation of derivative works is strictly
               prohibited. Please respect the intellectual property rights of the
               service and its creator.
@@ -261,7 +261,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               We are dedicated to protecting your privacy and ensuring the
-              security of your data. Lumina AI encrypts all user interactions
+              security of your data. SYNORA AI encrypts all user interactions
               and employs industry-standard security measures. Please review our
               Privacy Policy for a detailed explanation of how your data is
               collected, stored, and used.
@@ -269,7 +269,7 @@ const TermsPage: React.FC = () => {
             <Typography variant="body1" paragraph>
               Although we take reasonable steps to safeguard your information,
               no method of data transmission over the internet is entirely
-              secure. By using Lumina AI, you acknowledge and accept the
+              secure. By using SYNORA AI, you acknowledge and accept the
               inherent risks associated with online data exchange.
             </Typography>
 
@@ -278,7 +278,7 @@ const TermsPage: React.FC = () => {
               6. Modifications to the Terms and Service
             </Typography>
             <Typography variant="body1" paragraph>
-              Lumina AI reserves the right to update or modify these Terms and
+              SYNORA AI reserves the right to update or modify these Terms and
               Conditions at any time without prior notice. It is your
               responsibility to review this page periodically for any changes.
               Continued use of the service after modifications have been made
@@ -290,9 +290,9 @@ const TermsPage: React.FC = () => {
               7. Limitation of Liability
             </Typography>
             <Typography variant="body1" paragraph>
-              Lumina AI is provided on an "as is" basis, with no warranties or
-              guarantees of any kind, either express or implied. Son (David)
-              Nguyen, his affiliates, and licensors shall not be liable for any
+              SYNORA AI is provided on an "as is" basis, with no warranties or
+              guarantees of any kind, either express or implied.  (chakir)
+              bahmed, his affiliates, and licensors shall not be liable for any
               direct, indirect, incidental, consequential, or punitive damages
               arising from your use or inability to use this service.
             </Typography>
@@ -306,8 +306,8 @@ const TermsPage: React.FC = () => {
               8. Indemnification
             </Typography>
             <Typography variant="body1" paragraph>
-              You agree to indemnify, defend, and hold harmless Son (David)
-              Nguyen, his affiliates, officers, directors, employees, and agents
+              You agree to indemnify, defend, and hold harmless  (chakir)
+              bahmed, his affiliates, officers, directors, employees, and agents
               from and against any claims, damages, obligations, losses,
               liabilities, costs, or expenses (including reasonable attorneys'
               fees) arising from:
@@ -315,7 +315,7 @@ const TermsPage: React.FC = () => {
             <ul>
               <li>
                 <Typography variant="body1">
-                  Your use of Lumina AI or violation of these Terms and
+                  Your use of SYNORA AI or violation of these Terms and
                   Conditions.
                 </Typography>
               </li>
@@ -333,7 +333,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               In the event of any dispute arising from these Terms or your use
-              of Lumina AI, you agree to first attempt to resolve the dispute
+              of SYNORA AI, you agree to first attempt to resolve the dispute
               informally by contacting our support team. Should an informal
               resolution fail, any unresolved disputes will be submitted to
               binding arbitration in accordance with the rules of the applicable
@@ -351,7 +351,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               These Terms and Conditions shall be governed by and construed in
-              accordance with the laws of the jurisdiction in which Lumina AI is
+              accordance with the laws of the jurisdiction in which SYNORA AI is
               offered. Any disputes arising from these terms shall be subject to
               the exclusive jurisdiction of the appropriate courts in that
               jurisdiction.
@@ -362,7 +362,7 @@ const TermsPage: React.FC = () => {
               11. Termination of Access
             </Typography>
             <Typography variant="body1" paragraph>
-              Lumina AI reserves the right to suspend or terminate your access
+              SYNORA AI reserves the right to suspend or terminate your access
               to the service at any time, with or without notice, if you are
               found to be in violation of these Terms and Conditions. Upon
               termination, all rights granted to you will immediately cease.
@@ -373,13 +373,13 @@ const TermsPage: React.FC = () => {
               12. Account Security and User Data
             </Typography>
             <Typography variant="body1" paragraph>
-              If you create an account with Lumina AI, you are responsible for
+              If you create an account with SYNORA AI, you are responsible for
               maintaining the confidentiality of your login credentials and any
               other sensitive information. You agree to notify us immediately of
               any unauthorized access to your account.
             </Typography>
             <Typography variant="body1" paragraph>
-              Additionally, while Lumina AI stores conversation history for
+              Additionally, while SYNORA AI stores conversation history for
               authenticated users, all such data is encrypted and handled
               according to our privacy policies.
             </Typography>
@@ -390,7 +390,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               While we strive to maintain continuous and uninterrupted access to
-              Lumina AI, there may be periods of scheduled or unscheduled
+              SYNORA AI, there may be periods of scheduled or unscheduled
               downtime for maintenance, updates, or unforeseen issues. We will
               use reasonable efforts to notify users of significant service
               disruptions.
@@ -401,7 +401,7 @@ const TermsPage: React.FC = () => {
               14. Third-Party Services and Integrations
             </Typography>
             <Typography variant="body1" paragraph>
-              Lumina AI leverages several third-party technologies and services
+              SYNORA AI leverages several third-party technologies and services
               (such as the Gemini API, Pinecone vector database, and various
               open-source libraries) to deliver its functionalities. Your use of
               these third-party services is subject to the terms and conditions
@@ -414,7 +414,7 @@ const TermsPage: React.FC = () => {
               15. Disclaimer of Endorsements
             </Typography>
             <Typography variant="body1" paragraph>
-              Any opinions, advice, or statements provided by Lumina AI are
+              Any opinions, advice, or statements provided by SYNORA AI are
               generated by advanced algorithms and are for informational
               purposes only. They do not constitute professional or legal
               advice. Users should exercise their own judgment and seek
@@ -427,7 +427,7 @@ const TermsPage: React.FC = () => {
             </Typography>
             <Typography variant="body1" paragraph>
               We welcome your comments, suggestions, and feedback regarding
-              Lumina AI. If you have any questions, concerns, or require further
+              SYNORA AI. If you have any questions, concerns, or require further
               clarification about these Terms and Conditions, please contact us
               at our support email at:{" "}
               <MuiLink href="mailto:hoangson091104@gmail.com">
@@ -444,11 +444,11 @@ const TermsPage: React.FC = () => {
 
             {/* 17. Thank You */}
             <Typography variant="body1" paragraph>
-              Thank you for using Lumina AI. We hope you find the service
-              informative and engaging! 🚀 For more information about Son
-              (David) Nguyen, please visit my personal website at{" "}
-              <MuiLink href="https://sonnguyenhoang.com/">
-                sonnguyenhoang.com
+              Thank you for using SYNORA AI. We hope you find the service
+              informative and engaging! 🚀 For more information about 
+              (chakir) bahmed, please visit my personal website at{" "}
+              <MuiLink href="https://sonbahmedhoang.com/">
+                sonbahmedhoang.com
               </MuiLink>
               . Please enjoy your experience! 🌐
             </Typography>

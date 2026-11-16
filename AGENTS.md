@@ -1,8 +1,8 @@
-# Lumina Codex Guide
+# SYNORA Codex Guide
 
 ## Repository Overview
 
-Lumina is a full-stack AI-powered chatbot with RAG, a standalone MCP server, and a multi-agent pipeline:
+SYNORA is a full-stack AI-powered chatbot with RAG, a standalone MCP server, and a multi-agent pipeline:
 
 - **`client/`** — React 18 + Vite + MUI + Framer Motion frontend with branded chat UI, markdown/math rendering, and SSE streaming.
 - **`server/`** — Express + TypeScript API handling auth, conversations, chat, Gemini AI, Pinecone vector search, and knowledge CLI.
@@ -21,14 +21,14 @@ Lumina is a full-stack AI-powered chatbot with RAG, a standalone MCP server, and
 ## Working Rules
 
 - Read the matching skill in `.agents/skills/` when the task clearly maps to a subsystem:
-  - `lumina-frontend-ui` for React/Vite frontend work.
-  - `lumina-backend-api` for Express backend and API work.
-  - `lumina-rag-knowledge` for RAG, knowledge ingestion, and citation work.
-  - `lumina-agentic-mcp` for Python pipeline and MCP client work.
-  - `lumina-mcp-server` for standalone MCP server development.
-  - `lumina-infra-deploy` for Terraform, Docker, and deployment work.
+  - `SYNORA-frontend-ui` for React/Vite frontend work.
+  - `SYNORA-backend-api` for Express backend and API work.
+  - `SYNORA-rag-knowledge` for RAG, knowledge ingestion, and citation work.
+  - `SYNORA-agentic-mcp` for Python pipeline and MCP client work.
+  - `SYNORA-mcp-server` for standalone MCP server development.
+  - `SYNORA-infra-deploy` for Terraform, Docker, and deployment work.
 - Use `README.md`, `ARCHITECTURE.md`, `RAG.md`, `DEPLOYMENT.md`, and `openapi.yaml` as primary references before broad changes.
-- Preserve Lumina's branded frontend personality — do not flatten into generic boilerplate.
+- Preserve SYNORA's branded frontend personality — do not flatten into generic boilerplate.
 - Keep knowledge management CLI-driven unless the user explicitly requests a product change.
 - Preserve grounded answers and inline citations when modifying retrieval behavior.
 - Update `openapi.yaml` when API request or response contracts change.

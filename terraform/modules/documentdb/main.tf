@@ -3,7 +3,7 @@ locals {
 }
 
 resource "aws_security_group" "documentdb" {
-  name        = "${var.environment}-lumina-documentdb-sg"
+  name        = "${var.environment}-SYNORA-documentdb-sg"
   description = "Security group for DocumentDB cluster"
   vpc_id      = var.vpc_id
 
@@ -16,22 +16,22 @@ resource "aws_security_group" "documentdb" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-documentdb-sg"
+    Name = "${var.environment}-SYNORA-documentdb-sg"
   }
 }
 
 resource "aws_docdb_subnet_group" "this" {
-  name       = "${var.environment}-lumina-documentdb-subnets"
+  name       = "${var.environment}-SYNORA-documentdb-subnets"
   subnet_ids = var.private_subnet_ids
 
   tags = {
-    Name = "${var.environment}-lumina-documentdb-subnets"
+    Name = "${var.environment}-SYNORA-documentdb-subnets"
   }
 }
 
 resource "aws_docdb_cluster_parameter_group" "this" {
   family = "docdb5.0"
-  name   = "${var.environment}-lumina-documentdb-params"
+  name   = "${var.environment}-SYNORA-documentdb-params"
 
   parameter {
     name  = "tls"
@@ -44,12 +44,12 @@ resource "aws_docdb_cluster_parameter_group" "this" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-documentdb-params"
+    Name = "${var.environment}-SYNORA-documentdb-params"
   }
 }
 
 resource "aws_docdb_cluster" "this" {
-  cluster_identifier              = "${var.environment}-lumina-documentdb"
+  cluster_identifier              = "${var.environment}-SYNORA-documentdb"
   engine                          = "docdb"
   master_username                 = var.master_username
   master_password                 = var.master_password
@@ -66,20 +66,20 @@ resource "aws_docdb_cluster" "this" {
   enabled_cloudwatch_logs_exports = ["audit", "profiler"]
 
   tags = {
-    Name = "${var.environment}-lumina-documentdb"
+    Name = "${var.environment}-SYNORA-documentdb"
   }
 }
 
 resource "aws_docdb_cluster_instance" "this" {
   count              = var.cluster_size
-  identifier         = "${var.environment}-lumina-documentdb-${count.index + 1}"
+  identifier         = "${var.environment}-SYNORA-documentdb-${count.index + 1}"
   cluster_identifier = aws_docdb_cluster.this.id
   instance_class     = var.instance_class
   apply_immediately  = var.apply_immediately
   promotion_tier     = count.index + 1
 
   tags = {
-    Name = "${var.environment}-lumina-documentdb-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-documentdb-${count.index + 1}"
   }
 }
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Starting Lumina development servers..."
+echo "Starting SYNORA development servers..."
 
 # Start backend
 echo "=> Starting backend..."

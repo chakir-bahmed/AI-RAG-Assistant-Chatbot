@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-Lumina currently uses Pinecone (vector similarity) as its sole RAG retrieval backend. This design adds Neo4j AuraDB as a parallel graph retrieval path, enabling entity-relationship traversal alongside semantic search. Both paths run simultaneously, results are merged, and citations remain unified.
+SYNORA currently uses Pinecone (vector similarity) as its sole RAG retrieval backend. This design adds Neo4j AuraDB as a parallel graph retrieval path, enabling entity-relationship traversal alongside semantic search. Both paths run simultaneously, results are merged, and citations remain unified.
 
 ### Key Decisions
 

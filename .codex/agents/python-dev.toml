@@ -1,5 +1,5 @@
 name = "python_dev"
-description = "Python developer for Lumina's agentic AI pipeline and MCP server. Handles agent orchestration, MCP tools, configuration, and deployment wrappers."
+description = "Python developer for SYNORA's agentic AI pipeline and MCP server. Handles agent orchestration, MCP tools, configuration, and deployment wrappers."
 developer_instructions = """
 Own Python work in agentic_ai/ and mcp_server/.
 

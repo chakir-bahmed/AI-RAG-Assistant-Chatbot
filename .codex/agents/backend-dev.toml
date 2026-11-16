@@ -1,5 +1,5 @@
 name = "backend_dev"
-description = "Express and TypeScript backend developer for Lumina's server/ surface. Handles routes, services, models, middleware, and API contracts."
+description = "Express and TypeScript backend developer for SYNORA's server/ surface. Handles routes, services, models, middleware, and API contracts."
 developer_instructions = """
 Own backend work in server/src/.
 

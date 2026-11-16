@@ -5,7 +5,7 @@ resource "aws_vpc" "main" {
   enable_dns_support   = true
 
   tags = {
-    Name = "${var.environment}-lumina-vpc"
+    Name = "${var.environment}-SYNORA-vpc"
   }
 }
 
@@ -14,7 +14,7 @@ resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name = "${var.environment}-lumina-igw"
+    Name = "${var.environment}-SYNORA-igw"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "${var.environment}-lumina-public-subnet-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-public-subnet-${count.index + 1}"
     Type = "Public"
   }
 }
@@ -42,7 +42,7 @@ resource "aws_subnet" "private" {
   availability_zone = var.availability_zones[count.index]
 
   tags = {
-    Name = "${var.environment}-lumina-private-subnet-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-private-subnet-${count.index + 1}"
     Type = "Private"
   }
 }
@@ -54,7 +54,7 @@ resource "aws_eip" "nat" {
   domain = "vpc"
 
   tags = {
-    Name = "${var.environment}-lumina-nat-eip-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-nat-eip-${count.index + 1}"
   }
 
   depends_on = [aws_internet_gateway.main]
@@ -68,7 +68,7 @@ resource "aws_nat_gateway" "main" {
   subnet_id     = aws_subnet.public[count.index].id
 
   tags = {
-    Name = "${var.environment}-lumina-nat-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-nat-${count.index + 1}"
   }
 
   depends_on = [aws_internet_gateway.main]
@@ -84,7 +84,7 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-public-rt"
+    Name = "${var.environment}-SYNORA-public-rt"
   }
 }
 
@@ -100,7 +100,7 @@ resource "aws_route_table" "private" {
   }
 
   tags = {
-    Name = "${var.environment}-lumina-private-rt-${count.index + 1}"
+    Name = "${var.environment}-SYNORA-private-rt-${count.index + 1}"
   }
 }
 
@@ -128,21 +128,21 @@ resource "aws_flow_log" "main" {
   vpc_id          = aws_vpc.main.id
 
   tags = {
-    Name = "${var.environment}-lumina-vpc-flow-log"
+    Name = "${var.environment}-SYNORA-vpc-flow-log"
   }
 }
 
 resource "aws_cloudwatch_log_group" "flow_log" {
-  name              = "/aws/vpc/${var.environment}-lumina"
+  name              = "/aws/vpc/${var.environment}-SYNORA"
   retention_in_days = 7
 
   tags = {
-    Name = "${var.environment}-lumina-vpc-flow-log"
+    Name = "${var.environment}-SYNORA-vpc-flow-log"
   }
 }
 
 resource "aws_iam_role" "flow_log" {
-  name = "${var.environment}-lumina-vpc-flow-log-role"
+  name = "${var.environment}-SYNORA-vpc-flow-log-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -159,7 +159,7 @@ resource "aws_iam_role" "flow_log" {
 }
 
 resource "aws_iam_role_policy" "flow_log" {
-  name = "${var.environment}-lumina-vpc-flow-log-policy"
+  name = "${var.environment}-SYNORA-vpc-flow-log-policy"
   role = aws_iam_role.flow_log.id
 
   policy = jsonencode({

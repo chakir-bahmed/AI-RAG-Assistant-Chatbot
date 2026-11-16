@@ -34,7 +34,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import { motion } from "framer-motion";
 
-const LuminaScene = React.lazy(() => import("../components/three/LuminaScene"));
+const SYNORAScene = React.lazy(() => import("../components/three/SYNORAScene"));
 
 const LandingPage: React.FC = () => {
   const theme = useTheme();
@@ -192,7 +192,7 @@ const LandingPage: React.FC = () => {
     },
   };
 
-  // Entrance reveal for the floating hero cards (Lumina Reply / Retrieval /
+  // Entrance reveal for the floating hero cards (SYNORA Reply / Retrieval /
   // Pipeline). The reveal lives on an outer wrapper so each card's continuous
   // float animation keeps running on the inner element undisturbed.
   const heroVisualVariants = {
@@ -222,7 +222,7 @@ const LandingPage: React.FC = () => {
   };
 
   const heroBadges = [
-    "About David Nguyen",
+    "About CHAKIR BAHMED",
     "Resume-ready answers",
     "Project deep dives",
     "Private by design",
@@ -345,7 +345,7 @@ const LandingPage: React.FC = () => {
   const testimonials = [
     {
       quote:
-        "The assistant gave me a clear summary of David's AI work in under a minute.",
+        "The assistant gave me a clear summary of chakir's AI work in under a minute.",
       name: "Hiring Manager",
       role: "Applied AI Team",
     },
@@ -357,7 +357,7 @@ const LandingPage: React.FC = () => {
     },
     {
       quote:
-        "It was the quickest way to understand David's background before our call.",
+        "It was the quickest way to understand chakir's background before our call.",
       name: "Recruiter",
       role: "Tech Talent",
     },
@@ -388,14 +388,14 @@ const LandingPage: React.FC = () => {
 
   const promptGallery = [
     [
-      "Give me David Nguyen's 30-second intro",
+      "Give me CHAKIR BAHMED's 30-second intro",
       "What are his core strengths and focus areas?",
-      "Summarize David Nguyen's AI projects",
+      "Summarize CHAKIR BAHMED's AI projects",
       "Which stacks does he use most?",
       "What outcomes did his work drive?",
     ],
     [
-      "Draft a recruiter email to David Nguyen",
+      "Draft a recruiter email to CHAKIR BAHMED",
       "What roles is he a fit for right now?",
       "Summarize his most recent project",
       "How can I contact or connect with him?",
@@ -504,7 +504,7 @@ const LandingPage: React.FC = () => {
           sx={{ position: "absolute", inset: 0 }}
         >
           <React.Suspense fallback={null}>
-            <LuminaScene
+            <SYNORAScene
               mode={theme.palette.mode === "dark" ? "dark" : "light"}
               colorA={theme.palette.primary.main}
               colorB={theme.palette.info.main}
@@ -551,7 +551,7 @@ const LandingPage: React.FC = () => {
                   mb: 2,
                 }}
               >
-                DAVID NGUYEN'S PERSONAL AI ASSISTANT
+                CHAKIR BAHMED'S PERSONAL AI ASSISTANT
               </Typography>
               <Box component={motion.div} variants={heroItemVariants}>
                 <Typography
@@ -563,7 +563,7 @@ const LandingPage: React.FC = () => {
                     mb: 2,
                   }}
                 >
-                  Meet David Nguyen&apos;s{" "}
+                  Meet CHAKIR BAHMED&apos;s{" "}
                   <Box
                     component="span"
                     sx={{
@@ -583,7 +583,7 @@ const LandingPage: React.FC = () => {
                   color={secondaryTextColor}
                   sx={{ mb: 3, maxWidth: 520 }}
                 >
-                  Ask about my background, projects, and impact. Lumina runs a
+                  Ask about my background, projects, and impact. SYNORA runs a
                   hybrid RAG pipeline — fusing Pinecone vector search with a
                   Neo4j knowledge graph, orchestrated through LangChain — to
                   deliver sourced answers in seconds.
@@ -617,7 +617,7 @@ const LandingPage: React.FC = () => {
                     },
                   }}
                 >
-                  Ask about David
+                  Ask about chakir
                 </Button>
                 <Button
                   variant="outlined"
@@ -769,10 +769,10 @@ const LandingPage: React.FC = () => {
                     variant="overline"
                     sx={{ letterSpacing: "0.2em", color: secondaryTextColor }}
                   >
-                    Lumina Reply
+                    SYNORA Reply
                   </Typography>
                   <Typography variant="body1" sx={{ fontWeight: 600, mt: 1 }}>
-                    “Here&rsquo;s a concise summary of David Nguyen&rsquo;s
+                    “Here&rsquo;s a concise summary of CHAKIR BAHMED&rsquo;s
                     recent projects and impact...”
                   </Typography>
                   <Typography
@@ -1140,7 +1140,7 @@ const LandingPage: React.FC = () => {
         >
           <Box component={motion.div} variants={fadeUpVariant}>
             <Typography variant="overline" align="center" sx={sectionEyebrowSx}>
-              Why Lumina
+              Why SYNORA
             </Typography>
           </Box>
           <Box component={motion.div} variants={fadeUpVariant}>
@@ -1349,7 +1349,7 @@ const LandingPage: React.FC = () => {
                     </Typography>
                     <Typography variant="body2" color={secondaryTextColor}>
                       A graph of entities and relationships — projects, skills,
-                      roles — lets Lumina follow real connections, not just
+                      roles — lets SYNORA follow real connections, not just
                       keywords.
                     </Typography>
                   </CardContent>
@@ -1413,7 +1413,7 @@ const LandingPage: React.FC = () => {
               color={secondaryTextColor}
               sx={{ mb: 4, maxWidth: 640, mx: "auto" }}
             >
-              From quick intros to deep project dives, Lumina adapts to the
+              From quick intros to deep project dives, SYNORA adapts to the
               depth and tone you need.
             </Typography>
           </Box>
@@ -1551,7 +1551,7 @@ const LandingPage: React.FC = () => {
                   </Box>
                   <CardContent sx={{ textAlign: "left" }}>
                     <Typography variant="h6" gutterBottom>
-                      1&nbsp;&nbsp;•&nbsp;&nbsp;Ask About David
+                      1&nbsp;&nbsp;•&nbsp;&nbsp;Ask About chakir
                     </Typography>
                     <Typography variant="body2" color={secondaryTextColor}>
                       Ask about my work, projects, or focus areas.
@@ -1579,7 +1579,7 @@ const LandingPage: React.FC = () => {
                       2&nbsp;&nbsp;•&nbsp;&nbsp;Retrieve &amp; Ground
                     </Typography>
                     <Typography variant="body2" color={secondaryTextColor}>
-                      Lumina pulls relevant context from my knowledge base and
+                      SYNORA pulls relevant context from my knowledge base and
                       enriches it with RAG.
                     </Typography>
                   </CardContent>
@@ -1622,7 +1622,7 @@ const LandingPage: React.FC = () => {
         >
           <Box component={motion.div} variants={fadeUpVariant}>
             <Typography variant="overline" align="center" sx={sectionEyebrowSx}>
-              Built by David
+              Built by chakir
             </Typography>
           </Box>
           <Box component={motion.div} variants={fadeUpVariant}>
@@ -1756,7 +1756,7 @@ const LandingPage: React.FC = () => {
               color={secondaryTextColor}
               sx={{ mb: 4, maxWidth: 640, mx: "auto" }}
             >
-              Lumina keeps answers grounded while protecting your questions.
+              SYNORA keeps answers grounded while protecting your questions.
             </Typography>
           </Box>
 
@@ -1893,7 +1893,7 @@ const LandingPage: React.FC = () => {
               color={secondaryTextColor}
               sx={{ mb: 4, maxWidth: 640, mx: "auto" }}
             >
-              People use Lumina to understand my background without
+              People use SYNORA to understand my background without
               back-and-forth.
             </Typography>
           </Box>
@@ -2076,12 +2076,12 @@ const LandingPage: React.FC = () => {
             <Accordion sx={accordionStyle}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  How does Lumina differ from ChatGPT or Bard?
+                  How does SYNORA differ from ChatGPT or Bard?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography variant="body2" color={secondaryTextColor}>
-                  Lumina is focused on David Nguyen and leverages a curated
+                  SYNORA is focused on CHAKIR BAHMED and leverages a curated
                   knowledge base plus hybrid RAG — Pinecone vector search fused
                   with a Neo4j knowledge graph, orchestrated by LangChain — to
                   tailor answers. You still get general knowledge, but with
@@ -2094,7 +2094,7 @@ const LandingPage: React.FC = () => {
             <Accordion sx={accordionStyle}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  Can I use Lumina without creating an account?
+                  Can I use SYNORA without creating an account?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -2125,12 +2125,12 @@ const LandingPage: React.FC = () => {
             <Accordion sx={accordionStyle}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  How can I contribute to Lumina?
+                  How can I contribute to SYNORA?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography variant="body2" color={secondaryTextColor}>
-                  Lumina is open source! Check out the{" "}
+                  SYNORA is open source! Check out the{" "}
                   <Box
                     component="a"
                     href="https://github.com/hoangsonww/AI-RAG-Assistant-Chatbot"
@@ -2151,12 +2151,12 @@ const LandingPage: React.FC = () => {
             <Accordion sx={accordionStyle}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  What technologies power Lumina?
+                  What technologies power SYNORA?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography variant="body2" color={secondaryTextColor}>
-                  Lumina is built with a modern stack including{" "}
+                  SYNORA is built with a modern stack including{" "}
                   <strong>React</strong> for the frontend,{" "}
                   <strong>Node.js</strong> and <strong>Express</strong> for the
                   backend, <strong>MongoDB</strong> for data storage,{" "}
@@ -2171,13 +2171,13 @@ const LandingPage: React.FC = () => {
             <Accordion sx={accordionStyle}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
-                  What can I do with Lumina?
+                  What can I do with SYNORA?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography variant="body2" color={secondaryTextColor}>
-                  You can ask about David Nguyen&rsquo;s background, projects,
-                  skills, and interests. Lumina is designed to provide
+                  You can ask about CHAKIR BAHMED&rsquo;s background, projects,
+                  skills, and interests. SYNORA is designed to provide
                   personalized, context-rich answers and save your chat history
                   for future reference. Feel free to create an account to save
                   your conversations and access them later.
@@ -2264,7 +2264,7 @@ const LandingPage: React.FC = () => {
               Get Started
             </Typography>
             <Typography variant="h4" gutterBottom sx={sectionTitleSx}>
-              Start with David&apos;s assistant
+              Start with chakir&apos;s assistant
             </Typography>
             <Typography
               variant="subtitle1"
@@ -2363,10 +2363,10 @@ const LandingPage: React.FC = () => {
           © {new Date().getFullYear()}{" "}
           <Box
             component="a"
-            href="https://sonnguyenhoang.com"
+            href="https://sonbahmedhoang.com"
             sx={animatedLinkStyle}
           >
-            David Nguyen&rsquo;s
+            CHAKIR BAHMED&rsquo;s
           </Box>{" "}
           AI Assistant. All rights reserved.
         </Typography>

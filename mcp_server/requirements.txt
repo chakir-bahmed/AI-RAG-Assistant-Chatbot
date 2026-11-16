@@ -1,4 +1,4 @@
-# Lumina MCP Server Dependencies
+# SYNORA MCP Server Dependencies
 
 # MCP SDK
 mcp>=0.1.0

@@ -1,10 +1,10 @@
-# My Personal AI Assistant Project - Lumina 👨🏻‍💻
+# My Personal AI Assistant Project - SYNORA 👨🏻‍💻
 
-**David Nguyen's Personal AI Assistant** - **Lumina** is a full-stack web application that allows users to ask questions about David Nguyen, as well as any other topics, and receive instant, personalized responses powered by state‑of‑the‑art AI & RAG. Users can log in to save their conversation history or continue as guests. The app uses modern technologies and provides a sleek, responsive user interface with intuitive UX and lots of animations. 🚀
+**CHAKIR BAHMED's Personal AI Assistant** - **SYNORA** is a full-stack web application that allows users to ask questions about CHAKIR BAHMED, as well as any other topics, and receive instant, personalized responses powered by state‑of‑the‑art AI & RAG. Users can log in to save their conversation history or continue as guests. The app uses modern technologies and provides a sleek, responsive user interface with intuitive UX and lots of animations. 🚀
 
 <p align="center">
-  <a href="https://lumina-david.vercel.app/" target="_blank" rel="noopener noreferrer">
-    <img src="img/logo.jpeg" alt="Lumina Logo" width="45%" style="border-radius: 10px">
+  <a href="https://SYNORA-chakir.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="img/logo.jpeg" alt="SYNORA Logo" width="45%" style="border-radius: 10px">
   </a>
 </p>
 
@@ -54,14 +54,14 @@
 ## Live App
 
 > [!IMPORTANT]
-> Currently, the app is deployed live on Vercel at: [https://lumina-david.vercel.app/](https://lumina-david.vercel.app). Feel free to check it out!
+> Currently, the app is deployed live on Vercel at: [https://SYNORA-chakir.vercel.app/](https://SYNORA-chakir.vercel.app). Feel free to check it out!
 > 
 > For the backend (with Swagger docs), it is deployed live also on Vercel at: [https://ai-assistant-chatbot-server.vercel.app/](https://ai-assistant-chatbot-server.vercel.app/).
 
-Alternatively, the backup app is deployed live on Netlify at: [https://lumina-ai-chatbot.netlify.app/](https://lumina-ai-chatbot.netlify.app/).
+Alternatively, the backup app is deployed live on Netlify at: [https://SYNORA-ai-chatbot.netlify.app/](https://SYNORA-ai-chatbot.netlify.app/).
 
 > [!TIP]
-> Go straight to [https://lumina-david.vercel.app/chat](https://lumina-david.vercel.app/chat) if you want to chat with the AI right away!
+> Go straight to [https://SYNORA-chakir.vercel.app/chat](https://SYNORA-chakir.vercel.app/chat) if you want to chat with the AI right away!
 
 ### Key Technologies
 
@@ -105,7 +105,7 @@ Alternatively, the backup app is deployed live on Netlify at: [https://lumina-ai
 
 ## Features
 
-- **AI Chatbot:** Ask questions about David Nguyen and general topics; receive responses from an AI.
+- **AI Chatbot:** Ask questions about CHAKIR BAHMED and general topics; receive responses from an AI.
 - **User Authentication:** Sign up, log in, and log out using JWT authentication.
 - **Passkey (WebAuthn) Sign-in:** Passwordless login with Touch ID, Face ID, Windows Hello, or a phone via QR. Supports discoverable (usernameless) credentials, an optional post-signup enrollment dialog, and per-user passkey management at `/passkeys` (list/add/nickname/revoke). Backed by `@simplewebauthn/server` v9 with a TTL-indexed `challenges` collection consumed exactly once. Email + password remains as a fallback.
 - **Toast Notifications:** Global `ToastProvider` surfaces auth, passkey, and API errors in non-blocking snackbars instead of `alert()` dialogs.
@@ -121,7 +121,7 @@ Alternatively, the backup app is deployed live on Netlify at: [https://lumina-ai
 - **Streaming Responses:** AI responses are streamed in real-time using Server-Sent Events (SSE) for a more natural conversation flow.
 - **Lightning-Fast Development:** Built with Vite for instant HMR and optimized production builds.
 - **Responsive UI:** Built with React and Material‑UI (MUI) with a fully responsive, modern, and animated interface.
-- **Animated 3D/WebGL Hero:** A fully procedural Three.js / React Three Fiber scene (`client/src/components/three/LuminaScene.tsx`) with no binary assets — all geometry and GLSL shaders are generated in code. It renders a simplex-noise vertex-displaced icosahedron "core" with iridescent fresnel shading, an additive fresnel halo, a ~6k-point GPU particle starfield, and orbiting knowledge-node accents with glow rings. The scene is theme-aware (light/dark), mouse-parallax, scroll-reactive, and fully responsive (device-tiered particle counts and DPR for mobile/tablet/desktop). It respects `prefers-reduced-motion`, feature-detects WebGL with a graceful fallback, is `pointer-events: none`, and is lazy-loaded/code-split. Used as the landing background and reused as the ambient backdrop on the auth pages.
+- **Animated 3D/WebGL Hero:** A fully procedural Three.js / React Three Fiber scene (`client/src/components/three/SYNORAScene.tsx`) with no binary assets — all geometry and GLSL shaders are generated in code. It renders a simplex-noise vertex-displaced icosahedron "core" with iridescent fresnel shading, an additive fresnel halo, a ~6k-point GPU particle starfield, and orbiting knowledge-node accents with glow rings. The scene is theme-aware (light/dark), mouse-parallax, scroll-reactive, and fully responsive (device-tiered particle counts and DPR for mobile/tablet/desktop). It respects `prefers-reduced-motion`, feature-detects WebGL with a graceful fallback, is `pointer-events: none`, and is lazy-loaded/code-split. Used as the landing background and reused as the ambient backdrop on the auth pages.
 - **Landing Page:** A dynamic landing page with animations, feature cards, and call-to-action buttons.
 - **Branded Auth & Legal Pages:** Login, signup, forgot-password, passkeys, and terms pages share a cohesive, theme-aware glassmorphism design system, including a signup password-strength meter with a live match indicator, an enhanced post-signup passkey enrollment dialog, and a 2-step password-reset flow.
 - **Guest Mode:** Users may interact with the AI assistant as a guest, though conversations will not be saved.
@@ -234,7 +234,7 @@ graph TB
 
 ### RAG (Retrieval-Augmented Generation) Flow
 
-Hybrid retrieval from Pinecone and Neo4j in parallel, followed by intelligent merging, augmentation with conversation history, and response generation with Google Gemini AI. One failing retrieval path never blocks the other, and if live retrieval backends fail, Lumina can fall back to static resume context loaded from local manifest/files.
+Hybrid retrieval from Pinecone and Neo4j in parallel, followed by intelligent merging, augmentation with conversation history, and response generation with Google Gemini AI. One failing retrieval path never blocks the other, and if live retrieval backends fail, SYNORA can fall back to static resume context loaded from local manifest/files.
 
 ```mermaid
 sequenceDiagram
@@ -369,7 +369,7 @@ Please see **[ARCHITECTURE.md](ARCHITECTURE.md)**
    JWT_SECRET=your_jwt_secret_here
    GOOGLE_AI_API_KEY=your_google_ai_api_key_here
    PINECONE_API_KEY=your_pinecone_api_key_here
-   PINECONE_INDEX_NAME=lumina-index
+   PINECONE_INDEX_NAME=SYNORA-index
 
    # Neo4j AuraDB (optional — enables graph RAG)
    NEO4J_URI=neo4j+s://your-instance.databases.neo4j.io
@@ -384,7 +384,7 @@ Please see **[ARCHITECTURE.md](ARCHITECTURE.md)**
    # in. Credentials are domain-bound, so changing RP_ID later invalidates all
    # previously-registered passkeys.
    WEBAUTHN_RP_ID=localhost
-   WEBAUTHN_RP_NAME=Lumina AI
+   WEBAUTHN_RP_NAME=SYNORA AI
    WEBAUTHN_EXPECTED_ORIGIN=http://localhost:3000
    ```
 
@@ -488,7 +488,7 @@ The same manifest/file set also powers the static resume fallback used during li
 
 The application is currently deployed on Vercel with the following setup:
 
-- **Frontend**: Deployed at [https://lumina-david.vercel.app/](https://lumina-david.vercel.app)
+- **Frontend**: Deployed at [https://SYNORA-chakir.vercel.app/](https://SYNORA-chakir.vercel.app)
 - **Backend**: Deployed at [https://ai-assistant-chatbot-server.vercel.app/](https://ai-assistant-chatbot-server.vercel.app/)
 - **Database**: MongoDB Atlas (cloud-hosted)
 - **Vector Database**: Pinecone (cloud-hosted)
@@ -639,7 +639,7 @@ See [aws/README.md](aws/README.md) and [terraform/README.md](terraform/README.md
 
 ## Streaming Responses
 
-Lumina features real-time streaming responses that make conversations feel more natural and engaging. Instead of waiting for the complete response, you'll see the AI's thoughts appear word-by-word as they're generated.
+SYNORA features real-time streaming responses that make conversations feel more natural and engaging. Instead of waiting for the complete response, you'll see the AI's thoughts appear word-by-word as they're generated.
 
 ### How It Works
 
@@ -1014,11 +1014,11 @@ AI-Assistant-Chatbot/
     ├── docker-compose.yml
     ├── knowledge/
     │   ├── manifest.json            # Declarative manifest for batch knowledge sync
-    │   ├── son-nguyen-profile.txt
-    │   ├── son-nguyen-honors-awards.txt
-    │   ├── son-nguyen-publications.txt
-    │   ├── son-nguyen-projects.txt
-    │   └── son-nguyen-skills.txt
+    │   ├── bahmed-profile.txt
+    │   ├── bahmed-honors-awards.txt
+    │   ├── bahmed-publications.txt
+    │   ├── bahmed-projects.txt
+    │   └── bahmed-skills.txt
     └── src/
         ├── server.ts
         ├── models/
@@ -1053,7 +1053,7 @@ AI-Assistant-Chatbot/
 
 ## MCP Server (Model Context Protocol)
 
-Lumina includes a **standalone MCP server** (`mcp_server/`) that exposes 30+ tools, 7 resources, and 6 prompts through the standardized [Model Context Protocol](https://modelcontextprotocol.io). Any MCP-compatible client — Claude Desktop, ChatGPT, Cursor, VS Code Copilot — can connect and use Lumina's capabilities.
+SYNORA includes a **standalone MCP server** (`mcp_server/`) that exposes 30+ tools, 7 resources, and 6 prompts through the standardized [Model Context Protocol](https://modelcontextprotocol.io). Any MCP-compatible client — Claude Desktop, ChatGPT, Cursor, VS Code Copilot — can connect and use SYNORA's capabilities.
 
 ### Tool Categories
 
@@ -1088,7 +1088,7 @@ Add to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "lumina": {
+    "SYNORA": {
       "command": "python",
       "args": ["-m", "mcp_server"],
       "cwd": "/path/to/AI-RAG-Assistant-Chatbot"
@@ -1101,7 +1101,7 @@ Add to your `claude_desktop_config.json`:
 
 ## Agentic AI Pipeline
 
-Lumina includes a **multi-agent AI pipeline** implemented in Python (`agentic_ai/`). The pipeline uses LangGraph for agent orchestration and connects to the standalone MCP server as an MCP client, giving every agent access to 30+ real tools through the Model Context Protocol.
+SYNORA includes a **multi-agent AI pipeline** implemented in Python (`agentic_ai/`). The pipeline uses LangGraph for agent orchestration and connects to the standalone MCP server as an MCP client, giving every agent access to 30+ real tools through the Model Context Protocol.
 
 Key capabilities:
 
@@ -1184,7 +1184,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 If you have any questions or suggestions, feel free to reach out to me:
 
-- **David Nguyen**
+- **CHAKIR BAHMED**
   - [LinkedIn](https://www.linkedin.com/in/hoangsonw/)
   - [GitHub](https://github.com/hoangsonww)
   - [Email](mailto:hoangson091104@gmail.com)

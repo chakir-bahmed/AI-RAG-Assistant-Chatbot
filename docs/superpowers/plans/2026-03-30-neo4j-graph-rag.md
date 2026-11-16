@@ -39,7 +39,7 @@
 - [ ] **Step 1: Install neo4j-driver**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npm install neo4j-driver
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npm install neo4j-driver
 ```
 
 - [ ] **Step 2: Create graph types file**
@@ -98,7 +98,7 @@ export interface GraphStats {
 - [ ] **Step 3: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -235,7 +235,7 @@ export const closeNeo4j = async (): Promise<void> => {
 - [ ] **Step 2: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -313,7 +313,7 @@ Rules:
 const QUERY_ENTITY_PROMPT = `Extract entity names mentioned in this question. Return ONLY a valid JSON array of strings.
 Examples:
 - "What projects use React?" -> ["React"]
-- "Tell me about David's work at LexisNexis" -> ["David", "LexisNexis"]
+- "Tell me about chakir's work at LexisNexis" -> ["chakir", "LexisNexis"]
 - "What skills does he have?" -> []
 If no specific entities, return [].`;
 
@@ -630,7 +630,7 @@ const toNumber = (value: any): number => {
 - [ ] **Step 2: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -697,7 +697,7 @@ At the beginning of `deleteKnowledgeSourceVectors`, before the existing try bloc
 - [ ] **Step 4: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -808,7 +808,7 @@ With the same block:
 - [ ] **Step 5: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -997,7 +997,7 @@ At the end of the `run` function, before `await mongoose.disconnect()`, add:
 - [ ] **Step 10: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -1059,7 +1059,7 @@ process.on("SIGINT", shutdown);
 - [ ] **Step 4: Verify build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx tsc --noEmit
 ```
 
 Expected: no errors.
@@ -1081,7 +1081,7 @@ git commit -m "feat(graph): wire Neo4j init and graceful shutdown into Express s
 - [ ] **Step 1: Build the server**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npm run build
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npm run build
 ```
 
 Expected: clean build with no errors.
@@ -1089,7 +1089,7 @@ Expected: clean build with no errors.
 - [ ] **Step 2: Run graph:rebuild to ingest all txt documents into Neo4j**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx ts-node src/scripts/knowledgeCli.ts graph:rebuild
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx ts-node src/scripts/knowledgeCli.ts graph:rebuild
 ```
 
 Expected output: each source rebuilt with chunk and entity counts, final stats showing all documents indexed.
@@ -1097,7 +1097,7 @@ Expected output: each source rebuilt with chunk and entity counts, final stats s
 - [ ] **Step 3: Verify graph status**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && npx ts-node src/scripts/knowledgeCli.ts graph:status
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && npx ts-node src/scripts/knowledgeCli.ts graph:status
 ```
 
 Expected: non-zero counts for documents, chunks, entities, and relationships.
@@ -1118,7 +1118,7 @@ git add -A && git commit -m "chore: verify graph rebuild completes successfully"
 - [ ] **Step 1: Clean build**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server && rm -rf dist && npm run build
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server && rm -rf dist && npm run build
 ```
 
 Expected: no errors.
@@ -1126,7 +1126,7 @@ Expected: no errors.
 - [ ] **Step 2: Verify client still builds**
 
 ```bash
-cd /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/client && npm run build
+cd /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/client && npm run build
 ```
 
 Expected: clean build (client is unchanged, this confirms no regressions).
@@ -1134,9 +1134,9 @@ Expected: clean build (client is unchanged, this confirms no regressions).
 - [ ] **Step 3: Verify all new files exist**
 
 ```bash
-ls -la /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server/src/types/graph.ts \
-       /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server/src/services/neo4jClient.ts \
-       /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server/src/services/graphKnowledge.ts
+ls -la /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server/src/types/graph.ts \
+       /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server/src/services/neo4jClient.ts \
+       /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server/src/services/graphKnowledge.ts
 ```
 
 Expected: all three files exist.
@@ -1144,7 +1144,7 @@ Expected: all three files exist.
 - [ ] **Step 4: Verify .env has Neo4j config**
 
 ```bash
-grep NEO4J /Users/davidnguyen/WebstormProjects/AI-Assistant-Chatbot/server/.env
+grep NEO4J /Users/chakirbahmed/WebstormProjects/AI-Assistant-Chatbot/server/.env
 ```
 
 Expected: shows NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_DATABASE lines.

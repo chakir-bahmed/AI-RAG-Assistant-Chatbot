@@ -339,7 +339,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           }}
         >
           <Typography variant="body1" color="textSecondary" align="center">
-            No conversations yet. Start by sending a message to Lumina!
+            No conversations yet. Start by sending a message to SYNORA!
           </Typography>
         </Box>
       ) : (

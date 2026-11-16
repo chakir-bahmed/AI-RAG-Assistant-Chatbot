@@ -1,6 +1,6 @@
 ---
 name: knowledge-ops
-description: Use when explicitly asked to add, edit, delete, list, or sync indexed knowledge sources for Lumina through the CLI under server/. This skill has side effects and should be invoked intentionally.
+description: Use when explicitly asked to add, edit, delete, list, or sync indexed knowledge sources for SYNORA through the CLI under server/. This skill has side effects and should be invoked intentionally.
 disable-model-invocation: true
 ---
 

@@ -97,7 +97,7 @@ const Login: React.FC = () => {
         <>
           Sign in to{" "}
           <Box component="span" sx={gradientTextSx(theme)}>
-            Lumina
+            SYNORA
           </Box>
         </>
       }

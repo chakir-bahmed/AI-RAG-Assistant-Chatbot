@@ -8,7 +8,7 @@ featuring an assembly line architecture for complex task execution.
 This package provides:
 - Multi-agent orchestration with LangGraph
 - Assembly line processing architecture
-- MCP client for connecting to the standalone Lumina MCP Server
+- MCP client for connecting to the standalone SYNORA MCP Server
 - Production-ready deployment configurations for AWS and Azure
 """
 

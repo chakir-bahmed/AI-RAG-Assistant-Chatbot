@@ -1,9 +1,9 @@
 ---
-name: lumina-rag-knowledge
-description: Manage Lumina's retrieval-augmented generation and knowledge ingestion workflow. Use when editing server/src/services/knowledgeBase.ts, server/src/services/pineconeClient.ts, server/src/scripts/knowledgeCli.ts, server/src/models/KnowledgeSource.ts, files under server/knowledge, manifest-based sync inputs, or debugging grounded answers, retrieval relevance, source lifecycle, and inline citations.
+name: SYNORA-rag-knowledge
+description: Manage SYNORA's retrieval-augmented generation and knowledge ingestion workflow. Use when editing server/src/services/knowledgeBase.ts, server/src/services/pineconeClient.ts, server/src/scripts/knowledgeCli.ts, server/src/models/KnowledgeSource.ts, files under server/knowledge, manifest-based sync inputs, or debugging grounded answers, retrieval relevance, source lifecycle, and inline citations.
 ---
 
-# Lumina Rag Knowledge
+# SYNORA Rag Knowledge
 
 ## Overview
 
@@ -25,7 +25,7 @@ Use this skill for retrieval, ingestion, and citation work. The repository treat
 
 - Preserve stable `externalId` usage when designing repeatable updates.
 - Keep ingestion, deletion, listing, and sync semantics coherent across CLI commands and model storage.
-- If a change affects both retrieval logic and general API behavior, coordinate with `lumina-backend-api`.
+- If a change affects both retrieval logic and general API behavior, coordinate with `SYNORA-backend-api`.
 
 ## Finish With Practical Validation
 

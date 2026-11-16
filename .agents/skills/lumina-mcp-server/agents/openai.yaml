@@ -1,4 +1,4 @@
 interface:
-  display_name: "Lumina MCP Server"
+  display_name: "SYNORA MCP Server"
   short_description: "Standalone MCP server tool development"
-  default_prompt: "Use $lumina-mcp-server to work on the standalone MCP server tools, resources, or prompts."
+  default_prompt: "Use $SYNORA-mcp-server to work on the standalone MCP server tools, resources, or prompts."

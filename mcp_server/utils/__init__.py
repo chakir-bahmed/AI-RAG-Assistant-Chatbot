@@ -1,4 +1,4 @@
-"""Utility helpers for the Lumina MCP Server."""
+"""Utility helpers for the SYNORA MCP Server."""
 
 from .logger import get_logger, setup_logging
 from .errors import (

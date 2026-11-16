@@ -1,5 +1,5 @@
 """
-Comprehensive prompt library for the Lumina MCP Server.
+Comprehensive prompt library for the SYNORA MCP Server.
 """
 
 from __future__ import annotations

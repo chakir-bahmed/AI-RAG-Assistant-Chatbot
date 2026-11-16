@@ -1,6 +1,6 @@
 # Deployment Quick Reference Guide
 
-Quick reference for deployment commands and strategies used in the Lumina project (blue/green, canary, progressive delivery, etc.).
+Quick reference for deployment commands and strategies used in the SYNORA project (blue/green, canary, progressive delivery, etc.).
 
 ## 🚀 Deployment Commands
 
@@ -77,11 +77,11 @@ aws cloudwatch list-dashboards
 
 # Get deployment overview dashboard
 aws cloudwatch get-dashboard \
-  --dashboard-name lumina-deployment-overview-production
+  --dashboard-name SYNORA-deployment-overview-production
 
 # Get DORA metrics dashboard
 aws cloudwatch get-dashboard \
-  --dashboard-name lumina-dora-metrics-production
+  --dashboard-name SYNORA-dora-metrics-production
 ```
 
 ### View Metrics
@@ -89,7 +89,7 @@ aws cloudwatch get-dashboard \
 ```bash
 # Deployment count (last 24 hours)
 aws cloudwatch get-metric-statistics \
-  --namespace "lumina/Deployments" \
+  --namespace "SYNORA/Deployments" \
   --metric-name DeploymentCount \
   --start-time $(date -u -v-24H +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \
@@ -98,7 +98,7 @@ aws cloudwatch get-metric-statistics \
 
 # Deployment success rate
 aws cloudwatch get-metric-statistics \
-  --namespace "lumina/Deployments" \
+  --namespace "SYNORA/Deployments" \
   --metric-name SuccessfulDeployments \
   --start-time $(date -u -v-24H +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \
@@ -110,14 +110,14 @@ aws cloudwatch get-metric-statistics \
 
 ```bash
 # Tail deployment logs
-aws logs tail /aws/codedeploy/lumina/production --follow
+aws logs tail /aws/codedeploy/SYNORA/production --follow
 
 # Tail Lambda logs
-aws logs tail /aws/lambda/lumina-traffic-shifter-production --follow
+aws logs tail /aws/lambda/SYNORA-traffic-shifter-production --follow
 
 # Query recent deployments
 aws logs start-query \
-  --log-group-name /aws/codedeploy/lumina/production \
+  --log-group-name /aws/codedeploy/SYNORA/production \
   --start-time $(date -u -v-1H +%s) \
   --end-time $(date -u +%s) \
   --query-string 'fields @timestamp, @message | filter @message like /deployment/ | sort @timestamp desc'
@@ -179,13 +179,13 @@ aws deploy get-deployment --deployment-id <deployment-id>
 
 # List recent deployments
 aws deploy list-deployments \
-  --application-name lumina-production \
+  --application-name SYNORA-production \
   --deployment-group-name backend-production \
   --max-items 10
 
 # ECS service status
 aws ecs describe-services \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --services production-backend
 ```
 
@@ -198,13 +198,13 @@ aws elbv2 describe-target-health \
 
 # ECS task status
 aws ecs list-tasks \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --service-name production-backend \
   --desired-status RUNNING
 
 # CloudWatch alarms
 aws cloudwatch describe-alarms \
-  --alarm-name-prefix lumina-backend
+  --alarm-name-prefix SYNORA-backend
 ```
 
 ### Manual Rollback
@@ -217,7 +217,7 @@ aws deploy stop-deployment \
 
 # Force ECS service update
 aws ecs update-service \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --service production-backend \
   --task-definition production-backend:42 \
   --force-new-deployment
@@ -247,7 +247,7 @@ terraform apply
 terraform apply -target=module.canary_backend
 
 # Import existing resource
-terraform import module.codedeploy.aws_codedeploy_app.ecs_app lumina-production
+terraform import module.codedeploy.aws_codedeploy_app.ecs_app SYNORA-production
 ```
 
 ### Docker
@@ -255,11 +255,11 @@ terraform import module.codedeploy.aws_codedeploy_app.ecs_app lumina-production
 ```bash
 # Build and push images
 cd server
-docker build -t lumina-backend:v1.2.0 .
+docker build -t SYNORA-backend:v1.2.0 .
 docker push <ecr-uri>:v1.2.0
 
 cd ../client
-docker build -t lumina-frontend:v1.2.0 .
+docker build -t SYNORA-frontend:v1.2.0 .
 docker push <ecr-uri>:v1.2.0
 ```
 
@@ -270,7 +270,7 @@ docker push <ecr-uri>:v1.2.0
 ```bash
 # Deployments per day (last 7 days)
 aws cloudwatch get-metric-statistics \
-  --namespace "lumina/Deployments" \
+  --namespace "SYNORA/Deployments" \
   --metric-name DeploymentCount \
   --start-time $(date -u -v-7d +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \
@@ -283,7 +283,7 @@ aws cloudwatch get-metric-statistics \
 ```bash
 # Average lead time (hours)
 aws cloudwatch get-metric-statistics \
-  --namespace "lumina/Deployments" \
+  --namespace "SYNORA/Deployments" \
   --metric-name LeadTime \
   --start-time $(date -u -v-7d +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \
@@ -296,7 +296,7 @@ aws cloudwatch get-metric-statistics \
 ```bash
 # Average MTTR (minutes)
 aws cloudwatch get-metric-statistics \
-  --namespace "lumina/Deployments" \
+  --namespace "SYNORA/Deployments" \
   --metric-name RollbackTime \
   --start-time $(date -u -v-7d +%Y-%m-%dT%H:%M:%S) \
   --end-time $(date -u +%Y-%m-%dT%H:%M:%S) \
@@ -318,7 +318,7 @@ aws cloudwatch get-metric-data \
       "Id": "m1",
       "MetricStat": {
         "Metric": {
-          "Namespace": "lumina/Deployments",
+          "Namespace": "SYNORA/Deployments",
           "MetricName": "DeploymentCount"
         },
         "Period": 86400,
@@ -329,7 +329,7 @@ aws cloudwatch get-metric-data \
       "Id": "m2",
       "MetricStat": {
         "Metric": {
-          "Namespace": "lumina/Deployments",
+          "Namespace": "SYNORA/Deployments",
           "MetricName": "FailedDeployments"
         },
         "Period": 86400,
@@ -349,7 +349,7 @@ aws cloudwatch get-metric-data \
 # 1. Stop current deployment
 aws deploy stop-deployment \
   --deployment-id $(aws deploy list-deployments \
-    --application-name lumina-production \
+    --application-name SYNORA-production \
     --deployment-group-name backend-production \
     --include-only-statuses InProgress \
     --query "deployments[0]" --output text) \
@@ -357,13 +357,13 @@ aws deploy stop-deployment \
 
 # 2. Force service to previous version
 PREVIOUS_TASK_DEF=$(aws ecs describe-services \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --services production-backend \
   --query "services[0].deployments[?status=='ACTIVE'][0].taskDefinition" \
   --output text | sed 's/:.*$//')
 
 aws ecs update-service \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --service production-backend \
   --task-definition "${PREVIOUS_TASK_DEF}:$(($(echo $PREVIOUS_TASK_DEF | sed 's/.*://') - 1))" \
   --force-new-deployment
@@ -374,13 +374,13 @@ aws ecs update-service \
 ```bash
 # Scale up
 aws ecs update-service \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --service production-backend \
   --desired-count 10
 
 # Scale down
 aws ecs update-service \
-  --cluster lumina-production \
+  --cluster SYNORA-production \
   --service production-backend \
   --desired-count 2
 ```

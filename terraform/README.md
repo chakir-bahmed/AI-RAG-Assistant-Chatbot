@@ -1,6 +1,6 @@
 # Terraform Infrastructure
 
-This directory contains the production-ready Terraform configuration for deploying the Lumina AI Assistant on AWS. The stack provisions a fully managed environment with high availability, observability, and security best practices.
+This directory contains the production-ready Terraform configuration for deploying the SYNORA AI Assistant on AWS. The stack provisions a fully managed environment with high availability, observability, and security best practices.
 
 ## What Gets Provisioned
 
