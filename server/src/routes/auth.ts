@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import User, { IUser } from "../models/User";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import passkeyRouter from "./passkey";
