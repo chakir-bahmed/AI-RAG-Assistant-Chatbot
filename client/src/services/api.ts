@@ -13,7 +13,7 @@ import type {
 
 // You can adjust the baseURL if your server is different
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://server-tranquil-ember-4274.fly.dev/api",
 });
 
 // --- Token Handling ---
