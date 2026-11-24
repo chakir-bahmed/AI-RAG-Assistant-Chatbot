@@ -189,13 +189,11 @@ app.use("/api/knowledge", knowledgeRoutes);
  * Remove app.listen() when deploying to Vercel.
  * Vercel automatically handles starting the server.
  */
-if (process.env.NODE_ENV !== "production") {
-  mongoConnectPromise.then(() => {
-    app.listen(port, () => {
-      console.log(`Server listening on port ${port}`);
-    });
+mongoConnectPromise.then(() => {
+  app.listen(Number(port), "0.0.0.0", () => {
+    console.log(`Server listening on port ${port}`);
   });
-}
+});
 
 // Graceful shutdown
 const shutdown = async (): Promise<void> => {
