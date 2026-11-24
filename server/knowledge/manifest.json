@@ -4,73 +4,73 @@
       "externalId": "profile",
       "title": " bahmed Profile",
       "sourceType": "bio",
-      "file": "./knowledge/bahmed-profile.txt"
+      "file": "./knowledge/bahmed-chakir-profile.txt"
     },
     {
       "externalId": "career-timeline",
       "title": " bahmed Career Timeline",
       "sourceType": "bio",
-      "file": "./knowledge/bahmed-career-timeline.txt"
+      "file": "./knowledge/bahmed-chakir-career-timeline.txt"
     },
     {
       "externalId": "alias",
       "title": " bahmed Alias",
       "sourceType": "bio",
-      "file": "./knowledge/bahmed-alias.txt"
+      "file": "./knowledge/bahmed-chakir-alias.txt"
     },
     {
       "externalId": "projects",
       "title": " bahmed Projects",
       "sourceType": "project",
-      "file": "./knowledge/bahmed-projects.txt"
+      "file": "./knowledge/bahmed-chakir-projects.txt"
     },
     {
       "externalId": "skills",
       "title": " bahmed Skills",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-skills.txt"
+      "file": "./knowledge/bahmed-chakir-skills.txt"
     },
     {
       "externalId": "certifications",
       "title": " bahmed Certifications",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-certifications.txt"
+      "file": "./knowledge/bahmed-chakir-certifications.txt"
     },
     {
       "externalId": "publications",
       "title": " bahmed Publications",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-publications.txt"
+      "file": "./knowledge/bahmed-chakir-publications.txt"
     },
     {
       "externalId": "honors-awards",
       "title": " bahmed Honors and Awards",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-honors-awards.txt"
+      "file": "./knowledge/bahmed-chakir-honors-awards.txt"
     },
     {
       "externalId": "volunteering",
       "title": " bahmed Volunteering",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-volunteering.txt"
+      "file": "./knowledge/bahmed-chakir-volunteering.txt"
     },
     {
       "externalId": "coursework",
       "title": " bahmed Coursework",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-coursework.txt"
+      "file": "./knowledge/bahmed-chakir-coursework.txt"
     },
     {
       "externalId": "languages-organizations",
       "title": " bahmed Languages and Organizations",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-languages-organizations.txt"
+      "file": "./knowledge/bahmed-chakir-languages-organizations.txt"
     },
     {
       "externalId": "test-scores",
       "title": " bahmed Test Scores",
       "sourceType": "other",
-      "file": "./knowledge/bahmed-test-scores.txt"
+      "file": "./knowledge/bahmed-chakir-test-scores.txt"
     }
   ]
 }

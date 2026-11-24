@@ -1,0 +1,472 @@
+PROFILE OF CHAKIR BAHMED
+Personal Knowledge Base | Data Science, Artificial Intelligence, RAG & Software Projects
+
+======================================================================
+1. IDENTITY AND CONTACT INFORMATION
+======================================================================
+
+Full name: Chakir Bahmed
+Common name / preferred short name: Bahmed
+Other name formats: BAHMED CHAKIR, CHAKIR BAHMED, Chakir
+Professional headline: Ingénieur Data Science & IA (en formation)
+Email: chakirbahmed1@gmail.com
+Phone: +212 688 666 804
+Location: Casablanca, Morocco
+GitHub: https://github.com/chakir-bahmed
+LinkedIn: https://linkedin.com/in/chakir-bahmed
+
+Identity note:
+This knowledge file describes Chakir Bahmed, a Moroccan student and aspiring engineer specializing in Data Science and Artificial Intelligence. Do not confuse him with BAHMED CHAKIR or with the person described in the source profile used as a formatting example. The contact details, education, projects, and experience in this file belong to Chakir Bahmed.
+
+======================================================================
+2. PROFESSIONAL SUMMARY
+======================================================================
+
+Chakir Bahmed is a Data Science and Artificial Intelligence master's student at Université Hassan II in Casablanca, Morocco. He has an academic background in Computer Science and is developing practical skills through projects involving data analysis, machine learning, predictive modeling, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and software development.
+
+His interests combine the analytical side of Data Science with the engineering side of AI applications. He works on transforming raw data into useful information, preparing and analyzing datasets, developing predictive models, and integrating AI capabilities into applications. His project work includes a RAG-based conversational assistant, an AI-powered smart irrigation system using physical IoT hardware, data analytics and prediction projects, and a web-based e-learning platform.
+
+Chakir is particularly interested in building practical AI systems rather than focusing only on theoretical models. His work explores the complete path from data collection and preprocessing to model development, backend integration, information retrieval, and user-facing dashboards or interfaces.
+
+Main professional interests:
+- Data Science and applied Artificial Intelligence.
+- Data analysis, exploratory data analysis, and statistical analysis.
+- Machine Learning and predictive modeling.
+- Large Language Models (LLMs) and AI-powered applications.
+- Retrieval-Augmented Generation (RAG) and semantic search.
+- Prompt Engineering and model evaluation.
+- AI assistants and document-based question-answering systems.
+- IoT systems combined with data-driven automation.
+- Backend development, APIs, and database integration.
+- Data-driven decision support and practical problem solving.
+
+Career objective:
+Chakir's stated professional objective is to develop his career in Data Science and Artificial Intelligence and to contribute to practical projects with measurable value. His CV profile indicates an interest in a final-year project internship (stage PFE) related to Data Science and AI.
+
+======================================================================
+3. EDUCATION
+======================================================================
+
+MASTER ISI – OPTION DATA SCIENCE
+Institution: Université Hassan II
+Period: 2025–2027
+Location: Casablanca, Morocco
+Status: Program listed as 2025–2027; ongoing according to the dates provided.
+Field of study: Information Systems / Data Science (ISI – Option Data Science).
+Academic focus relevant to this profile: Data Science, Artificial Intelligence, data processing, analytical methods, and software-based technical projects.
+
+BACHELOR'S DEGREE IN COMPUTER SCIENCE (LICENCE EN INFORMATIQUE)
+Institution: Université Hassan II
+Period: 2022–2025
+Location: Casablanca, Morocco
+Field of study: Computer Science.
+
+BACCALAUREATE – MATHEMATICAL SCIENCES A
+Institution: Lycée Mostapha Elmàani
+Year: 2022
+Location: Casablanca, Morocco
+Field: Mathematical Sciences A.
+
+Education accuracy note:
+The information above reflects the academic details supplied by Chakir. No GPA, class rank, distinction, scholarship, or additional degree has been provided; do not invent one.
+
+======================================================================
+4. TECHNICAL SKILLS
+======================================================================
+
+DATA ANALYTICS
+- Exploratory Data Analysis (EDA).
+- Data Cleaning and Preprocessing.
+- Statistical Analysis.
+- Feature Engineering.
+- Data Visualization.
+- Predictive Analytics.
+- Dataset exploration and interpretation.
+- Preparing data for machine-learning workflows.
+
+ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING
+- Machine Learning.
+- Classification and Regression.
+- Predictive Modeling.
+- Model Training, Evaluation, and Optimization.
+- Large Language Models (LLMs).
+- Retrieval-Augmented Generation (RAG).
+- Semantic Search and document retrieval.
+- Prompt Engineering.
+- AI-assisted automation and conversational applications.
+
+PROGRAMMING AND DATA TOOLS
+- Python.
+- Pandas.
+- NumPy.
+- Scikit-learn.
+- Matplotlib.
+- Seaborn.
+- SQL.
+- DuckDB.
+- XGBoost.
+
+DATABASES AND BACKEND TECHNOLOGIES
+- MySQL.
+- PostgreSQL.
+- Firebase Realtime Database.
+- FastAPI.
+- Laravel.
+- REST API integration.
+
+LLM / RAG TECHNOLOGIES USED IN PROJECT WORK
+- LangChain.
+- ChromaDB.
+- OpenAI API.
+- FastAPI.
+- Semantic retrieval over a document collection.
+
+WEB DEVELOPMENT
+- JavaScript.
+- React.
+- Vite.
+- Laravel.
+- Frontend and backend integration.
+
+IOT AND EMBEDDED SYSTEMS
+- ESP32.
+- Arduino IDE and Arduino-style C++ sketches.
+- Soil-moisture sensing.
+- DHT11 temperature and humidity sensing.
+- LDR light sensing.
+- Relay and water-pump control.
+- Firebase data transmission.
+- Blynk dashboards and virtual pins.
+
+DEVELOPMENT TOOLS
+- Git.
+- GitHub.
+- Visual Studio Code.
+- Windows command line and PowerShell.
+- Google Colab.
+- Ollama for running local language models.
+
+Skill-level note:
+This section lists technologies and concepts appearing in Chakir's CV, coursework, or hands-on project work. It does not assign proficiency levels. A listed technology should not automatically be interpreted as professional employment experience or expert-level mastery.
+
+======================================================================
+5. FEATURED PROJECTS
+======================================================================
+
+5.1 AI CHATBOT ASSISTANT – RAG AND LARGE LANGUAGE MODELS
+
+Category: Artificial Intelligence, NLP, LLM Applications, Information Retrieval.
+Goal:
+Develop a conversational AI assistant that can answer questions using information retrieved from a dedicated document collection. Instead of relying only on the language model's general knowledge, the system retrieves relevant document content and uses it as context when generating answers.
+
+Work and features described in Chakir's CV:
+- Developed a conversational assistant based on RAG architecture and Large Language Models.
+- Integrated a document collection containing more than 100 documents.
+- Implemented semantic search to retrieve information relevant to a user's question.
+- Used retrieved contextual information to support more relevant and precise answers.
+- Connected the retrieval and language-model components through an application backend.
+
+Technologies listed:
+Python, LangChain, ChromaDB, OpenAI API, FastAPI.
+
+Concepts relevant to the project:
+- Document ingestion and text extraction.
+- Document chunking and preparation.
+- Embeddings and vector representations.
+- Vector database storage and retrieval.
+- Semantic similarity search.
+- Context construction for LLM prompts.
+- Grounded question answering.
+- RAG pipeline evaluation and answer relevance.
+
+Important project boundary:
+The CV confirms a RAG assistant, a collection of 100+ documents, semantic search, and the technologies listed above. It does not specify the exact embedding model, chunk size, chunk overlap, vector distance metric, reranker, LLM model name, or evaluation benchmark. Those implementation details should not be invented when answering questions about the project.
+
+5.2 SMART IRRIGATION SYSTEM USING IOT AND ARTIFICIAL INTELLIGENCE
+
+Category: Internet of Things (IoT), Artificial Intelligence, Machine Learning, Automation.
+Goal:
+Build an intelligent plant-watering system that monitors environmental conditions and soil moisture, sends sensor readings to a cloud database, and uses data-driven logic or a predictive model to support irrigation decisions. The project combines a physical ESP32 board, sensors, Firebase, Python-based processing, and a Blynk dashboard.
+
+Hardware and sensors used in the practical prototype:
+- ESP32 development board as the main microcontroller.
+- Soil-moisture sensor connected to GPIO 34 (analog input).
+- DHT11 sensor connected to GPIO 4 for air temperature and humidity.
+- LDR light sensor connected to GPIO 35 (analog input).
+- Relay module controlled through GPIO 25.
+- Water pump controlled through the relay.
+
+Data and software architecture:
+1. The ESP32 reads soil moisture, temperature, air humidity, and light intensity.
+2. Sensor readings are sent over Wi-Fi to Firebase Realtime Database.
+3. The sensor records are stored under the System_Data area, with values such as moisture, temperature, humidity, light, relay state, timestamp, and raw sensor readings.
+4. A Python component reads recent records from Firebase and processes the latest measurements.
+5. A machine-learning component has been explored for predicting irrigation-related values or decisions.
+6. Blynk is used as a dashboard to display measurements, predictions, and relay/pump state.
+7. The relay activates the pump when irrigation is required. A safety limit was requested and implemented in the control logic so a pump activation runs for a maximum of approximately 3 seconds per activation.
+
+Blynk dashboard mapping used in the project:
+- V0: Current soil-moisture value.
+- V1: AI prediction value.
+- V2: Temperature.
+- V3: Air humidity.
+- V4: Light level.
+- V5: Relay state or AI irrigation decision.
+
+Example hardware calibration details discussed during development:
+- Soil sensor calibration values were tested around dryValue = 3800 and wetValue = 1600.
+- Light sensor calibration values were tested around lightValue = 1000 and darkValue = 3350.
+- The soil sensor produced a raw reading close to 4095 when outside the soil in one test.
+- The DHT11 produced stable readings around 27°C and 59–60% humidity during an early test.
+These are development observations, not universal sensor specifications. Actual readings depend on the specific sensors, wiring, environment, and calibration.
+
+Technologies and components:
+ESP32, Arduino IDE, C++ for microcontroller code, Python, Firebase Realtime Database, Wi-Fi, HTTP requests, Blynk, soil-moisture sensor, DHT11, LDR, relay module, and water pump.
+
+Project status and accuracy:
+This is a hands-on project that progressed from simulation toward a physical ESP32 prototype. The described architecture and pin assignments reflect the development setup discussed with Chakir. Do not claim that the system is a commercially deployed product or that it operates reliably at industrial scale. Do not invent model accuracy or water-saving percentages.
+
+5.3 CHESS ANALYTICS AND AI PLATFORM
+
+Category: Data Analytics, Data Engineering, Predictive Modeling.
+Goal:
+Analyze chess games and player performance, create useful statistical indicators, and expose outcome-prediction functionality through an API.
+
+Work described in Chakir's CV:
+- Analyzed more than 500,000 chess games and data relating to more than 670,000 players.
+- Designed a data pipeline that generated more than 20 key indicators based on statistics and ELO ratings.
+- Developed a system for predicting match outcomes.
+- Exposed prediction functionality through a REST API.
+
+Technologies listed:
+Python, Pandas, DuckDB, SQL, FastAPI, XGBoost.
+
+5.4 CREDIT RISK ANALYSIS
+
+Category: Data Science, Financial Analytics, Classification, Predictive Modeling.
+Goal:
+Use financial and customer data to analyze credit risk and build a predictive model that supports risk assessment.
+
+Work described in Chakir's CV:
+- Analyzed a financial dataset containing 30,000 clients and 24 variables.
+- Performed data cleaning, preprocessing, and exploratory data analysis.
+- Developed a predictive model for credit-risk evaluation.
+- Reported model accuracy of 91% in the project description supplied for the CV.
+
+Technologies listed:
+Python, Pandas, NumPy, Scikit-learn, Matplotlib.
+
+Metric note:
+The 91% accuracy is the result stated in Chakir's project description. The train/test split, class distribution, validation strategy, and other evaluation metrics have not been provided in this profile. Do not present the accuracy as independently verified or assume it generalizes to other datasets.
+
+5.5 USA ROAD ACCIDENT ANALYTICS AND PREDICTION
+
+Category: Large-Scale Data Analysis, Machine Learning, Road Safety Analytics.
+Goal:
+Explore road-accident data to identify risk factors and develop predictive models that can support analysis and decision-making.
+
+Work described in Chakir's CV:
+- Analyzed more than 7 million road-accident records from the United States.
+- Studied factors associated with accident risk, including weather, traffic, and environmental conditions.
+- Developed predictive models to anticipate accident severity.
+- Framed the analysis as a way to support better decision-making and understanding of road-safety risks.
+
+Technologies listed:
+Python, Pandas, Scikit-learn, SQL, Seaborn.
+
+5.6 E-LEARNING WEB PLATFORM
+
+Category: Full-Stack Web Development, Education Technology, Database Design.
+Goal:
+Develop an e-learning platform with course content, video lessons, quizzes, questions, answers, student functionality, and trainer/formateur functionality.
+
+Architecture and technologies discussed:
+- Frontend: React 19 with Vite.
+- Backend: Laravel.
+- Database: MySQL, managed locally through phpMyAdmin.
+- Database name used in the development environment: cours_db.
+
+Main data entities discussed:
+- cours: courses.
+- videos: course videos.
+- quizzes: quizzes.
+- questions: quiz questions.
+- answers: possible answers.
+- students: student accounts or records.
+- formateurs: trainer/instructor accounts or records.
+
+Additional functionality discussed:
+- Student and trainer areas with different roles.
+- Local storage key for the trainer context: formateur.
+- Student authentication token stored using the authToken key.
+- Certificate generation using jsPDF.
+- A pass threshold of at least 50% was used in the certificate-related requirement.
+- QR code and logo integration were considered for certificates.
+
+Status note:
+This is a project developed iteratively. The technologies, entities, and requirements above were discussed during implementation. Do not assume that every planned feature is finished or deployed unless Chakir confirms its completion.
+
+======================================================================
+6. CERTIFICATIONS
+======================================================================
+
+RAPID APPLICATION DEVELOPMENT WITH LLMS
+Issuer: NVIDIA
+Obtained: October 2026
+
+CERTIFICATION DATA SCIENCE
+Issuer: EISTA
+Obtained: August 2024
+
+Certification note:
+These certification names, issuers, and dates are reproduced from the details provided by Chakir. No certificate ID or public verification URL has been supplied.
+
+======================================================================
+7. LANGUAGES
+======================================================================
+
+- Arabic.
+- English.
+- French.
+- German.
+
+Language proficiency levels were not specified. Do not assign CEFR levels or describe any language as native, fluent, or beginner without confirmation.
+
+======================================================================
+8. LOCAL AI AND DEVELOPMENT ENVIRONMENT
+======================================================================
+
+Chakir has worked with local LLM setup and experimentation using Ollama as part of his studies in LLMs and AI agents.
+
+Last known local setup discussed:
+- Operating system environment: Windows.
+- Python version at the time of setup: 3.13.9.
+- Ollama was installed and responding to version checks.
+- Models downloaded and listed in the local Ollama environment included:
+  - llama3.2:3b.
+  - llama3.2:1b.
+  - gemma3:270m.
+
+This information records a previous setup, not a guarantee that these exact versions or models remain installed. The local environment may have changed.
+
+Development habits and environment discussed:
+- Uses Windows PowerShell and Command Prompt for setup and troubleshooting.
+- Uses Visual Studio Code for development.
+- Uses Google Colab for Python and machine-learning experimentation.
+- Has worked with physical ESP32 hardware and Arduino IDE.
+- Prefers practical, reproducible instructions and complete code examples when implementing a project.
+
+======================================================================
+9. TECHNICAL LEARNING AND WORKING INTERESTS
+======================================================================
+
+RAG AND KNOWLEDGE-BASED AI
+Chakir is interested in systems that combine a language model with an external knowledge base. Relevant topics include document ingestion, text splitting, embeddings, vector databases, semantic retrieval, prompt construction, grounded answers, and retrieval evaluation. His stated RAG project uses LangChain, ChromaDB, OpenAI API, Python, and FastAPI.
+
+DATA SCIENCE WORKFLOW
+His project descriptions demonstrate interest in a typical applied Data Science workflow: understanding a problem, loading and exploring data, cleaning and preprocessing it, engineering features, training a model, evaluating its output, and making results accessible through a user-facing application or API.
+
+AI AND IOT INTEGRATION
+The smart irrigation project reflects an interest in connecting physical-world measurements to cloud data storage and AI-assisted decisions. It combines microcontroller programming, sensor calibration, data transmission, Python processing, and dashboard visualization.
+
+FULL-STACK APPLICATION DEVELOPMENT
+The e-learning project and RAG assistant involve connecting frontend interfaces, backend services, databases, and application logic. Chakir has worked with React/Vite, Laravel, FastAPI, MySQL, and related tools in these projects.
+
+======================================================================
+10. COMMUNICATION AND ASSISTANCE PREFERENCES
+======================================================================
+
+The following preferences have been observed from Chakir's technical and academic conversations and can help personalize explanations:
+
+- He often communicates in Moroccan Darija (Darija), French, and English.
+- For difficult technical topics, he benefits from explanations broken into clear, sequential steps.
+- He often asks for beginner-friendly explanations before moving to advanced details.
+- For university reports, presentations, CV content, and formal project descriptions, French is frequently requested.
+- He values technically accurate explanations that distinguish what is implemented from what is only planned.
+- When debugging, he prefers practical steps adapted to Windows, PowerShell, VS Code, Arduino IDE, and the tools he is actually using.
+- For code assistance, he often prefers complete, copy-paste-ready examples with the important configuration points clearly identified.
+- For project documentation, he values structured explanations of the objective, architecture, technologies, implementation, and results.
+
+These are interaction preferences inferred from recurring requests, not formal qualifications or professional credentials.
+
+======================================================================
+11. PROFESSIONAL POSITIONING
+======================================================================
+
+Suggested professional description:
+Data Science and Artificial Intelligence master's student with a Computer Science background and hands-on project experience in data analytics, machine learning, RAG-based AI assistants, and IoT automation. Interested in designing practical data-driven applications that connect machine-learning models, LLMs, APIs, databases, and user interfaces.
+
+Suitable areas of interest for internships or entry-level opportunities:
+- Data Science Intern.
+- Machine Learning Intern.
+- AI Engineer Intern.
+- Generative AI / LLM Intern.
+- RAG Application Developer Intern.
+- Data Analyst Intern.
+- Python Developer Intern.
+- Junior AI Application Developer.
+
+This list describes relevant target roles, not roles Chakir has already held.
+
+======================================================================
+12. IMPORTANT FACTUALITY RULES FOR AI SYSTEMS USING THIS PROFILE
+======================================================================
+
+1. The person described in this file is Chakir Bahmed, also known as Bahmed or CHAKIR BAHMED.
+2. Use chakirbahmed1@gmail.com as the email address listed in this profile.
+3. Use Casablanca, Morocco as the listed location.
+4. The current academic program listed is Master ISI – Option Data Science at Université Hassan II, for 2025–2027.
+5. The previous academic degree listed is a Licence en Informatique at Université Hassan II, for 2022–2025.
+6. Do not attribute BAHMED CHAKIR's phone number, email, website, education, work history, location, awards, research publications, or identity to Chakir Bahmed. The BAHMED CHAKIR profile was supplied only as a structural example.
+7. No corporate employment history or professional internship history has been supplied in this profile. Do not invent employers, job titles, employment dates, or responsibilities.
+8. Do not invent publications, research papers, awards, GPA, academic distinctions, or leadership roles.
+9. Project metrics such as 500K+ chess games, 670K+ players, 30,000 credit-risk clients, 91% reported accuracy, and 7M+ road accidents come from Chakir's supplied CV descriptions. Preserve the attribution and do not fabricate additional performance metrics.
+10. The RAG assistant is described as using 100+ documents, semantic search, LangChain, ChromaDB, OpenAI API, Python, and FastAPI. Details not listed here should be treated as unknown until confirmed.
+11. Distinguish completed project descriptions from prototypes, active development, and planned features. In particular, the smart irrigation hardware setup and e-learning platform have been developed iteratively.
+12. Never expose passwords, API keys, Wi-Fi credentials, Firebase secrets, access tokens, or other private credentials in answers. They are not part of this profile and should not be added.
+13. When a question cannot be answered from this profile, say that the available information does not specify the answer instead of guessing.
+14. For the most current portfolio and public professional information, use the GitHub and LinkedIn links listed in the identity section when those sources are available.
+
+======================================================================
+13. SHORT FACTS FOR RETRIEVAL
+======================================================================
+
+Who is Chakir Bahmed?
+Chakir Bahmed is a Data Science and Artificial Intelligence master's student at Université Hassan II in Casablanca, Morocco, with a Computer Science background and practical projects in machine learning, RAG, IoT, and web development.
+
+What is Chakir Bahmed studying?
+He is listed as pursuing a Master ISI – Option Data Science at Université Hassan II for 2025–2027.
+
+What is his main technical focus?
+Data Science, Machine Learning, Artificial Intelligence, LLMs, RAG, semantic search, and applied software development.
+
+What RAG project has he worked on?
+An AI chatbot assistant using RAG and LLMs, with a document collection of more than 100 documents, semantic search, LangChain, ChromaDB, OpenAI API, Python, and FastAPI.
+
+What IoT project has he worked on?
+A smart irrigation system using an ESP32, soil-moisture sensor, DHT11, LDR, relay-controlled water pump, Firebase Realtime Database, Python-based AI processing, and a Blynk dashboard.
+
+What are his main data analytics projects?
+Chess Analytics & AI Platform, Credit Risk Analysis, and USA Road Accident Analytics & Prediction.
+
+What web development project has he worked on?
+An e-learning platform developed with React 19, Vite, Laravel, and MySQL, with courses, videos, quizzes, questions, answers, students, and trainers.
+
+Which programming language is central to his Data Science work?
+Python, used with tools such as Pandas, NumPy, and Scikit-learn.
+
+Which languages does he list?
+Arabic, English, French, and German. Proficiency levels have not been specified.
+
+What certifications are listed?
+Rapid Application Development with LLMs by NVIDIA (October 2026) and Certification Data Science by EISTA (August 2024).
+
+What is his GitHub profile?
+https://github.com/chakir-bahmed
+
+What is his LinkedIn profile?
+https://linkedin.com/in/chakir-bahmed
+
+======================================================================
+END OF PROFILE
+======================================================================

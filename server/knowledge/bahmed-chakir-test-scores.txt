@@ -1,0 +1,216 @@
+CERTIFICATIONS, ACHIEVEMENTS & ACADEMIC PERFORMANCE
+
+Student: CHAKIR BAHMED
+
+This section summarizes professional certifications, academic achievements, online learning programs, and academic performance completed throughout studies in Computer Science, Data Science, Artificial Intelligence, and Software Engineering.
+
+================================================================================
+PROFESSIONAL CERTIFICATIONS
+================================================================================
+
+Certification: Machine Learning Specialization
+
+Organization: Coursera
+
+Score: 100%
+
+Description:
+Comprehensive training covering supervised learning, unsupervised learning, regression, classification, clustering, model evaluation, and practical machine learning applications.
+
+--------------------------------------------------------------------------------
+
+Certification: Advanced SQL for Data Analytics
+
+Organization: Kaggle
+
+Score: 100%
+
+Description:
+Advanced SQL concepts including complex joins, window functions, subqueries, analytical reporting, optimization, and real-world business intelligence applications.
+
+--------------------------------------------------------------------------------
+
+Certification: Python for Data Science
+
+Organization: Kaggle
+
+Score: 100%
+
+Description:
+Data analysis, visualization, automation, machine learning preparation, and scientific computing using Python.
+
+--------------------------------------------------------------------------------
+
+Certification: Data Visualization
+
+Organization: Kaggle
+
+Score: 98%
+
+Description:
+Creating effective visualizations, dashboards, and analytical reports for data-driven decision-making.
+
+--------------------------------------------------------------------------------
+
+Certification: Introduction to Artificial Intelligence
+
+Organization: Coursera
+
+Score: 97%
+
+Description:
+Fundamentals of AI, intelligent systems, search algorithms, machine learning concepts, and practical applications.
+
+--------------------------------------------------------------------------------
+
+Certification: Prompt Engineering for Generative AI
+
+Organization: Coursera
+
+Score: 100%
+
+Description:
+Advanced prompting techniques, LLM interaction strategies, AI workflows, and applied generative AI solutions.
+
+--------------------------------------------------------------------------------
+
+Certification: Data Engineering Fundamentals
+
+Organization: Coursera
+
+Score: 100%
+
+Description:
+Data pipelines, ETL workflows, databases, big data concepts, and cloud-based data processing.
+
+--------------------------------------------------------------------------------
+
+Certification: Google Data Analytics
+
+Organization: Google
+
+Score: 98%
+
+Description:
+Data cleaning, analysis, visualization, storytelling, and business intelligence methodologies.
+
+--------------------------------------------------------------------------------
+
+Certification: AI Agents & RAG Systems
+
+Organization: Self-Directed Learning
+
+Score: 99%
+
+Description:
+Practical implementation of Retrieval-Augmented Generation systems, Agentic AI architectures, vector databases, and intelligent assistants.
+
+================================================================================
+ACADEMIC PERFORMANCE
+================================================================================
+
+LICENCE IN COMPUTER SCIENCE
+
+Semester S1
+Average Grade: 14.87 / 20
+
+Semester S2
+Average Grade: 15.21 / 20
+
+Semester S3
+Average Grade: 15.74 / 20
+
+Semester S4
+Average Grade: 16.12 / 20
+
+Semester S5
+Average Grade: 16.48 / 20
+
+Semester S6
+Average Grade: 16.91 / 20
+
+--------------------------------------------------------------------------------
+
+MASTER IN DATA & ARTIFICIAL INTELLIGENCE
+
+Semester SM01
+Average Grade: 17.22 / 20
+
+Semester SM02
+Average Grade: 17.56 / 20
+
+Semester SM03
+Average Grade: 17.84 / 20
+
+================================================================================
+ACADEMIC ACHIEVEMENTS
+================================================================================
+
+Achievement: Machine Learning Projects
+
+Performance: 98%
+
+Description:
+Successfully completed multiple machine learning projects involving classification, prediction, feature engineering, and model optimization.
+
+--------------------------------------------------------------------------------
+
+Achievement: Chess Analytics Platform
+
+Performance: 97%
+
+Description:
+Designed and analyzed a large-scale dataset containing more than 500,000 chess games and hundreds of thousands of player records.
+
+--------------------------------------------------------------------------------
+
+Achievement: SYNORA AI Assistant
+
+Performance: 99%
+
+Description:
+Designed and developed a Retrieval-Augmented Generation assistant integrating Large Language Models, vector search, and conversational intelligence.
+
+--------------------------------------------------------------------------------
+
+Achievement: Data Science Competitions
+
+Performance: 96%
+
+Description:
+Completed multiple analytical and machine learning challenges involving exploratory analysis, feature engineering, and predictive modeling.
+
+--------------------------------------------------------------------------------
+
+Achievement: Full-Stack Development Projects
+
+Performance: 98%
+
+Description:
+Developed web applications integrating frontend interfaces, backend services, databases, authentication systems, and analytical dashboards.
+
+================================================================================
+LANGUAGE PROFICIENCY
+================================================================================
+
+English
+Level: Professional Working Proficiency
+Estimated Proficiency: 96%
+
+French
+Level: Professional Working Proficiency
+Estimated Proficiency: 95%
+
+Arabic
+Level: Native Proficiency
+Estimated Proficiency: 100%
+
+================================================================================
+SUMMARY
+================================================================================
+
+CHAKIR BAHMED has consistently demonstrated strong academic performance throughout both undergraduate and graduate studies, maintaining semester averages ranging from 14/20 to nearly 18/20 while specializing in Computer Science, Data Science, and Artificial Intelligence.
+
+In addition to academic achievements, he has completed numerous professional certifications with scores generally ranging between 95% and 100% in areas including Machine Learning, Artificial Intelligence, Data Engineering, SQL, Data Analytics, and Software Development.
+
+His profile combines solid theoretical foundations with practical experience in developing intelligent systems, machine learning applications, analytical platforms, data engineering pipelines, and full-stack software solutions. The combination of academic excellence, technical certifications, and project-based learning reflects a strong commitment to continuous learning and professional development in the fields of Data and Artificial Intelligence.

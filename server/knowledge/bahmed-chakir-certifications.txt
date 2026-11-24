@@ -1,0 +1,25 @@
+CERTIFICATIONS
+
+1. Advanced SQL
+- Issuer: Kaggle
+- Date: November 2026
+- Skills: SQL, Database Queries, BigQuery, JOINs, Common Table Expressions (CTEs), Window Functions, SQL Query Optimization.
+- Description: Completed Kaggle Advanced SQL certification. Gained hands-on experience with BigQuery, JOINs, CTEs, Window Functions, and SQL Query Optimization.
+
+2. Intro to Machine Learning
+- Issuer: Kaggle
+- Date: November 2026
+- Skills: Feature Engineering, Machine Learning, Model Training, Predictive Modeling.
+- Description: Strengthened practical machine learning skills through hands-on exercises and real-world datasets.
+
+3. Rapid Application Development with Large Language Models (LLMs)
+- Issuer: NVIDIA
+- Date: October 2026
+- Credential ID: DaaTMkEET32UF9MHbibzWg
+- Credential URL: https://learn.nvidia.com/certificates?id=DaaTMkEET32UF9MHbibzWg
+- Skills: Generative AI, Large Language Model Operations (LLMOps), +3 additional skills.
+- Description: Certificate of competency in developing applications using Large Language Models (LLMs).
+
+4. Certification Data Science
+- Issuer: EISTA
+- Date: August 2024

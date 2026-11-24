@@ -108,40 +108,35 @@ const CitationBadge = ({
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
 }) => (
-  <Box
-    component="button"
-    type="button"
-    onClick={onClick}
-    onMouseEnter={onMouseEnter}
-    onMouseLeave={onMouseLeave}
-    sx={{
-      display: "inline-block",
-      fontSize: "0.65em",
-      fontWeight: 700,
-      lineHeight: 1,
-      padding: "0.05em 0.45em",
-      borderRadius: "999px",
-      backgroundColor: "rgba(245, 124, 0, 0.12)",
-      color: "#f57c00",
-      border: "1px solid rgba(245, 124, 0, 0.35)",
-      marginLeft: "0.15em",
-      marginRight: "0.15em",
-      verticalAlign: "super",
-      cursor: "pointer",
-      transition: "all 0.2s ease",
-      outline: "none",
-      "&:hover": {
-        backgroundColor: "rgba(245, 124, 0, 0.2)",
-        transform: "translateY(-1px)",
-      },
-      "&:focus-visible": {
-        boxShadow: "0 0 0 2px rgba(245, 124, 0, 0.35)",
-      },
-    }}
-  >
-    {children}
-  </Box>
-);
+ <button
+  type="button"
+  onClick={(e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log("BUTTON CLICK");
+    onClick?.();
+  }}
+  onMouseEnter={onMouseEnter}
+  onMouseLeave={onMouseLeave}
+  style={{
+    display: "inline-block",
+    fontSize: "0.65em",
+    fontWeight: 700,
+    lineHeight: 1,
+    padding: "0.05em 0.45em",
+    borderRadius: "999px",
+    backgroundColor: "rgba(245,124,0,0.12)",
+    color: "#f57c00",
+    border: "1px solid rgba(245,124,0,0.35)",
+    marginLeft: "0.15em",
+    marginRight: "0.15em",
+    verticalAlign: "super",
+    cursor: "pointer"
+  }}
+>
+  {children}
+</button>
+); 
 
 const renderTextWithCitations = (
   text: string,

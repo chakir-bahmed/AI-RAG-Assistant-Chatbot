@@ -1,0 +1,24 @@
+Chakir Bahmed — Academic Timeline, Career Direction, and Key Milestones
+
+Current academic status: Master's student in Information Systems (ISI), specializing in Data Science, at Université Hassan II, Casablanca, Morocco (2025–2027).
+
+Academic timeline, most recent first (institution — degree — dates — location):
+- Université Hassan II — Master ISI, Option Data Science — 2025 to 2027 — Casablanca, Morocco.
+- Université Hassan II — Licence en Informatique — 2022 to 2025 — Casablanca, Morocco.
+- Lycée Mostapha Elmàani — Baccalauréat Sciences Mathématiques A — 2022 — Morocco.
+
+Education milestone: Completed a Bachelor's degree in Computer Science at Université Hassan II in 2025 and continued to Master's studies in Information Systems, specializing in Data Science.
+
+Certifications:
+- NVIDIA — Rapid Application Development with LLMs — October 2026.
+- EISTA — Certification Data Science — August 2024.
+
+Professional direction: Chakir Bahmed is pursuing a career in Data Science and Artificial Intelligence. His stated objective is to obtain a final-year project internship (Stage PFE) and contribute to practical projects in Data Science and AI.
+
+Key milestones:
+- 2022: Obtained Baccalauréat Sciences Mathématiques A.
+- 2025: Completed Licence en Informatique at Université Hassan II.
+- 2025: Started Master's studies in ISI – Option Data Science.
+- August 2024: Obtained Data Science certification from EISTA.
+- October 2026: Obtained NVIDIA certification in Rapid Application Development with LLMs.
+- 2025–2027: Master's academic program in progress.

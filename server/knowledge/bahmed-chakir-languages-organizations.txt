@@ -1,0 +1,28 @@
+Languages
+
+
+Arabic - Native proficiency
+French - Professional proficiency
+English - Professional proficiency
+
+Organizations
+
+
+Data Science & AI Community
+- Role: Member
+- Dates: 2024 - Present
+- Notes: Participated in workshops, hackathons, and machine learning projects.
+
+Technology & Innovation Club
+- Role: Active Member
+- Dates: 2023 - Present
+- Notes: Contributed to software development, artificial intelligence, and data-driven projects.
+
+Academic & Research Interests
+- Artificial Intelligence
+- Machine Learning
+- Retrieval-Augmented Generation (RAG)
+- Large Language Models (LLMs)
+- Data Science
+- Knowledge Graphs
+- Cloud Computing

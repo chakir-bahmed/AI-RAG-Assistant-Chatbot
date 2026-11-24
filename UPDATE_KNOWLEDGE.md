@@ -63,17 +63,17 @@ Every knowledge update flows through this pipeline:
 ```
 server/knowledge/
 ├── manifest.json                        # Manifest for batch sync
-├── bahmed-profile.txt               # Bio, education, work experience
-├── bahmed-alias.txt                 # Name aliases
-├── bahmed-projects.txt              # All 87+ projects (detailed)
-├── bahmed-skills.txt                # Skills by category
-├── bahmed-publications.txt          # Research papers
-├── bahmed-honors-awards.txt         # Awards, distinctions
-├── bahmed-certifications.txt        # Professional certifications
-├── bahmed-volunteering.txt          # Volunteer roles
-├── bahmed-coursework.txt            # University coursework
-├── bahmed-languages-organizations.txt  # Languages & orgs
-└── bahmed-test-scores.txt           # Standardized test scores
+├── bahmed-chakir-profile.txt               # Bio, education, work experience
+├── bahmed-chakir-alias.txt                 # Name aliases
+├── bahmed-chakir-projects.txt              # All 87+ projects (detailed)
+├── bahmed-chakir-skills.txt                # Skills by category
+├── bahmed-chakir-publications.txt          # Research papers
+├── bahmed-chakir-honors-awards.txt         # Awards, distinctions
+├── bahmed-chakir-certifications.txt        # Professional certifications
+├── bahmed-chakir-volunteering.txt          # Volunteer roles
+├── bahmed-chakir-coursework.txt            # University coursework
+├── bahmed-chakir-languages-organizations.txt  # Languages & orgs
+└── bahmed-chakir-test-scores.txt           # Standardized test scores
 ```
 
 **Rules:**

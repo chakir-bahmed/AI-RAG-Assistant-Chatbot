@@ -50,12 +50,7 @@ const EXTRACTION_BASE_DELAY_MS = 15_000;
 const EXTRACTION_MAX_DELAY_MS = 60_000;
 
 const EXTRACTION_MODELS = [
-  "gemini-2.5-flash",
-  "gemini-2.5-flash-lite",
-  "gemini-2.0-flash",
-  "gemini-2.0-flash-001",
-  "gemini-2.0-flash-lite",
-  "gemini-2.0-flash-lite-001",
+  "gemini-3.8-flash",
 ];
 
 const getGenAI = (): GoogleGenerativeAI =>

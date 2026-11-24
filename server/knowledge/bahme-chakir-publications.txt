@@ -1,0 +1,106 @@
+PUBLICATIONS & RESEARCH WORK
+
+Researcher: CHAKIR BAHMED
+
+This section highlights research papers, academic studies, and technical investigations conducted by CHAKIR BAHMED in the fields of Artificial Intelligence, Data Science, Software Engineering, Data Engineering, and Emerging Technologies.
+
+The publications demonstrate analytical thinking, research methodology, technical writing, and the ability to explore complex technological challenges through scientific investigation and practical evaluation.
+
+================================================================================
+PUBLICATION: RETRIEVAL-AUGMENTED GENERATION FOR INTELLIGENT ASSISTANTS
+================================================================================
+
+Title: Design and Development of a RAG-Based Intelligent Assistant
+
+Category: Artificial Intelligence & Large Language Models
+
+Description:
+This research explores the architecture, implementation, and evaluation of an intelligent assistant powered by Retrieval-Augmented Generation (RAG). The study investigates how vector databases, semantic search, and large language models can be combined to produce accurate, context-aware responses. The work also analyzes challenges related to knowledge retrieval, hallucination reduction, and response quality in production AI systems.
+
+================================================================================
+PUBLICATION: LARGE-SCALE CHESS ANALYTICS AND PLAYER PERFORMANCE MODELING
+================================================================================
+
+Title: Data-Driven Analysis of Competitive Chess Performance
+
+Category: Data Science & Predictive Analytics
+
+Description:
+A large-scale analytical study based on more than 500,000 chess games and 600,000 player records. The research investigates player behavior, performance indicators, and ranking evolution. Statistical techniques and data mining methods are applied to identify patterns influencing player success and competitive development.
+
+================================================================================
+PUBLICATION: MACHINE LEARNING APPLICATIONS FOR PREDICTIVE ANALYTICS
+================================================================================
+
+Title: Machine Learning Approaches for Data Classification and Prediction
+
+Category: Machine Learning
+
+Description:
+A practical evaluation of supervised learning techniques for solving classification and prediction tasks. The research compares multiple machine learning models, examines feature engineering strategies, and evaluates model performance using industry-standard metrics.
+
+================================================================================
+PUBLICATION: DATA VISUALIZATION FOR DECISION SUPPORT SYSTEMS
+================================================================================
+
+Title: Interactive Dashboards and Business Intelligence Analytics
+
+Category: Data Analysis & Visualization
+
+Description:
+This study investigates the role of interactive visualization systems in supporting business and operational decision-making. Through dashboard development and KPI analysis, the research demonstrates how visual analytics can transform complex datasets into actionable insights.
+
+================================================================================
+PUBLICATION: MODERN DATA ENGINEERING PIPELINES
+================================================================================
+
+Title: End-to-End Data Pipeline Design and Automation
+
+Category: Data Engineering
+
+Description:
+A technical study focused on the design of scalable Extract-Transform-Load (ETL) pipelines for modern data-driven environments. The research covers data ingestion, transformation, storage optimization, workflow automation, and preparation of analytical datasets for reporting and machine learning.
+
+================================================================================
+PUBLICATION: DATABASE OPTIMIZATION AND QUERY PERFORMANCE
+================================================================================
+
+Title: Advanced Database Management and Query Optimization
+
+Category: Database Systems
+
+Description:
+This research analyzes database performance optimization techniques, indexing strategies, relational modeling, and query execution improvements. The study demonstrates methods for increasing efficiency and scalability within large-scale database environments.
+
+================================================================================
+PUBLICATION: WEB TECHNOLOGIES AND FULL-STACK SYSTEM DESIGN
+================================================================================
+
+Title: Development of Scalable Full-Stack Web Applications
+
+Category: Software Engineering
+
+Description:
+An exploration of modern web application architecture using frontend and backend technologies. The work investigates system scalability, API design, database integration, authentication mechanisms, and user experience optimization in full-stack environments.
+
+================================================================================
+PUBLICATION: BIG DATA AND ANALYTICAL PROCESSING
+================================================================================
+
+Title: Big Data Technologies for Large-Scale Information Processing
+
+Category: Big Data & Analytics
+
+Description:
+A research-oriented study examining technologies and methodologies used to process high-volume datasets. The work explores distributed computing concepts, large-scale storage solutions, and analytical frameworks used in contemporary big data systems.
+
+================================================================================
+PUBLICATION: ARTIFICIAL INTELLIGENCE IN DECISION-MAKING SYSTEMS
+================================================================================
+
+Title: Intelligent Decision Support through Artificial Intelligence
+
+Category: Artificial Intelligence
+
+Description:
+This publication examines how artificial intelligence technologies improve decision support systems. The study evaluates predictive analytics, machine learning integration, and automated reasoning mechanisms to enhance operational efficiency and strategic decision-making.

@@ -1,0 +1,80 @@
+LICENCE
+
+S1
+- Analyse 1
+- Algèbre 1
+- Algèbre 2
+- Physique 1
+- Physique 2
+- Informatique 1
+
+S2
+- Analyse 2
+- Analyse 3
+- Algèbre 3
+- Physique 3
+- Physique 4
+- Informatique 2
+
+S3
+- Électronique
+- Algorithmique II
+- Système d'exploitation I
+- Probabilités-Statistiques
+- Technologie du web
+- Programmation I
+
+S4
+- Bases de données
+- Compilation
+- Réseaux
+- Recherche opérationnelle
+- Conception orientée objets (UML)
+- Programmation orientée objets
+
+S5
+- Architecture des ordinateurs
+- Programmation II
+- Système d'exploitation II
+- Analyse numérique
+- Électromagnétisme
+- Structures de données
+
+S6
+- Développement Web
+- Java
+- Programmation de base de données / Système
+- Administration de BD
+- Analyse de données
+- Systèmes d'information décisionnels
+- Projet tutoré 1 & 2
+
+MASTER
+
+SM01
+- Programmation Python
+- Structures des données avancées
+- Développement Web Full Stack
+- Mathématiques pour l'analyse des données
+- Développement avancé des bases de données
+- Anglais
+- Intelligence Artificielle et Innovation
+
+SM02
+- Sécurité des systèmes et réseaux
+- Internet des objets
+- Administration avancée des bases de données
+- Technologie du web sémantique
+- Données massives (Big Data)
+- Culture Entrepreneuriale et Techniques de Communication
+- Méthodologie de Recherche Scientifique
+
+SM03
+- Analyse des données dans le Web
+- Apprentissage automatique (Machine Learning)
+- J2EE
+- Architectures des microservices
+- Systèmes répartis
+- Ingénierie des ontologies
+- Ingénierie des LLM et des Agents IA
+- Traitement des données multimédias

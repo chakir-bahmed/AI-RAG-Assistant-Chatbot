@@ -21,15 +21,11 @@ const GEMINI_MODELS_ENDPOINT =
   "https://generativelanguage.googleapis.com/v1/models";
 const MODEL_CACHE_TTL_MS = 10 * 60 * 1000;
 const FALLBACK_MODEL_TTL_MS = 60 * 1000;
-const FALLBACK_GEMINI_MODELS = ["gemini-2.5-flash"];
+const FALLBACK_GEMINI_MODELS = ["gemini-3.8-flash"];
 const STATIC_GEMINI_MODELS = [
-  "gemini-2.5-flash",
-  "gemini-2.5-flash-lite",
-  "gemini-2.0-flash",
-  "gemini-2.0-flash-001",
-  "gemini-2.0-flash-lite",
-  "gemini-2.0-flash-lite-001",
+  "gemini-3.8-flash",
 ];
+
 const RAG_TOP_K = 12;
 const RAG_LIST_TOP_K = 24;
 const MAX_CONTEXT_SNIPPET_CHARS = 1200;

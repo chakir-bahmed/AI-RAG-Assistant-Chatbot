@@ -13,7 +13,7 @@ import type {
 
 // You can adjust the baseURL if your server is different
 const API = axios.create({
-  baseURL: "https://ai-assistant-chatbot-server.vercel.app/api",
+  baseURL: "http://localhost:5000/api",
 });
 
 // --- Token Handling ---

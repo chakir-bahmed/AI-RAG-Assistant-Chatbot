@@ -1,0 +1,88 @@
+PERSONAL PROJECTS OF CHAKIR BAHMED
+
+GitHub: https://github.com/chakir-bahmed
+Total Projects: 10+
+
+This document presents a collection of projects developed by CHAKIR BAHMED throughout his academic and personal journey in Computer Science, Data Engineering, Data Analysis, and Artificial Intelligence.
+
+The projects demonstrate practical experience in software engineering, machine learning, data analytics, full-stack development, database management, and intelligent systems design. They reflect a strong interest in building data-driven solutions and applying modern AI technologies to real-world problems.
+
+================================================================================
+CATEGORY: ARTIFICIAL INTELLIGENCE & DATA SCIENCE
+================================================================================
+
+Project: SYNORA AI
+Category: Artificial Intelligence & Data Science
+Description: An intelligent RAG-based assistant developed to answer questions using custom knowledge sources and conversational AI. The platform combines large language models, vector search, and modern web technologies to deliver contextual and accurate responses.
+
+Project: Chess Analytics Platform
+Category: Artificial Intelligence & Data Science
+Description: A large-scale data analysis project that processes more than 500,000 chess games and evaluates the performance of over 600,000 players. The system generates analytical insights using ELO rankings, player statistics, and performance indicators.
+
+Project: Machine Learning Classification Projects
+Category: Artificial Intelligence & Data Science
+Description: A collection of machine learning projects covering classification, prediction, data preprocessing, model evaluation, and performance optimization using real-world datasets.
+
+================================================================================
+CATEGORY: DATA ANALYSIS & BUSINESS INTELLIGENCE
+================================================================================
+
+Project: Data Analysis Dashboard
+Category: Data Analysis & Business Intelligence
+Description: Interactive dashboards developed to transform raw datasets into meaningful visual insights. The project focuses on trend discovery, KPI tracking, and decision support through effective data visualization.
+
+Project: SQL Analytics Projects
+Category: Data Analysis & Business Intelligence
+Description: A collection of SQL-based analytical projects involving complex queries, database optimization, business reporting, and data exploration across different domains.
+
+Project: Kaggle Data Science Projects
+Category: Data Analysis & Business Intelligence
+Description: Multiple projects completed on Kaggle involving data cleaning, feature engineering, predictive analytics, and machine learning model development using public datasets.
+
+================================================================================
+CATEGORY: DATA ENGINEERING
+================================================================================
+
+Project: ETL Data Pipeline
+Category: Data Engineering
+Description: An end-to-end data engineering project involving data extraction, transformation, and loading workflows. The pipeline automates data processing and prepares datasets for analytics and machine learning tasks.
+
+Project: Database Management Systems
+Category: Data Engineering
+Description: A set of projects focused on database design, administration, query optimization, and data storage solutions using relational database systems.
+
+================================================================================
+CATEGORY: FULL-STACK WEB DEVELOPMENT
+================================================================================
+
+Project: Personal Portfolio Website
+Category: Full-Stack Web Development
+Description: A responsive web portfolio designed to present projects, academic achievements, technical skills, and professional experience through a modern and user-friendly interface.
+
+Project: Full-Stack Web Applications
+Category: Full-Stack Web Development
+Description: A series of web applications developed using modern frontend and backend technologies, including authentication systems, database integration, REST APIs, and responsive user interfaces.
+
+================================================================================
+CATEGORY: ACADEMIC & RESEARCH PROJECTS
+================================================================================
+
+Project: Academic Research Projects
+Category: Research & Innovation
+Description: University projects exploring data science, artificial intelligence, machine learning, big data technologies, and intelligent information systems through practical implementations and research activities.
+
+Project: Data Mining & Predictive Analytics
+Category: Research & Innovation
+Description: Research-oriented work focused on extracting knowledge from data, building predictive models, and applying statistical methods to solve real-world analytical problems.
+
+================================================================================
+SUMMARY
+================================================================================
+
+CHAKIR BAHMED has developed a diverse portfolio of projects spanning Artificial Intelligence, Data Science, Data Engineering, Machine Learning, Data Analytics, Database Systems, and Full-Stack Web Development.
+
+His work demonstrates strong practical expertise in transforming data into actionable insights, designing intelligent systems, building scalable applications, and applying modern technologies to solve real-world challenges.
+
+Through academic coursework, personal initiatives, and research projects, he has acquired experience in Python, SQL, Machine Learning, Data Visualization, ETL Pipelines, Database Management, Web Development, and Retrieval-Augmented Generation (RAG) systems.
+
+His portfolio reflects a continuous commitment to learning, innovation, and the development of impactful technology solutions in the fields of Data and Artificial Intelligence.

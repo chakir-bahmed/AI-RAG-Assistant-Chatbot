@@ -52,7 +52,7 @@
     "admin:revoke": "ts-node src/scripts/makeAdmin.ts revoke"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.21.0",
+    "@google/generative-ai": "^0.24.1",
     "@pinecone-database/pinecone": "^4.1.0",
     "@simplewebauthn/server": "^9.0.3",
     "bcrypt": "^5.0.1",

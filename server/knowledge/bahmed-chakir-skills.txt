@@ -1,0 +1,235 @@
+TECHNICAL SKILLS – CHAKIR BAHMED
+
+This document summarizes the technical skills, tools, technologies, and practical competencies acquired by CHAKIR BAHMED through academic coursework, personal projects, data science competitions, software development, and artificial intelligence projects.
+
+The skill set covers Data Science, Artificial Intelligence, Data Engineering, Full-Stack Development, Database Systems, Machine Learning, Business Intelligence, and Software Engineering.
+
+================================================================================
+CATEGORY: PROGRAMMING LANGUAGES
+================================================================================
+
+Python
+Description: Primary programming language used for Data Science, Machine Learning, Data Analysis, Automation, Artificial Intelligence, ETL Pipelines, and Backend Development.
+
+SQL
+Description: Advanced database querying, data extraction, optimization, reporting, and analytics across relational database systems.
+
+JavaScript
+Description: Frontend and backend development for modern web applications and interactive user interfaces.
+
+TypeScript
+Description: Type-safe JavaScript development for scalable applications and enterprise-grade projects.
+
+Java
+Description: Object-Oriented Programming, database connectivity, software engineering, and enterprise application development.
+
+C
+Description: Fundamental systems programming, memory management, and algorithm implementation.
+
+C++
+Description: Data structures, algorithms, and performance-oriented application development.
+
+PHP
+Description: Dynamic web development and backend application implementation.
+
+================================================================================
+CATEGORY: ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+================================================================================
+
+Machine Learning
+Description: Building predictive models, classification systems, regression analysis, model evaluation, and optimization.
+
+Artificial Intelligence
+Description: Development of intelligent systems capable of analysis, decision-making, automation, and knowledge retrieval.
+
+Large Language Models (LLMs)
+Description: Practical experience working with modern AI systems, prompt design, retrieval systems, and intelligent assistants.
+
+Retrieval-Augmented Generation (RAG)
+Description: Designing systems that combine language models with external knowledge sources to improve response accuracy.
+
+Prompt Engineering
+Description: Creating effective instructions and interactions for AI systems to optimize outputs and user experience.
+
+Scikit-Learn
+Description: Machine learning library used for model training, evaluation, preprocessing, and predictive analytics.
+
+TensorFlow
+Description: Deep learning framework used for neural network development and advanced AI applications.
+
+Natural Language Processing (NLP)
+Description: Text processing, language understanding, sentiment analysis, and intelligent conversational systems.
+
+Data Mining
+Description: Extracting useful patterns, relationships, and insights from large datasets.
+
+================================================================================
+CATEGORY: DATA SCIENCE & ANALYTICS
+================================================================================
+
+Data Analysis
+Description: Cleaning, exploring, transforming, and interpreting datasets to produce valuable business insights.
+
+Data Visualization
+Description: Building visual reports, dashboards, and analytical systems to communicate findings effectively.
+
+Predictive Analytics
+Description: Identifying trends and forecasting outcomes through statistical and machine learning techniques.
+
+Business Intelligence
+Description: Transforming raw data into meaningful information for decision support and strategic planning.
+
+Statistical Analysis
+Description: Using quantitative techniques to interpret datasets and validate analytical results.
+
+Research Analytics
+Description: Applying scientific methodologies and analytical techniques to research-oriented projects.
+
+================================================================================
+CATEGORY: DATABASES
+================================================================================
+
+MySQL
+Description: Relational database design, administration, query optimization, and analytical reporting.
+
+PostgreSQL
+Description: Advanced relational database systems with strong support for analytics and complex queries.
+
+MongoDB
+Description: NoSQL database management for scalable and flexible document-based applications.
+
+SQL Server
+Description: Enterprise database solutions and business-oriented database management.
+
+Database Administration
+Description: Database maintenance, optimization, schema design, security, and performance monitoring.
+
+Database Modeling
+Description: Conceptual, logical, and physical database design using industry best practices.
+
+================================================================================
+CATEGORY: DATA ENGINEERING
+================================================================================
+
+ETL Pipelines
+Description: Data extraction, transformation, and loading workflows for analytics and machine learning environments.
+
+Data Warehousing
+Description: Organizing and storing analytical data for reporting, visualization, and decision-making.
+
+Data Processing
+Description: Handling large datasets efficiently through transformation and automation processes.
+
+Pipeline Automation
+Description: Building workflows that automatically process and prepare data for analysis.
+
+Big Data Fundamentals
+Description: Concepts related to large-scale data storage, processing, and distributed analytics.
+
+================================================================================
+CATEGORY: WEB DEVELOPMENT
+================================================================================
+
+HTML5
+Description: Semantic and accessible web page structure.
+
+CSS3
+Description: Modern responsive design, layouts, animations, and styling.
+
+Bootstrap
+Description: Rapid responsive user interface development.
+
+React
+Description: Building dynamic and interactive single-page applications.
+
+Node.js
+Description: Backend development and API creation using JavaScript.
+
+Express.js
+Description: REST API development and backend application architecture.
+
+REST APIs
+Description: Designing and implementing communication interfaces between software systems.
+
+Responsive Design
+Description: Creating applications compatible across desktop, tablet, and mobile devices.
+
+================================================================================
+CATEGORY: BUSINESS INTELLIGENCE TOOLS
+================================================================================
+
+Power BI
+Description: Interactive dashboards, reporting systems, and business intelligence visualization.
+
+Microsoft Excel
+Description: Advanced spreadsheet analysis, formulas, dashboards, pivot tables, and reporting.
+
+Tableau
+Description: Visualization and business analytics for large and complex datasets.
+
+================================================================================
+CATEGORY: SOFTWARE ENGINEERING
+================================================================================
+
+Object-Oriented Programming (OOP)
+Description: Design and development of modular, maintainable, and reusable software systems.
+
+Data Structures
+Description: Implementation and analysis of lists, stacks, queues, trees, graphs, and related structures.
+
+Algorithms
+Description: Problem-solving, optimization techniques, and computational analysis.
+
+Software Design
+Description: System architecture, modular development, and software engineering principles.
+
+Version Control (Git)
+Description: Source code management, collaboration workflows, and project tracking.
+
+GitHub
+Description: Repository hosting, project management, collaboration, and version control.
+
+Testing & Debugging
+Description: Quality assurance, software verification, and issue resolution.
+
+================================================================================
+CATEGORY: ACADEMIC KNOWLEDGE AREAS
+================================================================================
+
+Machine Learning
+
+Artificial Intelligence
+
+Big Data
+
+Database Systems
+
+Data Warehousing
+
+Decision Support Systems
+
+Information Systems
+
+Web Development
+
+Software Engineering
+
+Computer Networks
+
+Operating Systems
+
+Data Structures & Algorithms
+
+Object-Oriented Programming
+
+Research Methodology
+
+================================================================================
+SUMMARY
+================================================================================
+
+CHAKIR BAHMED possesses a multidisciplinary technical profile combining expertise in Data Science, Artificial Intelligence, Data Engineering, Web Development, Database Systems, and Software Engineering.
+
+His experience includes the development of intelligent systems, machine learning projects, analytical dashboards, ETL pipelines, database management solutions, and full-stack web applications. Through academic research, practical projects, Kaggle competitions, and independent development work, he has built strong competencies in transforming data into actionable insights and designing modern technology solutions.
+
+The combination of analytical thinking, programming skills, software engineering practices, and AI knowledge enables him to contribute effectively to projects involving Data Analytics, Business Intelligence, Machine Learning, Artificial Intelligence, and Intelligent Information Systems.
