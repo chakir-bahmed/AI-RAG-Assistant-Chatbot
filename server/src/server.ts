@@ -39,7 +39,7 @@ app.use(cors(corsOptions));
 // path Express thinks it matched.
 app.options("*", cors(corsOptions));
 
-app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
+//app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
